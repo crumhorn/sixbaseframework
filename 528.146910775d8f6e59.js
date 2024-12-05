@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkbase_test=self.webpackChunkbase_test||[]).push([[528],{9528:(t,e,s)=>{function n(u){return{name:"VBScript in HTML",subLanguage:"xml",contains:[{begin:"<%",end:"%>",subLanguage:"vbscript"}]}}s.r(e),s.d(e,{default:()=>n})}}]);
