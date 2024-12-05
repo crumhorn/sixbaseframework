@@ -1,0 +1,95 @@
+<div class="documentParent">
+  <div class="document">
+    <h1>Split Layout View</h1>
+
+    <p class="description">The split layout control is a further extended version of the "Angular Split" control to cover needs that the original doesn't have. This original control can be found <a href="https://angular-split.github.io/" target="_new">here</a>.</p>
+    <p class="description">It allows you to have any number of nested, resizable sections on a page, that can also be minimized and maximized (full screen overlay).:</p>
+    <img src="./assets/screenshots/splitlayout.jpg" style="width: 1000px" class="screenshot">
+
+    <h2>Demo</h2>
+    <p class="description">Here is a rather crude example of how the split layout works. The main view is split horizontally in 2, and the right side of that is split vertically in 2.</p>
+    <p class="description">Each section is also using the <i>SplitLayoutContainer</i> as a content holder, which has support for header, body, toolbar, and footer.</p>
+    <p-tabView>
+      <p-tabPanel header="Result">
+        <div style="width: 100%; height: 600px; border: 2px solid green; position: relative">
+          <as-split direction="horizontal" [disabled]="false" [unit]="'percent'" [gutterSize]="11">
+            <as-split-area [size]="'50%'" [maximizable]="true" [collapsible]="true">
+              <SplitLayoutContainer [header]="header" [body]="body" [toolbar]="toolbar" [footer]="footer" headerName="Left Side">
+                <ng-template #header>
+                  I am in the #header area
+                </ng-template>
+                <ng-template #toolbar>
+                  <div style="display: flex; align-items: center; background: black; color: white; height: 30px; padding-left: 10px">I'm in the #toolbar area</div>
+                </ng-template>
+                <ng-template #body>
+                  <div style="padding: 10px">
+                    Hi! I'm #body
+                  </div>
+                </ng-template>
+                <ng-template #footer>
+                  <div style="display: flex; align-items: center; background: black; color: white; height: 30px; padding-left: 10px">I'm in the #footer area</div>
+                </ng-template>
+              </SplitLayoutContainer>
+            </as-split-area>
+            <as-split-area [size]="'50%'" [maximizable]="true" [collapsible]="true">
+              <as-split direction="vertical" [disabled]="false" [unit]="'percent'" [gutterSize]="11">
+                <as-split-area [size]="'50%'" [maximizable]="true" [collapsible]="true">
+                  <SplitLayoutContainer [body]="bodytwo" headerName="Right Side">
+                    <ng-template #bodytwo>
+                      <div style="padding: 10px">
+                        How are you?
+                      </div>
+                    </ng-template>
+                  </SplitLayoutContainer>
+                </as-split-area>
+                <as-split-area [size]="'50%'" [maximizable]="true" [collapsible]="true">
+                  <SplitLayoutContainer [body]="bodythree" headerName="Bottom Right Side">
+                    <ng-template #bodythree>
+                      <div style="padding: 10px">
+                        I'm good, thanks!
+                      </div>
+                    </ng-template>
+                  </SplitLayoutContainer>
+                </as-split-area>
+              </as-split>
+            </as-split-area>
+          </as-split>
+        </div>
+      </p-tabPanel>
+      <p-tabPanel header="Code">
+        <pre><code [highlight]="layoutCode"
+           language="html"></code></pre>
+      </p-tabPanel>
+    </p-tabView>
+    <p></p>
+
+    <h2>Setup</h2>
+    <p class="description">In your imports section of your module, define the usage of the SplitLayoutModule:</p>
+    <pre><code [highlight]="importCode"
+               language="ts"></code></pre>
+
+    <p class="description">Now you can use it. In your HTML. The root tags look like this.</p>
+    <pre><code [highlight]="rootCode"
+               language="ts"></code></pre>
+
+    <p class="description">For property options, please see the full documentation <a href="" target="_new">here</a>. Any properties that are not part of the existing control will be documented in <a href="https://angular-split.github.io/documentation" target="_new">here</a>.</p>
+    <p class="description">After defining the root, inside you define the split sections with:</p>
+
+    <pre><code [highlight]="innerCode" language="html"></code></pre>
+
+    <h2>Defining the maximized view location</h2>
+    <p class="description">The maximized view location is up to you. The ID for the tag by default is <i>maximizedArea</i> and is usually defined like this:</p>
+    <pre><code [highlight]="maximizedCode" language="html"></code></pre>
+    <p class="description">To override the tag name, you can set it with<i>[maximizedDivId]="'thisNameIsBetter'"</i> in the <i>as-split</i> tag as a property.</p>
+
+    <h2>Defining the CSS for the images</h2>
+    <p class="description">To override/setup the default image path and CSS, use the following:</p>
+    <pre><code [highlight]="cssCode" language="scss"></code></pre>
+
+    <h2>Images</h2>
+    <p class="description">To download the images used in this demo, including a few extra in different colors, you can grab them <a href="./assets/layout_images.zip">here</a>.</p>
+    <p></p>
+
+  </div>
+</div>
+

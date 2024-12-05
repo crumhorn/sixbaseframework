@@ -1,0 +1,203 @@
+<div class="documentParent">
+  <div class="document">
+    <h1>Toolbar</h1>
+
+    <p class="description">The <i>Toolbar</i> control mimics how fat client toolbars look and function. It comes with many different button and input types and hooks together with the <i>AgGrid</i> context menu if used together with the <i>ContextMenuHelper</i>, where you only need to enable/disable toolbar buttons for the same menu actions to be enabled/disabled in the context menu at the same time.</p>
+    <img src="./assets/screenshots/toolbar.png" class="screenshot">
+
+    <h2>Setup</h2>
+    <p class="description">The <i>Toolbar</i> control is contained in the <i>CompactToolbarModule</i>. It was named as such to not cause conflicts with all the other existing toolbar modules that sometimes exist in 3rd party libraries. Import it into your module as follows: </p>
+    <pre><code [highlight]="toolbarInitCode"
+               language="ts"></code></pre>
+
+    <h2>Demo</h2>
+    <Toolbar id="demoToolbar" #tb></Toolbar>
+    <p class="description">Result: {{ toolbarOutput }}</p>
+
+    <h2>Overflow Demo</h2>
+    <p class="description">If the toolbar runs out of horizontal space, it will either show a scrollbar (if you've set <i>toolbarSettings.enablePopupOverflow = false</i>), or a popup icon on the far right will appear (if you've set <i>toolbarSettings.enablePopupOverflow = true</i>) showing the items that do not fit in the toolbar.</p>
+    <div style="max-width: 130px; height: 60px">
+      <Toolbar id="demoToolbar2" #tbTwo></Toolbar>
+    </div>
+
+    <h2>ToolbarSettings</h2>
+    <p class="description">To configure the general properties of the toolbar, you will need to set up a ToolbarSettings class object that holds all your settings. It's suggested to put this somewhere easily accessible in a Global property somewhere in your application.</p>
+    <p class="description">Here's an example setup:</p>
+
+    <pre><code [highlight]="toolbarInitCode"
+               language="ts"></code></pre>
+
+    <p class="description">All options can be found in the API <a href="https://gitlab.six-group.net/six/angbase/base/-/blob/main/src/app/components/controls/src/toolbar/ToolbarSettings.ts" target="_new">here</a>, each one is documented.</p>
+
+    <p class="description">Due to the complexity of a toolbar, you will not be setting it up in pure HTML, but rather will reference it from your HTML for setup in code. Here is an example:</p>
+
+    <pre><code [highlight]="toolbarInitCodeTwo" language="html"></code></pre>
+    <p class="description">Please note that the toolbar must have an ID set on it.</p>
+
+    <p class="description">The toolbar is then imported with a ViewChild so that it can be configured. We also create a reference to the <i>ToolbarHelper</i> in this example</p>
+    <pre><code [highlight]="toolbarInitCodeThree" language="ts"></code></pre>
+
+    <h2>Event Listeners</h2>
+    <p class="description">There are multiple event listeners available.</p>
+
+    <table class="doc-table">
+      <thead>
+      <tr>
+        <th> name</th>
+        <th> example</th>
+        <th> description</th>
+        <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let item of eventData">
+        <td><span class="doc-option-name" id="api.menu.props.model">{{ item.name }}<a class="doc-option-link"><i class="pi pi-link"></i></a></span></td>
+        <td><span class="doc-option-type"><pre><code [highlight]="item.example" language="ts"></code></pre></span></td>
+        <td><span id="api.menu.props.description" class="doc-option-description">{{ item.description }}</span></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      </tbody>
+    </table>
+
+    <h2>Creating and Accessing Toolbar Items</h2>
+    <p class="description">Here is a basic list of available items and methods that can be used to add and manipulate items on the toolbar. For full API please see the API documentation <a href="https://gitlab.six-group.net/six/angbase/base/-/blob/main/src/app/components/controls/src/toolbar/ToolbarSettings.ts"
+                                                                                                                                                                                             target="_new">here</a></p>
+
+    <table class="doc-table">
+      <thead>
+      <tr>
+        <th> name</th>
+        <th> method</th>
+        <th> description</th>
+        <th> related event</th>
+        <th></th>
+        <th></th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let item of toolbarData">
+        <td><span class="doc-option-name" id="api.menu.props.model">{{ item.name }}<a class="doc-option-link"><i class="pi pi-link"></i></a></span></td>
+        <td><span class="doc-option-type"><pre><code [highlight]="item.method" language="ts"></code></pre></span></td>
+        <td><span id="api.menu.props.description" class="doc-option-description">{{ item.description }}</span></td>
+        <td><span class="doc-option-type"><pre><code [highlight]="item.event" language="ts"></code></pre></span></td>
+        <td></td>
+        <td></td>
+      </tr>
+      </tbody>
+    </table>
+
+    <h2>Submenus</h2>
+    <p class="description">Submenus are passed in as a list of items for the controls that allow menus.</p>
+    <p class="description">Example:</p>
+    <pre><code [highlight]="menuCode" language="ts"></code></pre>
+
+    <h2>Real Images or Web Fonts</h2>
+    <p class="description">As shown at the top, <i>toolbarSettings.treatImagesAsWebFonts = true;</i> tells the toolbar that every <i>image</i> passed to it via parameters will be treated as a web font. If instead you set it to false, you define the base path to where your toolbar images are via <i>toolbarSettings.imagePath
+      = "assets/images/toolbar/";</i> and then pass in images in the parameters relative to that path, for example <i>someMethod(..., ..., "image_enabled.png", "image_disabled.png)</i></p>
+
+    <p class="description">You can also set up <i>webFontPrepend</i> to include any css classes that every web font should have in front, for example:</p>
+    <pre><code [highlight]="'toolbarSettings.webFontPrepend = fas'" language="ts"></code></pre>
+
+    <h2>Tippy Tooltips</h2>
+    <p class="description">The <i>Tooltip</i> controls supports tooltips using <a href="https://atomiks.github.io/tippyjs/" target="_new">TippyJS</a>. To use them you need to add Tippy as a dependency in your <i>package.json</i>:</p>
+    <pre><code [highlight]="tippyCode" language="ts"></code></pre>
+
+    <p class="description">Ensure <i>angular.json</i> has the scripts set up for Tippy:</p>
+    <pre><code [highlight]="tippyCodeTwo" language="ts"></code></pre>
+
+    <p class="description">Then enable Tippy tooltips in the <i>ToolbarSettings</i>:</p>
+    <pre><code [highlight]="'toolbarSettings.useTippyTooltips = true;'" language="ts"></code></pre>
+
+    <p class="description"></p>
+    <!--
+    <p class="description">Here is a rather crude example of how the split layout works. The main view is split horizontally in 2, and the right side of that is split vertically in 2.</p>
+    <p class="description">Each section is also using the <i>SplitLayoutContainer</i> as a content holder, which has support for header, body, toolbar, and footer.</p>
+    <p-tabView>
+      <p-tabPanel header="Result">
+        <div style="width: 100%; height: 600px; border: 2px solid green; position: relative">
+          <as-split direction="horizontal" [disabled]="false" [unit]="'percent'" [gutterSize]="11">
+            <as-split-area [size]="'50%'" [maximizable]="true" [collapsible]="true">
+              <SplitLayoutContainer [header]="header" [body]="body" [toolbar]="toolbar" [footer]="footer" headerName="Left Side">
+                <ng-template #header>
+                  I am in the #header area
+                </ng-template>
+                <ng-template #toolbar>
+                  <div style="display: flex; align-items: center; background: black; color: white; height: 30px; padding-left: 10px">I'm in the #toolbar area</div>
+                </ng-template>
+                <ng-template #body>
+                  <div style="padding: 10px">
+                    Hi! I'm #body
+                  </div>
+                </ng-template>
+                <ng-template #footer>
+                  <div style="display: flex; align-items: center; background: black; color: white; height: 30px; padding-left: 10px">I'm in the #footer area</div>
+                </ng-template>
+              </SplitLayoutContainer>
+            </as-split-area>
+            <as-split-area [size]="'50%'" [maximizable]="true" [collapsible]="true">
+              <as-split direction="vertical" [disabled]="false" [unit]="'percent'" [gutterSize]="11">
+                <as-split-area [size]="'50%'" [maximizable]="true" [collapsible]="true">
+                  <SplitLayoutContainer [body]="bodytwo" headerName="Right Side">
+                    <ng-template #bodytwo>
+                      <div style="padding: 10px">
+                        How are you?
+                      </div>
+                    </ng-template>
+                  </SplitLayoutContainer>
+                </as-split-area>
+                <as-split-area [size]="'50%'" [maximizable]="true" [collapsible]="true">
+                  <SplitLayoutContainer [body]="bodythree" headerName="Bottom Right Side">
+                    <ng-template #bodythree>
+                      <div style="padding: 10px">
+                        I'm good, thanks!
+                      </div>
+                    </ng-template>
+                  </SplitLayoutContainer>
+                </as-split-area>
+              </as-split>
+            </as-split-area>
+          </as-split>
+        </div>
+      </p-tabPanel>
+      <p-tabPanel header="Code">
+        <pre><code [highlight]="layoutCode"
+                   language="html"></code></pre>
+      </p-tabPanel>
+    </p-tabView>
+    <p></p>
+
+    <h2>Setup</h2>
+    <p class="description">In your imports section of your module, define the usage of the SplitLayoutModule:</p>
+    <pre><code [highlight]="importCode"
+               language="ts"></code></pre>
+
+    <p class="description">Now you can use it. In your HTML. The root tags look like this.</p>
+    <pre><code [highlight]="rootCode"
+               language="ts"></code></pre>
+
+    <p class="description">For property options, please see the full documentation <a href="" target="_new">here</a>. Any properties that are not part of the existing control will be documented in <a href="https://angular-split.github.io/documentation" target="_new">here</a>.</p>
+    <p class="description">After defining the root, inside you define the split sections with:</p>
+
+    <pre><code [highlight]="innerCode" language="html"></code></pre>
+
+    <h2>Defining the maximized view location</h2>
+    <p class="description">The maximized view location is up to you. The ID for the tag by default is <i>maximizedArea</i> and is usually defined like this:</p>
+    <pre><code [highlight]="maximizedCode" language="html"></code></pre>
+    <p class="description">To override the tag name, you can set it with<i>[maximizedDivId]="'thisNameIsBetter'"</i> in the <i>as-split</i> tag as a property.</p>
+
+    <h2>Defining the CSS for the images</h2>
+    <p class="description">To override/setup the default image path and CSS, use the following:</p>
+    <pre><code [highlight]="cssCode" language="scss"></code></pre>
+
+    <h2>Images</h2>
+    <p class="description">To download the images used in this demo, including a few extra in different colors, you can grab them <a href="./assets/layout_images.zip">here</a>.</p>
+    <p></p>
+
+-->
+  </div>
+</div>
+

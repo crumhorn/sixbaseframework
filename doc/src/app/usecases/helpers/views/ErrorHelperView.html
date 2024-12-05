@@ -1,0 +1,33 @@
+<div class="documentParent">
+  <div class="document">
+    <h1>ErrorHelper</h1>
+
+    <p class="description">This <i>Service</i> assists with the displaying of error messages. At the core, it uses <i>SweetAlert2</i> (more details <a href="https://sweetalert2.github.io/" target="_new">here</a>), which is a required dependency.</p>
+    <pre><code [highlight]="depCode" language="json"></code></pre>
+
+    <p class="description">The error parsing code of the class has a lot of checks for thing such as <i>GraphQL</i> errors, <i>validation errors</i> and others already built in. Should these not fit your implementation, see the section below called <i>Overriding all error parsing</i></p>
+
+    <h2>Demo</h2>
+    <p class="description"><button pButton pRipple (click)="testError()">Test Error Dialog</button></p>
+    <p></p>
+
+    <h2>Usage</h2>
+    <p class="description">As <i>ErrorHelper</i> is a service, inject it in your constructor as follows:</p>
+    <pre><code [highlight]="injectCode" language="ts"></code></pre>
+
+    <p class="description">Then simply call it via the available API. Here's an example:</p>
+    <pre><code [highlight]="exampleCode" language="ts"></code></pre>
+
+    <h2>Known vs. Unknown Errors</h2>
+    <p class="description">There's two APIs available. One is called <i>displayError(...)</i> and the other <i>displayKnownError(...)</i>. The difference is that you are saying "I know what error I want to display", whereas the other is more intended for a try/catch scenario where you do not know what the error may be.</p>
+
+    <h2>Overriding all error parsing</h2>
+    <p class="description">If you provide an implementation of the interface <i>IErrorOverrideHandler</i> and inject it with injection token <i>ERROR_OVERRIDE_HANDLER</i>, you can override all error handling.</p>
+    <pre><code [highlight]="injTokenCode" language="ts"></code></pre>
+
+    <h2>See also</h2>
+    <p class="description"><i>DialogUtilities</i> has dialogs that also use <i>SweetAlert2</i> but are more for questions and information rather than errors.</p>
+
+
+  </div>
+  </div>

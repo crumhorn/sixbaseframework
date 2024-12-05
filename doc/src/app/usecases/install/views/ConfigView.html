@@ -1,0 +1,75 @@
+<div class="documentParent">
+  <div class="document">
+    <h1>Configuration</h1>
+
+    <h2>Framework Root Module Initialization</h2>
+    <p class="description">To get started with the base framework you need to tell your application (or module / library), to use it and to initialize it. This is done in your module declaration in the import section. Usually in <i>app.module.ts</i>, but you can of course initialize it individually in any lazy loaded module
+      as well.
+      You initialize the module by telling it some basic things, such as what the default display date format is and you need to provide a class handler that converts class "string names" into objects. An Example follows:</p>
+
+    <h4>Example Initialization</h4>
+    <pre><code [highlight]="initCode"
+               language="ts"></code></pre>
+
+
+    <p class="description">So to highlight, the important block here is the <i>SixCoreModule.forRoot()</i>. You can also use <i>forChild()</i> rather than <i>forRoot()</i> for sub-module implementations.</p>
+
+    <h2>Initializing for testing (Jest/Karma):</h2>
+    <p class="description">If you get errors about the module not being instantiated, you may need to provide a custom provider in your "providers" set up of your testbed as follows:</p>
+
+    <pre><code [highlight]="testbedCode"
+               language="ts"></code></pre>
+
+    <h2>Parameter 1 (Optional) - IEntityClassHandler</h2>
+    <p class="description">This parameter is our "converter" for classes that tells the entity mapper inside the base framework what "string class name" goes to what class object.
+
+      A "class handler" is a very simple dummy class that exports all entity classes that you wish to be mappable from text to object in the following way:</p>
+
+    <pre><code [highlight]="classHandlerCode"
+               language="ts"></code></pre>
+
+
+    <p class="description">When the EntityMapper then needs a class, it calls your handler that returns a new class cast from the string representation of that class.
+
+      This can be done in many ways, but if you want each instance to be a new object, the "simplest" (with some typescript magic) is to simply cast a new object into the class via:</p>
+
+    <pre><code [highlight]="'return new (<any>clazzHandler)[clazzName]();'"
+               language="ts"></code></pre>
+
+    <p></p>
+    <p class="description">You can import the <i>clazzHandler</i> (ClassHandler from above) as follows;</p>
+
+    <pre><code [highlight]="importCode"
+               language="ts"></code></pre>
+
+    <p class="description">If you hare not planning on using any sort of entity mapping, you can pass <i>null</i> or <i>undefined</i>.</p>
+
+    <h2>Parameter 2 (Optional) - IBaseFrameworkSettings</h2>
+    <p class="description">The second parameter, is your implementation of the <i>IBaseFrameworkSettings</i> interface. This controls settings that are used in the base module and range from how things are displayed to grid specific features. Please look at the interface for further details on possible options, <a
+      href="https://gitlab.six-group.net/six/angbase/base/-/blob/main/src/app/components/core/src/ext/IBaseFrameworkSettings.ts">each option is documented in the API.</a></p>
+
+    <table class="doc-table">
+      <thead>
+      <tr>
+        <th> name</th>
+        <th> type</th>
+        <th> default</th>
+        <th> description</th>
+        <th></th>
+        <th></th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let item of tableData">
+        <td><span class="doc-option-name" id="api.menu.props.model">{{ item.name }}<a class="doc-option-link"><i class="pi pi-link"></i></a></span></td>
+        <td><span class="doc-option-type">{{ item.type }}</span></td>
+        <td><span id="api.menu.props.default" class="doc-option-light doc-option-default">{{ item.def }}</span></td>
+        <td><span id="api.menu.props.description" class="doc-option-description">{{ item.description }}</span></td>
+        <td></td>
+        <td></td>
+      </tr>
+      </tbody>
+    </table>
+
+  </div>
+</div>

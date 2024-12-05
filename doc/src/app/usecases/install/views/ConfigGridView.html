@@ -1,0 +1,51 @@
+<div class="documentParent">
+  <div class="document">
+    <h1>Grid Module Configuration</h1>
+
+    <p class="description">In your <i>app.module</i>, define the import:</p>
+    <pre><code [highlight]="'imports [ CoreAgGridModule.forRoot(), ... ]'"
+               language="ts"></code></pre>
+
+    <p class="description">In sub modules or lazy loaded modules, you would import:</p>
+    <pre><code [highlight]="'imports [ CoreAgGridModule.forChild(), ... ]'"
+               language="ts"></code></pre>
+
+    <p class="description">And if you're using a shared module, you will need to export the module via:</p>
+    <pre><code [highlight]="'exports [ CoreAgGridModule, ... ]'"
+               language="ts"></code></pre>
+
+    <h2>GridSettings</h2>
+
+    <p class="description">GridSettings is a global setting that must be provided to each <i>BaseGrid</i> implementation, which defines certain properties that define how the grid should function.</p>
+    <p class="description">The full API can be found <a href="https://gitlab.six-group.net/six/angbase/root/base/-/blob/main/src/app/components/ag-grid/src/services/GridSettings.ts?ref_type=heads" target="_new">here</a>.</p>
+
+    <p class="description">Here is an example configuration, setting up a global <i>GridSettings</i> property. This example enables the <i>AgGrid Inline Search</i> control among other settings.</p>
+    <pre><code [highlight]="initCode"
+               language="ts"></code></pre>
+
+    <h2>Various <i>GridSettings</i> and what they do. Please consult the API for more details on each one.</h2>
+    <table class="doc-table">
+      <thead>
+      <tr>
+        <th> name</th>
+        <th> type</th>
+        <th> description</th>
+        <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let item of tableData">
+        <td><span class="doc-option-name" id="api.menu.props.model">{{ item.name }}<a class="doc-option-link"><i class="pi pi-link"></i></a></span></td>
+        <td><span class="doc-option-type"><pre><code [highlight]="item.objType" language="ts"></code></pre></span></td>
+        <td><span id="api.menu.props.description" class="doc-option-description">{{ item.description }}</span></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      </tbody>
+    </table>
+
+  </div>
+</div>

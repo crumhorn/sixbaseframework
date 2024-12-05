@@ -1,0 +1,67 @@
+<div class="documentParent">
+  <div class="document">
+    <h1>AgGrid Inline Search Control</h1>
+
+    <p class="description">This control wraps around your AgGrid controla and provides inline search capability to your grid with fine-grained highlighting of search results</p>
+    <p class="description">Here is a screenshot of the search in action:</p>
+    <img src="./assets/screenshots/inlinesearch.png" class="screenshot">
+
+    <h2>Demo</h2>
+    <p class="description">(click a row and press CTRL+F to search, write a value, for example '123'; and press enter):</p>
+    <BasicGrid></BasicGrid>
+    <p></p>
+
+    <h2>Configuring</h2>
+    <p class="description">In one of your base classes that gets called at application startup (such as <i>app.model</i> or <i>app.component)</i>, where you define the global grid settings, ensure the following is set up (the CSS class is optional, the default name is the same as in this example):</p>
+    <pre><code [highlight]="configureCode"
+               language="ts"></code></pre>
+
+    <p class="description">The BaseGrid class will automatically request a copy of this as follows:</p>
+    <pre><code [highlight]="baseGridCode"
+               language="ts"></code></pre>
+
+    <h2>At the root level (<i>app.component</i> for example)</h2>
+
+    <p class="description">In your root level HTML you need to define where the popup code will be rendered. Ideally this is before the end of your &lt;body /&gt; tag as then it can go over any other control visually.</p>
+    <pre><code [highlight]="'<GridInlineSearch #gridInlineSearch></GridInlineSearch>'" language="ts"></code></pre>
+
+    <p class="description">Then import the control via a <i>ViewChild</i> as follows:</p>
+    <pre><code [highlight]="'@ViewChild(\'gridInlineSearch\', {read: GridInlineSearch}) gridInlineSearch?: GridInlineSearch;'" language="ts"></code></pre>
+
+    <p class="description">In the constructor of the same class that did the <i>ViewChild</i> import add this:</p>
+    <pre><code [highlight]="'constructor (private inlineSearchService: InlineSearchService) {'" language="ts"></code></pre>
+
+    <p class="description">Then in the initializing code somewhere (such as <i>ngOnInit()</i>), add your listeners. These essentially work like a Proxy to the inline search control. It's possible these will be made obsolete in future code.</p>
+    <pre><code [highlight]="proxyCode" language="ts"></code></pre>
+
+    <h2>Creating Columns Without <i>ColumnHelper</i></h2>
+    <p class="description"><i>ColumnHelper</i> will automatically wrap all your cell renderers in its own, which is how the data is rendered correctly. <b>But this only works if you use <i>ColumnHelper</i></b>.</p>
+
+    <h3>The Easy Way</h3>
+    <p class="description"><i>ColumnHelper</i> provides a static method that takes your column definition, the grid id and your grid settings and will wrap your existing cell renderer with the necessary code. Here's an example on how to call it:</p>
+    <pre><code [highlight]="'ColumnHelper.wrapCellRendererForInlineSearch(def, gridId, gridSettings);'" language="ts"></code></pre>
+
+    <h3>The Hard Way</h3>
+    <p class="description">If you wish to have this feature work on columns that you create in a different manner, you will need to tell the column that it should also render the text. Here is the code you could use inside your cell renderer (customize to match with the rest of your renderer):</p>
+    <pre><code [highlight]="manualColumnCode" language="ts"></code></pre>
+
+    <h2>Grid Wrapping</h2>
+    <p class="description">For each grid that should have inline searching available for it, you need to wrap it as follows in the HTML:<div>
+    <pre><code [highlight]="gridWrappingCode" language="ts"></code></pre>
+
+    <p class="description">And that's it. When the grid has focus, pressing CTRL+F should now show the Inline search control.<div>
+
+    <h2>Customizing CSS</h2>
+    <p class="description">If you changed the base CSS classes, adapt to match your names. This example shows how to customize the search results.<div>
+    <pre><code [highlight]="cssCode" language="scss"></code></pre>
+
+    <p class="description">In the above example, to get <i>stringSearchMatchedCell</i> to work, you will need to do this after your column definitions:</p>
+    <pre><code [highlight]="furtherCssCode" language="ts"></code></pre>
+    <p class="description" style="font-style: italic">(<i>ch</i> is a <i>ColumnHelper</i>)</p>
+    <p class="description">In this case, it highlights the entire cell with a border if there is a match to the search.</p>
+
+    <p class="description">Or without using <i>ColumnHelper</i>:</p>
+    <pre><code [highlight]="furtherCssCodeNoColumnHelper" language="ts"></code></pre>
+
+  </div>
+</div>

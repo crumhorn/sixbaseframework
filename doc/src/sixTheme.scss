@@ -1,0 +1,5833 @@
+@charset "UTF-8";
+
+$sixBlue: #4997b7;
+$sixRed: #de3919;
+$sixLightGray: #ededed;
+$sixLightGrayBorder: #dcdcdc;
+$sixLightGrayBorderHover: #c6c6c6;
+$fontFamilyCompact: "Noto Sans Condensed", Helvetica, sans-serif;
+$fontFamily: "Noto Sans", Helvetica, sans-serif;
+
+$sixHoverBackground: rgba(33, 150, 243, 0.1);
+$sixHoverBackgroundColor: rgb(235, 232, 231);
+$sixHoverBorderColor: black;
+$sixFocusedBorderColor: black;
+
+$sixHorizon: #88C1E4;
+$sixHorizon10: #f3f9fc;
+$sixMarine: #002c5f;
+$sixClay: #ada398;
+$sixRock: #4e4e4e;
+$sixRock90: #5f5f5f;
+$sixRock80: #717171;
+
+$navbarBackground: white;
+$navbarLinkColor: #262626;
+
+$lightGradientStart: $sixClay;
+$lightGradientEnd: $sixClay;
+$darkGradientStart: $sixRock;
+$darkGradientEnd: $sixRock;
+$tableBorder: #1f2329;
+$tableHeaderTextColor: #ececec;
+
+$mainButtonColor: #4997b7;
+$mainButtonHoverColor: #39768f;
+$mainButtonBorderColor: #4997b7;
+$mainButtonHoverBorderColor: #39768f;
+
+$mainThemeColor: #de3919;
+$mainThemeColorGradientEnd: #de3919;
+$mainThemeColorBorder: $sixHorizon;
+$mainThemeColorOffset: #de3919;
+$mainPanelAndButtonBackground: #252525;
+
+$mainThemeHoverColor: lighten($sixRed, 5%);
+$mainThemeHoverForegroundColor: #000000;
+$mainThemeFocusColor: lighten($sixRed, 10%);
+$mainThemeSelectedNotFocused: darken($sixRed, 10%);
+
+$mainPanelBorderColor: #191919;
+$mainPanelBackground: #323232;
+
+$mainLightDropShadowColor: #ffe8b3;
+$mainDarkDropShadowColor: rgba(0, 0, 0, 0.16);
+
+/* flesh these out better later */
+$someButtons: #888888;
+/* end */
+
+$generalForeground: black;
+$generalForegroundOpposite: white;
+$generalForegroundHover: white;
+
+$selectionColor: $sixRed;
+$menuItemHoverColorNotSelected: $mainThemeColor;
+$menuItemHoverColorSelected: black;
+$generalMenuAndControlBackgroundColor: $mainThemeColor;
+$generalMenuAndControlForegroundColor: #dedede;
+
+$backgroundGradientTop: #22272d;
+$backgroundGradientBottom: #1c1f24;
+
+
+$innerGradientTop: $sixLightGray;
+$innerGradientBottom: $sixLightGray;
+$innerGradientBorder: $innerGradientBottom;
+
+$innerBackgroundStatic: $sixRock;
+$innerBackgroundStaticBorder: $sixRock;
+
+$inputBackground: #181b1f;
+$inputBorder: #393b3f;
+$inputFieldBorderRadius: 0;
+$otherInputTypesBorderRadius: 0;
+
+$timepickerBackgroundColor: #2d3436;
+
+$legendBackground: #f7f7f7;
+$legendBorder: $sixLightGrayBorder;
+$legendText: black;
+$fieldSetBorder: $sixLightGrayBorder;
+$fieldSetBorderRadius: 0;
+$fieldSetLegendBorderRadius: 0;
+
+$switchBorderColor: black;
+$switchOnBallColor: $mainThemeColor;
+$switchOffBallColor: #9a9a9a;
+
+$disabledControlBackground: #d9d8d8;
+$disabledControlBorder: #d9d8d8;
+
+$datePickerTodayBackground: #b7b7b7;
+
+$cellFocusColor: #ffffff;
+$formButtonAndManyOthersColor: #212121;
+
+$loadingColor: $sixRed;
+$whiteColor: white;
+
+$agFilterBorderColor: silver;
+$agThemeBackground: #1f2329;
+$agGridRowBorderColor: #3b4452;
+$agGridOverlayLoadingWrapperBackground: #58585880;
+$agIcon: orange;
+$agIconExpanded: white;
+$agStatusBarBorder: #404040;
+
+$currencyHolidayCopyBorder: #485561;
+$popupMenuItemSeparatorColor: #d1d1d1;
+
+$detailsPanelButtonForeground: white;
+$detailsPanelButtonForegroundHover: $sixRed;
+
+$tooltipColor: white;
+$tooltipBackground: $mainThemeColor;
+
+$htmlReportLabelColor: black;
+$fullCalendarWeekNumberColor: #969696;
+$navLinkIconColor: #69727d;
+$navLinkIconColorHover: #ffffff;
+$logoutLinkIconHover: red;
+$dailyCycleRunningColor: #ff5200;
+$testRunColor: #5cb9c9;
+$loadingBlockerFormOuterBorderColor: darkorange;
+$modalDialogCloseButtonActive: red;
+$reportWrapperTableColor: black;
+$dropdownMenuLinkColor: rgba(255, 255, 255, 0.5);
+$redText: #ff3f3f;
+$fieldSetLegendTextColor: #bda56c;
+$multiSelectFilterIconColor: #989898;
+
+$mainMenuToggleBackground: white;
+$mainMenuRightSideBackground: black;
+
+$auditGridEditedRowBackground: orange;
+$auditGridEditedRowBackgroundHover: darkorange;
+$auditGridDeletedRowBackground: red;
+$auditGridDeletedRowBackgroundHover: indianred;
+$auditGridAddedRowBackground: darkgreen;
+$auditGridAddedRowBackgroundHover: seagreen;
+
+$checkboxBoxBorderColor: #4a4a4a;
+$checkboxBoxBackgroundColor: #4a4a4a;
+
+$popoverHeaderBackgroundTop: #ffffff;
+$popoverHeaderBackgroundBottom: #cccccc;
+$popoverBodyBackgroundTop: #ffffff;
+$popoverBodyBackgroundBottom: #cccccc;
+$popupTableColor: black;
+$popupTableBorderColor: black;
+$popupTableBackground: #e9ecef;
+$popupTableTdBackground: #484848;
+
+$selfLinkedPreventionForeground: black;
+$selfLinkedPreventionForegroundSelected: white;
+$selfLinkedPreventionBackground: #fcd7d0;
+$selfLinkedPreventionBackgroundHover: #fcc3cf;
+
+$fcDayNumberColor: black;
+$fcDayNameColor: black;
+$fcWidgetContentBorderColor: black;
+$fcHighlightBackground: #558e98;
+
+$sixDropdownHoverBackground: #4288a5;
+
+$toolbarSeparatorColor: #d1d1d1;
+$dailyCycleBackgroundColor: white;
+$checkboxTixColor: white;
+
+/* Add your customizations of theme here */
+.ag-theme-alpine {
+  --ag-selected-row-background-color: #de3919 !important;
+  --ag-range-selection-border-color: black !important;
+}
+
+body.six-theme, body.six-theme-dark {
+
+  /* theme light blue */
+  //@import './themeLightIncl.scss';
+
+  font-family: $fontFamilyCompact;
+
+  .form-control {
+    font-family: $fontFamily !important;
+  }
+
+  .ag-cell, .p-component, .slcLayoutHeaderName, label {
+    font-family: $fontFamily !important;
+  }
+
+  /*--ag-selected-row-background-color: #de3919 !important;*/
+  --ag-foreground-color: black;
+  --ag-border-color: #ededed;
+
+
+  --ownuserrowRowBg_dark: #1f7490;
+  --ownuserrowRowFg_dark: #000000;
+  --ownuserrowRowBg_hover_dark: #489c95;
+  --ownuserrowRowFg_hover_dark: #000000;
+  --suspendedRowBg_dark: deeppink;
+  --suspendedRowFg_dark: white;
+  --suspendedRowBg_selected_dark: #ff59ab;
+  --suspendedRowBg_hover_dark: #ff59ab;
+  --suspendedRowFg_hover_dark: white;
+  --suspendedText_dark: deeppink;
+  --inactiveRowBg_dark: red;
+  --inactiveRowBg_selected_dark: #ff442c;
+  --inactiveRowFg_dark: white;
+  --inactiveRowBg_hover_dark: #ff8f4a;
+  --inactiveRowFg_hover_dark: white;
+  --testEnvironment_dark: #a0a0a0;
+  --testEnvironment_hover_dark: #d5d5d5;
+  --testEnvironmentSuspended_dark: #5c5c5c;
+  --testEnvironmentSuspended_hover_dark: #2d2d2d;
+  --staleRowBg_dark: darkred;
+  --staleRowBg_hover_dark: #aa0000;
+  --staleRowFg_dark: white;
+  --staleRowFg_hover_dark: white;
+
+  --stringSearchMatch_dark: red;
+
+  background: #333;
+
+  /** THESE DO NOT CHANGE NAMES ACROSS THEMES AND ARE NOT USER SET. Do note that many template html pages use these */
+  --color: black;
+  --borderColor: #dcdcdc;
+  --dailyCycleDatesBorderColor: #3a3a3a;
+  --activePageColor: black;
+
+  /* OVERRIDES */
+  #dailyCycleView {
+    background: $dailyCycleBackgroundColor;
+  }
+
+  .p-multiselect-item .p-checkbox-icon::before {
+    color: $checkboxTixColor;
+  }
+
+  .ag-theme-alpine .ag-picker-field-wrapper {
+    border-radius: 0;
+  }
+
+  .ag-theme-alpine .ag-popup-child:not(.ag-tooltip-custom) {
+    border-radius: 0;
+    border-color: $sixLightGrayBorder !important;
+  }
+
+  .ag-theme-alpine .ag-checkbox-input-wrapper:focus-within, .ag-theme-alpine .ag-checkbox-input-wrapper:active {
+    box-shadow: none !important;
+  }
+
+  .ag-theme-alpine .ag-picker-field-wrapper:focus, .ag-theme-alpine .ag-picker-field-wrapper:hover {
+    box-shadow: none;
+    border-color: black !important;
+  }
+
+  .ag-cell-edit-wrapper, .ag-cell-inline-editing {
+    max-height: 31px;
+  }
+
+  .formContainer {
+    background: #f9f9f9;
+  }
+
+  .p-datepicker table td {
+    padding: 0.1rem !important;
+  }
+
+  .form-control {
+    padding: 0.15rem 0.45rem !important;
+  }
+
+  .preferencesView {
+    border: unset !important;
+    background: unset !important;
+  }
+
+  /* FONT SIZES, PADDING */
+  input.p-inputtext {
+    padding-top: 3px;
+  }
+
+  .ngToolbarInput {
+    padding-top: 1px !important;
+  }
+
+  .p-inputtext, .p-dropdown-item {
+    font-size: 13px !important;
+  }
+
+  /* THEME OVERRIDES */
+  h1 {
+    color: black;
+  }
+
+  .p-sidebar .p-sidebar-header {
+    padding: 0 !important;
+  }
+
+  .ag-row-selected,
+  .ag-row-selected:before {
+    --ag-foreground-color: white;
+  }
+
+  #eventsGridToolbar, #clientLogGridToolbar, #auditLogGridToolbar, #serverLogGrid {
+    border-top: 1px solid gainsboro !important
+  }
+
+  .p-highlight, ::selection {
+    background: #4997b7 !important;
+    color: white !important;
+  }
+
+  .p-inputtext:enabled:focus {
+    border-color: #4997b7 !important;
+    box-shadow: 0 0 0 0.2rem #4997b754;
+  }
+
+  /* SELECTION COLORS */
+  .p-highlight, ::selection, .layout-sidebar .layout-menu > li.active-menuitem > a.active-menuitem-routerlink, .nav-link.active {
+    background: $sixRed !important;
+    color: white !important;
+  }
+
+  /* DIALOGS */
+  .modal-header {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,e5e5e5+100;White+3D */
+    background: rgb(255, 255, 255); /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(229, 229, 229, 1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(229, 229, 229, 1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(229, 229, 229, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e5e5e5', GradientType=0); /* IE6-9 */
+
+    border-radius: 0px !important;
+
+    padding: 3px 3px 3px 16px !important;
+
+    .modal-title {
+      font-size: 16px !important;
+      align-self: center;
+    }
+
+    .close {
+      font-size: 34px !important;
+      text-shadow: none !important;
+      margin: -1rem -1rem -1rem auto !important;
+      margin-top: -24px !important;
+      background-color: initial;
+      border: 0;
+      float: right;
+      font-weight: 700;
+      line-height: 1;
+      color: #000 !important;
+      opacity: .5;
+      padding: 1.5rem 1.2rem 1rem 1rem;
+    }
+
+    .close:hover {
+      color: red !important;
+    }
+  }
+
+  .modal-content {
+    background: white !important;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    pointer-events: auto;
+    background-clip: padding-box;
+    /*border: 1px solid rgba(0, 0, 0, 0.2);*/
+    border: none !important;
+    border-radius: 0.3rem;
+    outline: 0;
+  }
+
+  .modal-body {
+    border-bottom: 0 !important;
+  }
+
+  .edit-dialog {
+    .modal-header {
+      border-bottom: 1px solid #ed9017 !important;
+      background: #f6e6b4;
+      border-top: 4px solid #ed9017;
+    }
+  }
+
+  .add-dialog {
+    .modal-header {
+      border-bottom: 1px solid green !important;
+      background: #addd81;
+      border-top: 4px solid green;
+    }
+  }
+
+  .modal-footer {
+    border-radius: 0;
+
+    button {
+      min-width: 120px;
+      width: 120px;
+      margin-left: 10px;
+    }
+  }
+
+  .modal-body {
+    flex: 2;
+  }
+
+  .modal-content .card {
+    height: 100%;
+  }
+
+  /* GRIDS */
+  .ag-input-field-input.ag-text-field-input {
+    color: $generalForeground !important;
+  }
+
+  .ag-row-selected,
+  .ag-row-selected:before {
+    --ag-data-color: white;
+  }
+
+  .ag-theme-balham-dark .ag-rich-select .ag-rich-select-list {
+    width: 100%;
+  }
+
+  .ag-row-selected:hover,
+  .ag-row-selected:before:hover {
+    background-color: lighten($sixRed, 10%) !important
+  }
+
+  //.ag-cell {
+  //  line-height: 31px !important; /* if you change this, also change the SettingsService.SIX_GRID_ROW_HEIGHT value */
+  //}
+
+  //.ag-header-row {
+  //  height: 31px !important; /* if you change this, also change the SettingsService.SIX_GRID_ROW_HEIGHT value */
+  //}
+
+  //.ag-header {
+  //  height: 31px !important; /* if you change this, also change the SettingsService.SIX_GRID_ROW_HEIGHT value */
+  //  min-height: 31px !important; /* if you change this, also change the SettingsService.SIX_GRID_ROW_HEIGHT value */
+//  }
+
+  /*
+  .ag-header-cell {
+    border-right: unset !important;
+    background: unset;
+    font-size: unset;
+    font-family: unset;
+    color: unset;
+    height: 31px !important; !* if you change this, also change the SettingsService.SIX_GRID_ROW_HEIGHT value *!
+    min-height: 31px !important; !* if you change this, also change the SettingsService.SIX_GRID_ROW_HEIGHT value *!
+  }
+  */
+
+  /* NAVBAR */
+  .navbar {
+    background: $navbarBackground !important;
+    box-shadow: 0 8px 25px 0 rgb(0 0 0 / 8%), 0 -1px #fff;
+    z-index: 1;
+  }
+
+  .navbar.compact {
+    padding: .3rem 1rem !important;
+  }
+
+  .navbar-dark .navbar-brand {
+    color: $generalForeground;
+  }
+
+  .navbar-dark .navbar-nav .nav-link {
+    color: $navbarLinkColor;
+  }
+
+  .navbar .navbar-nav > li > a:focus, .navbar .navbar-nav > li > a:hover, .dropdown-menu a:hover {
+    color: $generalForegroundHover;
+    background: $mainThemeColor;
+  }
+
+  /* Split panels */
+  .slcLayoutHeaderName {
+    font-weight: 500 !important;
+    color: $generalForeground !important;
+  }
+
+  .slcLayoutHeaderContainer {
+    border: 1px solid #cfcfcf !important;
+    background: #cfcfcf !important;
+  }
+
+  /* Toolbars */
+  .ngToolbar {
+    background: #ededed !important;
+    border: 1px solid #dcdcdc !important;
+    border-top: 0 !important;
+    border-bottom: 0 !important;
+  }
+
+  .ngToolbar .ngToolbarButton:hover:not([disabled]) {
+    background: white !important;
+    border-color: $sixLightGrayBorderHover !important;
+  }
+
+  .ngToolbar .ngToolbarButton:active:not([disabled]) {
+    background: darken(white, 10%) !important;
+    border-color: darken($sixLightGrayBorderHover, 10%) !important;
+  }
+
+  .ngToolbarButton:hover:not(.disabled), .ngToolbarButtonSelect:hover:not(.disabled), .ngToolbarButtonSelect:hover:not(.disabled) + .ngToolbarButtonSelectDropdown:not(.disabled), .ngToolbarButtonSelectDropdown:hover:not(.disabled), .ngToolbarButtonSelect.activeMenuOpen {
+    background: white !important;
+    border-color: $sixLightGrayBorderHover !important;
+  }
+
+  .ngToolbarButtonSelectDropdown.activeMenuOpen {
+    background: darken(white, 10%) !important;
+    border-color: $sixLightGrayBorderHover !important;
+  }
+
+  .ngToolbarPopupTable {
+    background: #ededed !important;
+    border-color: #dcdcdc;
+  }
+
+  .ngToolbarPopupTable td {
+    color: $generalForeground;
+  }
+
+  .ngToolbarPopupMenu {
+    border-color: $sixLightGrayBorder !important;
+  }
+
+  .ngToolbarButton:active, .ngToolbarButtonSelect:active, .overflowMenuOpen {
+    background: white !important;
+    border-color: $sixLightGrayBorderHover !important;
+  }
+
+  .ngToolbarPopupMenuSeparator {
+    background: $popupMenuItemSeparatorColor !important;
+  }
+
+  .ngToolbarPopupTable tr:hover:not(.ngToolbarPopupMenuSeparatorParent):not(.ngToolbarPopupSeparatorRow) {
+    background-color: $sixHoverBackground;
+    color: $generalForeground;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+  }
+
+  .ngToolbarPopupTable tr:hover:not(.ngToolbarPopupMenuSeparatorParent):not(.ngToolbarPopupSeparatorRow) span {
+    color: $generalForeground;
+  }
+
+  .ngToolbarLabel {
+    color: $generalForeground !important;
+  }
+
+  .ngToolbarPopupMenuItemText {
+    color: $generalForeground !important;
+  }
+
+  .ngToolbarOverflowIcon {
+    color: $generalForeground !important;
+  }
+
+  .ngToolbarSeparator {
+    border-left: 1px solid $toolbarSeparatorColor !important;
+  }
+
+  .ngToolbarLabel {
+    color: $generalForeground;
+  }
+
+  /* Details panel */
+  .detailsPanel {
+    background: #f8f8f8 !important;
+    border-top: 1px solid #e7e7e7 !important;
+    border-bottom: 1px solid #e7e7e7 !important;
+  }
+
+  /* Input */
+  input, button {
+    border-radius: 0 !important;
+  }
+
+  input, .ngToolbarInput {
+    border-color: $sixLightGrayBorder;
+    background-color: white;
+    color: black !important;
+  }
+
+  .form-check-input:checked {
+    background-color: #4997b7 !important;
+    border-color: #4997b7 !important;
+  }
+
+  input:focus {
+    border: 1px solid $sixHorizon !important;
+    background-color: $sixHorizon10 !important;
+    box-shadow: none !important;
+  }
+
+  .p-datepicker-buttonbar button {
+    background: #787878 !important;
+    border: 1px solid #4c4c4c !important;
+    color: white !important;
+  }
+
+  .p-datepicker-buttonbar button:hover {
+    background: #4b4b4b !important;
+  }
+
+
+  /* Tooltip */
+  .tippy-box {
+    background: white;
+    color: black;
+    border-radius: 0;
+    box-shadow: 0 7px 8px -4px rgb(0 0 0 / 20%), 0 5px 22px 4px rgb(0 0 0 / 12%), 0 12px 17px 2px rgb(0 0 0 / 14%);
+    font-family: $fontFamily !important;
+  }
+
+  .tippy-arrow {
+    color: white;
+  }
+
+  /* Forms etc */
+  .formContainer, fieldset {
+    box-shadow: none !important; /* -5px 0 10px 0 rgb(0 0 0 / 8%), 10px 10px 20px 0 rgb(0 0 0 / 5%) !important;*/
+  }
+
+  fieldset {
+    background: #efefef !important;
+    border: 1px solid $sixLightGrayBorder !important;
+    margin: 5px;
+    border-radius: 0;
+  }
+
+  fieldset legend {
+    background: $legendBackground !important;
+    color: $legendText !important;
+    border: 1px solid $legendBorder !important;
+    border-radius: $fieldSetLegendBorderRadius !important;
+  }
+
+  .modal-body, .modal-footer {
+    background: white !important;
+  }
+
+  .wrappedFormGroup {
+    border-color: $sixLightGrayBorder !important;
+  }
+
+  /* Buttons */
+  .modal-footer {
+    border-top: 1px solid #dee2e6;
+
+    button {
+      height: 35px !important;
+      min-height: 35px !important;
+      max-height: 35px !important;
+      box-shadow: none !important;
+
+      .fas {
+        color: white !important;
+        position: absolute;
+        left: 13px;
+        top: 9px;
+      }
+
+
+    }
+  }
+
+  button {
+    &.yellow, &.green, &.red, &.blue, &.silver {
+      background-image: none !important;
+      box-shadow: none !important;
+    }
+
+    &.silver:not([disabled]) {
+      color: #ffffff !important;
+      background: #8e938e !important;
+      border: 1px solid #8e938e !important;
+    }
+
+    &.blue:not([disabled]) {
+      color: #ffffff !important;
+      background: #3498db !important;
+      border: 1px solid #3498db !important;
+    }
+
+    &.yellow:not([disabled]) {
+      color: #ffffff !important;
+      background: #dfb14b !important;
+      border: 1px solid #dfb14b !important;
+    }
+
+    &.green:not([disabled]) {
+      color: #ffffff !important;
+      background: #28a745 !important;
+      border: 1px solid #28a745 !important;
+    }
+
+    &.red:not([disabled]) {
+      background: #c73316 !important;
+      border-color: #c73316 !important;
+    }
+
+
+    &.blue:not([disabled]) {
+      border: none;
+      z-index: 1;
+    }
+
+    &.blue:not([disabled]):hover {
+      border-color: #46a1de !important;
+    }
+
+    &.blue:not([disabled]):after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 0;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      background-color: #46a1de;
+      transition: all 0.3s ease;
+    }
+
+    &.blue:not([disabled]):hover:after {
+      top: auto;
+      bottom: 0;
+      height: 100%;
+    }
+
+    &.blue:not([disabled]):active {
+      top: 2px;
+    }
+
+    &.silver:not([disabled]) {
+      border: none;
+      z-index: 1;
+    }
+
+    &.silver:not([disabled]):hover {
+      border-color: #acb2ac !important;
+    }
+
+    &.silver:not([disabled]):after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 0;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      background-color: #acb2ac;
+      transition: all 0.3s ease;
+    }
+
+    &.silver:not([disabled]):hover:after {
+      top: auto;
+      bottom: 0;
+      height: 100%;
+    }
+
+    &.silver:not([disabled]):active {
+      top: 2px;
+    }
+
+    &.yellow:not([disabled]) {
+      border: none;
+      z-index: 1;
+    }
+
+    &.yellow:not([disabled]):hover {
+      border-color: #eeca7a !important;
+    }
+
+    &.yellow:not([disabled]):after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 0;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      background-color: #eeca7a;
+      transition: all 0.3s ease;
+    }
+
+    &.yellow:not([disabled]):hover:after {
+      top: auto;
+      bottom: 0;
+      height: 100%;
+    }
+
+    &.yellow:not([disabled]):active {
+      top: 2px;
+    }
+
+
+    &.green:not([disabled]) {
+      border: none;
+      z-index: 1;
+    }
+
+    &.green:not([disabled]):hover {
+      border-color: #46b05e !important;
+    }
+
+    &.green:not([disabled]):after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 0;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      background-color: #46b05e;
+      transition: all 0.3s ease;
+    }
+
+    &.green:not([disabled]):hover:after {
+      top: auto;
+      bottom: 0;
+      height: 100%;
+    }
+
+    &.green:not([disabled]):active {
+      top: 2px;
+    }
+
+
+    &.red:not([disabled]) {
+      border: none;
+      z-index: 1;
+    }
+
+    &.red:not([disabled]):hover {
+      border-color: #c74329 !important;
+    }
+
+    &.red:not([disabled]):after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 0;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      background-color: #c74329;
+      transition: all 0.3s ease;
+    }
+
+    &.red:not([disabled]):hover:after {
+      top: auto;
+      bottom: 0;
+      height: 100%;
+    }
+
+    &.red:not([disabled]):active {
+      top: 2px;
+    }
+
+  }
+
+  .button.yellow[disabled=disabled], .button.yellow:disabled, .button.yellow:hover[disabled=disabled], .button.yellow:hover:disabled, .button.yellow:active[disabled=disabled], .button.yellow:active:disabled .button.yellow--loading[disabled=disabled], .button.yellow--loading:disabled, .button.yellow--loading:hover[disabled=disabled], .button.yellow--loading:hover:disabled, .button.yellow--loading:active[disabled=disabled], .button.yellow--loading:active:disabled .button.green[disabled=disabled], .button.green:disabled, .button.green:hover[disabled=disabled], .button.green:hover:disabled, .button.green:active[disabled=disabled], .button.green:active:disabled .button.green--loading[disabled=disabled], .button.green--loading:disabled, .button.green--loading:hover[disabled=disabled], .button.green--loading:hover:disabled, .button.green--loading:active[disabled=disabled], .button.green--loading:active:disabled .button.blue[disabled=disabled], .button.blue:disabled, .button.blue:hover[disabled=disabled], .button.blue:hover:disabled, .button.blue:active[disabled=disabled], .button.blue:active:disabled, .button.blue--loading[disabled=disabled], .button.blue--loading:disabled, .button.blue--loading:hover[disabled=disabled], .button.blue--loading:hover:disabled, .button.blue--loading:active[disabled=disabled], .button.blue--loading:active:disabled, .button.pink[disabled=disabled], .button.pink:disabled, .button.pink:hover[disabled=disabled], .button.pink:hover:disabled, .button.pink:active[disabled=disabled], .button.pink:active:disabled, .button.pink--loading[disabled=disabled], .button.pink--loading:disabled, .button.pink--loading:hover[disabled=disabled], .button.pink--loading:hover:disabled, .button.pink--loading:active[disabled=disabled], .button.pink--loading:active:disabled, .button.orange[disabled=disabled], .button.orange:disabled, .button.orange:hover[disabled=disabled], .button.orange:hover:disabled, .button.orange:active[disabled=disabled], .button.orange:active:disabled, .button.orange--loading[disabled=disabled], .button.orange--loading:disabled, .button.orange--loading:hover[disabled=disabled], .button.orange--loading:hover:disabled, .button.orange--loading:active[disabled=disabled], .button.orange--loading:active:disabled, .button.red[disabled=disabled], .button.red:disabled, .button.red:hover[disabled=disabled], .button.red:hover:disabled, .button.red:active[disabled=disabled], .button.red:active:disabled, .button.red--loading[disabled=disabled], .button.red--loading:disabled, .button.red--loading:hover[disabled=disabled], .button.red--loading:hover:disabled, .button.red--loading:active[disabled=disabled], .button.red--loading:active:disabled {
+    background: #777777 !important;
+  }
+
+  /* Various */
+  .p-focus {
+    outline: none !important;
+    outline-offset: 0 !important;
+    box-shadow: none !important;
+  }
+
+  .p-inputswitch.p-inputswitch-checked .p-inputswitch-slider {
+    background: black !important;
+  }
+
+  .p-dropdown-trigger-icon, .p-multiselect-trigger-icon {
+    color: $sixRed !important;
+  }
+
+  .p-inputswitch-slider {
+    border-radius: 0;
+  }
+
+  .p-dropdown-panel .p-dropdown-items:not(.p-dropdown-virtualscroll) {
+    padding: 0;
+  }
+
+  .layout-sidebar .sidebar-logo .sidebar-pin {
+    background-color: $sixRock80;
+  }
+
+  .layout-sidebar .layout-menu-container .layout-menu li {
+    font-family: $fontFamily !important;
+  }
+
+  .layout-rightpanel .right-panel-header {
+    background-color: $sixRock80;
+  }
+
+  .calendarRoot {
+    background-color: #dfdfdf;
+  }
+
+  .slcArrows {
+    background-image: url('/assets/images/layout/dhxlayout_cell_btns.png') !important;
+  }
+
+  .slcArrows:hover {
+    background-image: url('/assets/images/layout/dhxlayout_cell_btns_hover.png') !important;
+  }
+
+  .slcMaxMin {
+    background-image: url('/assets/images/layout/dhxlayout_max_min.png') !important;
+  }
+
+  .slcMaxMin:hover {
+    background-image: url('/assets/images/layout/dhxlayout_max_min_hover.png') !important;
+  }
+
+
+  ::selection {
+    background: $selectionColor;
+  }
+
+  /*::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }*/
+
+  ::-webkit-scrollbar-button {
+    background-color: #575757;
+    height: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: #646464;
+  }
+
+  ::-webkit-scrollbar-track-piece {
+    background-color: $agThemeBackground;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    height: 20px;
+    background-color: #666;
+    border-radius: 6px;
+  }
+
+  ::-webkit-scrollbar-corner {
+    background-color: #646464;
+  }
+
+  ::-webkit-resizer {
+    background-color: #666;
+  }
+
+  .border-switch:focus-within .border-switch-control-indicator {
+    border: 2px solid $sixHorizon;
+  }
+
+  .custom-control.border-switch:focus-within .border-switch-control-input:checked ~ .border-switch-control-indicator {
+    color: black !important;
+  }
+
+  .custom-control.border-switch .border-switch-control-input:checked ~ .border-switch-control-indicator::after {
+    //left: 16px;
+    background-color: #4997b7 !important;
+  }
+
+
+  .collapsedVerticalContainer {
+    color: #afafaf !important;
+    border: 1px solid $innerGradientBorder !important;
+    background: linear-gradient(to left, $innerGradientTop 0%, $innerGradientBottom 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$innerGradientTop}', endColorstr='#{$innerGradientBottom}', GradientType=0); /* IE6-9 */
+  }
+
+  .as-split-area {
+    background-color: $innerGradientBottom;
+  }
+
+  .as-split-gutter {
+    background-color: $innerGradientBottom !important;
+  }
+
+  .preventionSamePartyIds {
+    background-color: #fcd7d0 !important;
+    color: black !important;
+  }
+
+  .searchBar {
+    padding: 10px;
+    border: 1px solid $innerGradientBorder !important;
+    border-radius: 0px;
+    padding-bottom: 3px;
+    background: $innerGradientTop; /* Old browsers */
+    background: -moz-linear-gradient(top, $innerGradientTop 0%, $innerGradientBottom 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, $innerGradientTop 0%, $innerGradientBottom 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, $innerGradientTop 0%, $innerGradientBottom 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$innerGradientTop}', endColorstr='#{$innerGradientBottom}', GradientType=0); /* IE6-9 */
+  }
+
+  #filterBar {
+    background: $innerGradientTop; /* Old browsers */
+    background: -moz-linear-gradient(top, $innerGradientTop 0%, $innerGradientBottom 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, $innerGradientTop 0%, $innerGradientBottom 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, $innerGradientTop 0%, $innerGradientBottom 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$innerGradientTop}', endColorstr='#{$innerGradientBottom}', GradientType=0); /* IE6-9 */
+  }
+
+  .searchBar label, #filterBar label {
+    color: $generalForeground !important;
+  }
+
+
+  .toolbarGradient {
+    background: $innerGradientTop; /* Old browsers */
+    background: -moz-linear-gradient(top, $innerGradientTop 0%, $innerGradientBottom 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, $innerGradientTop 0%, $innerGradientBottom 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, $innerGradientTop 0%, $innerGradientBottom 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$innerGradientTop}', endColorstr='#{$innerGradientBottom}', GradientType=0); /* IE6-9 */
+  }
+
+  .detailsPanel {
+    background: $innerGradientTop; /* Old browsers */
+    background: -moz-linear-gradient(top, $innerGradientTop 0%, $innerGradientBottom 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, $innerGradientTop 0%, $innerGradientBottom 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, $innerGradientTop 0%, $innerGradientBottom 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$innerGradientTop}', endColorstr='#{$innerGradientBottom}', GradientType=0); /* IE6-9 */
+    color: $generalForeground !important;
+  }
+
+  .noTmSectionSelected {
+    color: $generalForeground;
+  }
+
+  .table {
+    color: $generalForeground;
+  }
+
+  .fc-day-number {
+    color: $fcDayNumberColor;
+    font-weight: bold;
+  }
+
+  .fc-today .fc-day-number {
+    color: $fcDayNameColor !important;
+  }
+
+  .fc-widget-content {
+    border-color: $fcWidgetContentBorderColor;
+  }
+
+  .fc-highlight {
+    opacity: 0.7 !important;
+    background: $fcHighlightBackground !important;
+  }
+
+  .fc-header-toolbar .fc-center h2 {
+    color: $generalForeground !important;
+  }
+
+  .formSearchButton, .formDeleteButton {
+    color: $formButtonAndManyOthersColor;
+    background-color: $mainButtonColor;
+    border: 1px solid $mainButtonBorderColor;
+    font-size: 14px;
+    transition: background-color 0.2s, box-shadow 0.2s;
+    border-radius: 0;
+    margin: 1px 0 0;
+    height: 24px;
+  }
+
+  .formSearchButton:hover:not([disabled]), .formDeleteButtonSolo:hover:not([disabled]) {
+    background-color: $mainButtonHoverColor !important;
+    border-color: $mainButtonHoverBorderColor !important;
+  }
+
+  .formSearchButton.nextToDisabledField {
+    border-left: 0 !important;
+    border-color: $mainButtonBorderColor;
+  }
+
+  .formDeleteButton .fas {
+    font-size: 1.18em;
+  }
+
+  .formDeleteButtonSolo, .formDeleteButton {
+    padding-top: 4px !important;
+    margin-right: 1px !important;
+  }
+
+  .secondButton {
+    border-radius: 3.2px;
+    margin-left: 1px;
+  }
+
+  .formDeleteButton {
+    /*margin-left: 1px;*/
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+  }
+
+  .formDeleteButtonSolo {
+    border-radius: 0;
+  }
+
+  .formSearchButton:disabled, .formDeleteButton:disabled, .formSearchButton:hover:disabled, .formDeleteButton:hover:disabled {
+    border-color: $disabledControlBackground !important;
+    background-color: $disabledControlBackground !important;
+  }
+
+  .formSearchButton, .formDeleteButtonSolo, .formDeleteButton,
+  .formSearchButton:hover, .formDeleteButtonSolo:hover, .formDeleteButton:hover {
+    width: 32px !important;
+    min-width: 32px !important;
+    max-width: 32px !important;
+    padding-left: 6px !important;
+    padding-right: 6px !important;
+  }
+
+  .custom-control.border-switch .border-switch-control-indicator {
+    border-radius: 5px !important;
+  }
+
+  .custom-control.border-switch .border-switch-control-indicator:hover {
+    border-color: $mainThemeColor;
+  }
+
+  .custom-control.border-switch .border-switch-control-input:checked ~ .border-switch-control-indicator {
+    color: $switchOnBallColor;
+    border-color: $sixLightGrayBorder;
+  }
+
+  .custom-control.border-switch {
+    color: $mainThemeColor;
+  }
+
+  .custom-control .border-switch-control-indicator {
+    background: white;
+    border-width: 1px;
+    border-color: $sixLightGrayBorder;
+  }
+
+  .custom-control .border-switch-control-indicator::after {
+    //top: 3px !important;
+    background: $switchOffBallColor;
+    border-color: $sixLightGrayBorder;
+  }
+
+  .custom-control.border-switch:focus-within .border-switch-control-input:checked ~ .border-switch-control-indicator,
+  .custom-control.border-switch:focus-within .border-switch-control-input ~ .border-switch-control-indicator {
+    color: black !important;
+    background: white;
+    border-color: $sixFocusedBorderColor;
+    border-width: 1px;
+  }
+
+  .custom-control.border-switch .border-switch-control-indicator:hover {
+    border-color: black !important;
+    border-width: 1px;
+  }
+
+  .custom-control.border-switch:focus-within .border-switch-control-input:checked ~ .border-switch-control-indicator::after {
+    top: 4px !important;
+  }
+
+  .custom-control.border-switch .border-switch-control-input:disabled + .border-switch-control-indicator {
+    border: 1px solid $sixLightGrayBorder !important;
+    background-color: white !important;
+    cursor: not-allowed;
+  }
+
+  .custom-control.border-switch .border-switch-control-input:disabled + .border-switch-control-indicator:hover {
+    border: 1px solid $sixLightGrayBorder !important;
+    background-color: white !important;
+    cursor: not-allowed;
+  }
+
+  .custom-control.border-switch .border-switch-control-input:checked:disabled ~ .border-switch-control-indicator::after {
+    background-color: $disabledControlBorder !important;
+  }
+
+  .p-disabled, .p-component:disabled, input:disabled:not(.visibly-disabled-checkbox) {
+    opacity: 0.45 !important;
+  }
+
+  .search-container label {
+    white-space: nowrap !important;
+  }
+
+  .compact-form label {
+    color: $generalForeground;
+  }
+
+  .col-form-label {
+    color: $generalForeground;
+  }
+
+  .ngToolbar {
+    background: #ededed !important;
+    border: 1px solid #dcdcdc !important;
+    border-top: 0 !important;
+    border-bottom: 0 !important;
+  }
+
+  .form-control:disabled, .form-control[readonly] {
+    background-color: white !important;
+    opacity: 0.45 !important;
+  }
+
+}
+
+/** FORM ONLY END */
+
+/* EVERYTHING BELOW THIS LINE IS FROM nova.css in PRIMENG, with paths corected and body tags taken out (search & replace */
+
+.six-theme, .six-theme .six-form, .six-theme-dark {
+
+  * {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+  .p-component {
+    //font-family: "Open Sans", "Helvetica Neue", sans-serif;
+    //font-size: 14px;
+    text-decoration: none;
+  }
+
+  .p-corner-all {
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+  }
+
+  .p-corner-top {
+    -moz-border-radius-topleft: 3px;
+    -webkit-border-top-left-radius: 3px;
+    border-top-left-radius: 3px;
+    -moz-border-radius-topright: 3px;
+    -webkit-border-top-right-radius: 3px;
+    border-top-right-radius: 3px;
+  }
+
+  .p-corner-bottom {
+    -moz-border-radius-bottomleft: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -webkit-border-bottom-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+
+  .p-corner-left {
+    -moz-border-radius-topleft: 3px;
+    -webkit-border-top-left-radius: 3px;
+    border-top-left-radius: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+  }
+
+  .p-corner-right {
+    -moz-border-radius-topright: 3px;
+    -webkit-border-top-right-radius: 3px;
+    border-top-right-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -webkit-border-bottom-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+
+  a {
+    color: $mainThemeColor;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: $mainThemeHoverColor;
+  }
+
+  a:active {
+    color: $mainThemeFocusColor;
+  }
+
+  .p-helper-reset {
+    line-height: normal;
+  }
+
+  .p-disabled, body .p-component:disabled {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+  }
+
+  .pi {
+    font-size: 1.25em;
+  }
+
+  .p-inputnumber-input {
+    height: 26px !important;
+    padding-bottom: 3px !important;
+    padding-left: 6px !important;
+    border: 1px solid $inputBorder;
+    border-right: 1px solid transparent !important;
+  }
+
+  .p-inputnumber-button {
+    border-radius: 0 !important;
+    max-height: 13px !important;
+  }
+
+  .p-inputnumber-button-icon.pi-caret-up {
+    margin-top: -0.5em;
+  }
+
+  .p-inputnumber-button-icon.pi-caret-down {
+    margin-top: 0;
+  }
+
+  .p-radiobutton {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    width: 20px;
+    height: 20px;
+  }
+
+  .p-radiobutton .p-radiobutton-box {
+    border: 1px solid $generalMenuAndControlBackgroundColor;
+    background-color: $generalMenuAndControlBackgroundColor;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    position: relative;
+    -moz-transition: background-color 0.2s, border-color 0.2s, box-shadow 0.2s;
+    -o-transition: background-color 0.2s, border-color 0.2s, box-shadow 0.2s;
+    -webkit-transition: background-color 0.2s, border-color 0.2s, box-shadow 0.2s;
+    transition: background-color 0.2s, border-color 0.2s, box-shadow 0.2s;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+  }
+
+  .p-radiobutton .p-radiobutton-box:not(.p-disabled):not(.p-state-active):hover {
+    border-color: $mainThemeColor;
+  }
+
+  .p-radiobutton .p-radiobutton-box.p-focus {
+    border-color: $mainThemeColor;
+    background-color: $generalMenuAndControlBackgroundColor;
+    color: $mainThemeColor;
+    -webkit-box-shadow: 0 0 0 0.2em $mainLightDropShadowColor;
+    -moz-box-shadow: 0 0 0 0.2em $mainLightDropShadowColor;
+    box-shadow: 0 0 0 0.2em $mainLightDropShadowColor;
+  }
+
+  .p-radiobutton .p-radiobutton-box.p-state-active {
+    border-color: $mainThemeColor;
+    background-color: $mainThemeColor;
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-radiobutton .p-radiobutton-box.p-state-active .p-radiobutton-icon {
+    background-color: $formButtonAndManyOthersColor;
+  }
+
+  .p-radiobutton .p-radiobutton-box.p-state-active:not(.p-disabled):hover {
+    border-color: $mainThemeFocusColor;
+    background-color: $mainThemeFocusColor;
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-radiobutton .p-radiobutton-box.p-state-active.p-focus {
+    border-color: $mainThemeColor;
+    background-color: $mainThemeColor;
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-radiobutton .p-radiobutton-box .p-radiobutton-icon {
+    background: transparent;
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -5px;
+    margin-top: -5px;
+    -moz-transition: background-color 0.2s;
+    -o-transition: background-color 0.2s;
+    -webkit-transition: background-color 0.2s;
+    transition: background-color 0.2s;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+  }
+
+  .p-radiobutton .p-radiobutton-box .p-radiobutton-icon:before {
+    display: none;
+  }
+
+  .p-radiobutton-label {
+    margin: 0 0 0 0.5em;
+  }
+
+  .p-inputswitch {
+    width: 3em;
+    height: 1.75em;
+  }
+
+  .p-inputswitch .p-inputswitch-slider {
+    -moz-transition: background-color 0.2s;
+    -o-transition: background-color 0.2s;
+    -webkit-transition: background-color 0.2s;
+    transition: background-color 0.2s;
+    border-radius: 30px;
+    background: $generalMenuAndControlBackgroundColor;
+  }
+
+  .p-inputswitch .p-inputswitch-slider:before {
+    background-color: $mainPanelBackground;
+    height: 1.25em;
+    width: 1.25em;
+    left: 0.25em;
+    bottom: 0.25em;
+    border-radius: 50%;
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+  }
+
+  .p-inputswitch.p-inputswitch-checked .p-inputswitch-slider:before {
+    -webkit-transform: translateX(1.25em);
+    -ms-transform: translateX(1.25em);
+    transform: translateX(1.25em);
+  }
+
+  .p-inputswitch.p-inputswitch-focus .p-inputswitch-slider {
+    background: $generalMenuAndControlBackgroundColor;
+  }
+
+  .p-inputswitch:not(.p-disabled):hover .p-inputswitch-slider {
+    background-color: $generalMenuAndControlBackgroundColor;
+  }
+
+  .p-inputswitch.p-inputswitch-checked .p-inputswitch-slider {
+    background-color: $mainThemeColor;
+  }
+
+  .p-inputswitch.p-inputswitch-checked:not(.p-disabled):hover .p-inputswitch-slider {
+    background-color: $mainThemeHoverColor;
+  }
+
+  .p-inputswitch.p-inputswitch-checked.p-inputswitch-focus .p-inputswitch-slider {
+    background: $mainThemeFocusColor;
+  }
+
+  .p-autocomplete .p-autocomplete-input {
+    padding: 0.429em;
+  }
+
+  .p-autocomplete.p-autocomplete-multiple .p-autocomplete-multiple-container {
+    padding: 0.2145em 0.429em;
+  }
+
+  .p-autocomplete.p-autocomplete-multiple .p-autocomplete-multiple-container:not(.p-disabled):hover {
+    border-color: $mainThemeColor;
+  }
+
+  .p-autocomplete.p-autocomplete-multiple .p-autocomplete-multiple-container:not(.p-disabled).p-focus {
+    border-color: $mainThemeColor;
+    outline: 0 none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .p-autocomplete.p-autocomplete-multiple .p-autocomplete-multiple-container .p-autocomplete-input-token {
+    margin: 0;
+    padding: 0.2145em 0;
+    color: $generalMenuAndControlForegroundColor;
+  }
+
+  .p-autocomplete.p-autocomplete-multiple .p-autocomplete-multiple-container .p-autocomplete-input-token input {
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .p-autocomplete.p-autocomplete-multiple .p-autocomplete-multiple-container .p-autocomplete-token {
+    font-size: 14px;
+    padding: 0.2145em 0.429em;
+    margin: 0 0.286em 0 0;
+  }
+
+  .p-autocomplete-panel .p-autocomplete-items {
+    padding: 0;
+  }
+
+  /*
+  .p-multiselect-panel {
+    background-color: $mainPanelBorderColor;
+  }
+  */
+
+  .p-autocomplete-panel .p-autocomplete-items .p-autocomplete-group {
+    padding: 0.429em 0.857em;
+    background-color: $generalMenuAndControlBackgroundColor;
+    color: $generalMenuAndControlForegroundColor;
+  }
+
+  .p-fluid .p-autocomplete .p-autocomplete-dropdown.p-button {
+    width: 2.357em;
+  }
+
+  .p-fluid .p-autocomplete.p-autocomplete-multiple.p-autocomplete-dd .p-autocomplete-multiple-container {
+    border-right: 0 none;
+    width: calc(100% - 2.357em);
+  }
+
+  .p-fluid .p-autocomplete.p-autocomplete-dd .p-inputtext {
+    border-right: 0 none;
+    width: calc(100% - 2.357em);
+  }
+
+  .p-chips > ul.p-inputtext {
+    padding: 0.2145em 0.429em;
+    display: inline-block;
+  }
+
+  .p-chips > ul.p-inputtext:not(.p-disabled):hover {
+    border-color: $sixHoverBorderColor;
+  }
+
+  input:not(.p-disabled):not([disabled]):hover {
+    border-color: $sixHoverBorderColor !important;
+  }
+
+  .p-chips > ul.p-inputtext:not(.p-disabled).p-focus {
+    border-color: $sixFocusedBorderColor !important;
+    outline: 0 none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .p-chips > ul.p-inputtext .p-chips-input-token {
+    padding: 0.2145em 0;
+  }
+
+  .p-chips > ul.p-inputtext .p-chips-input-token input {
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    padding: 0;
+    margin: 0;
+    color: $generalMenuAndControlForegroundColor;
+  }
+
+  .p-chips > ul.p-inputtext .p-chips-input-token input:hover {
+    border: 0 none;
+  }
+
+  .p-chips > ul.p-inputtext .p-chips-input-token input:focus {
+    border: 0 none;
+  }
+
+  .p-chips > ul.p-inputtext .p-chips-token {
+    font-size: 14px;
+    padding: 0.2145em 0.429em;
+    margin: 0 0.286em 0 0;
+    background: $mainThemeColor;
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-dropdown {
+    border-color: $sixLightGrayBorder;
+    border-radius: 0 !important;
+  }
+
+  .p-dropdown:focus {
+    border-color: $sixLightGrayBorderHover !important;
+  }
+
+  .p-dropdown:hover {
+    border-color: $sixFocusedBorderColor;
+  }
+
+  .p-dropdown-panel, .p-multiselect-panel {
+    border-radius: 0 !important;
+    box-shadow: 0 3px 6px 0 #0000001c !important;
+  }
+
+  .p-multiselect {
+    border-color: $sixLightGrayBorder;
+    border-radius: 0 !important;
+  }
+
+  .stiServicesCellEditor {
+    border: 0 !important;
+  }
+
+  .p-multiselect:focus {
+    border-color: $sixLightGrayBorderHover !important;
+  }
+
+  .p-multiselect:hover {
+    border-color: $sixLightGrayBorderHover;
+  }
+
+  .p-multiselect-panel .p-multiselect-items .p-multiselect-item:focus {
+    box-shadow: none !important;
+  }
+
+  .p-checkbox-box {
+    border: 1px solid $sixLightGrayBorder !important;
+    border-radius: 0 !important;
+  }
+
+  .p-checkbox-box:hover, .p-checkbox-box:focus {
+    border: 1px solid $sixLightGrayBorder !important;
+  }
+
+  .p-checkbox-box.p-highlight {
+    background: #4997b7 !important;
+  }
+
+  .p-multiselect:not(.p-disabled):hover {
+    border-color: $sixHoverBorderColor;
+  }
+
+  .p-multiselect:not(.p-disabled).p-focus {
+    border-color: $sixFocusedBorderColor;
+    outline: 0 none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .p-multiselect-panel .p-multiselect-header {
+    border-radius: 0 !important;
+  }
+
+  .p-multiselect-panel .p-multiselect-header .p-multiselect-filter-container {
+    float: none;
+    width: 70%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 0;
+  }
+
+  .p-multiselect-panel .p-multiselect-header .p-multiselect-filter-container .p-inputtext {
+    padding: 0 2em 0 30px;
+  }
+
+  .p-multiselect-panel .p-multiselect-header .p-multiselect-filter-container .p-multiselect-filter-icon {
+    color: #989090;
+    top: 50%;
+    margin-top: -0.3em;
+    right: 0.5em;
+    left: auto;
+    width: 28px;
+  }
+
+  .p-multiselect-panel .p-multiselect-header .p-multiselect-close:hover {
+    color: $generalMenuAndControlForegroundColor;
+  }
+
+  .p-multiselect-panel .p-multiselect-items {
+    padding: 0;
+  }
+
+  .p-multiselect-panel .p-multiselect-items .p-multiselect-item.p-highlight {
+    color: $formButtonAndManyOthersColor;
+    background-color: $mainThemeColor;
+  }
+
+  .pi-check:before {
+    color: $mainThemeColor;
+  }
+
+  /*
+  .p-multiselect-items-wrapper {
+    background-color: $inputBackground;
+  }
+  */
+
+  .p-multiselect-panel .p-multiselect-items .p-multiselect-item:not(.p-highlight):not(.p-disabled):hover {
+    color: $formButtonAndManyOthersColor;
+    background-color: $sixHoverBackgroundColor;
+  }
+
+  .p-multiselect-panel .p-multiselect-items .p-multiselect-item:not(.p-highlight):focus {
+    background-color: $mainThemeSelectedNotFocused;
+    color: white;
+  }
+
+  .p-multiselect-panel .p-multiselect-items .p-multiselect-item.p-disabled .p-checkbox-box {
+    cursor: auto;
+  }
+
+  .p-multiselect-panel .p-multiselect-items .p-multiselect-item.p-disabled .p-checkbox-box:hover {
+    border: 1px solid $generalMenuAndControlBackgroundColor;
+  }
+
+  .p-multiselect-panel .p-multiselect-items .p-multiselect-item.p-disabled .p-checkbox-box.p-state-active:hover {
+    border-color: $mainThemeColor;
+  }
+
+  .p-multiselect-panel .p-multiselect-items .p-multiselect-item .p-checkbox {
+    position: static;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0.5em 0 0;
+  }
+
+  .p-multiselect-panel .p-multiselect-items .p-multiselect-item label {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .p-listbox {
+    padding: 0;
+    min-width: 12em;
+  }
+
+  .p-listbox .p-checkbox {
+    margin: 0 0.5em 0 0;
+  }
+
+  .p-listbox .p-listbox-header {
+    padding: 0.429em 0.857em 0.429em 0.857em;
+    margin: 0;
+  }
+
+  .p-listbox .p-listbox-header .p-listbox-filter-container {
+    width: calc(100% - (0.857em + 0.857em + 0.5em));
+  }
+
+  .p-listbox .p-listbox-header .p-listbox-filter-container input {
+    padding: 0.429em 2em 0.429em 0.429em;
+  }
+
+  .p-listbox .p-listbox-header .p-listbox-filter-container .p-listbox-filter-icon {
+    top: 50%;
+    left: auto;
+    margin-top: -0.5em;
+    right: 0.5em;
+  }
+
+
+  .p-listbox .p-listbox-list .p-listbox-item {
+    margin: 0;
+    padding: 0.429em 0.857em;
+    border: 0 none;
+    background-color: transparent;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+  }
+
+  .p-listbox .p-listbox-list .p-listbox-item .p-checkbox {
+    position: static;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0.5em 0 0;
+  }
+
+  .p-listbox .p-listbox-list .p-listbox-item:focus {
+    box-shadow: none !important;
+  }
+
+  .p-listbox .p-listbox-list .p-listbox-item label {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .p-listbox {
+    height: 100%;
+  }
+
+  .p-listbox .p-listbox-footer {
+    padding: 0.429em 0.857em 0.429em 0.857em;
+    border-top: 1px solid $mainPanelBorderColor;
+    color: $generalMenuAndControlForegroundColor;
+    background-color: $mainPanelAndButtonBackground;
+  }
+
+  .p-editor-container .p-editor-toolbar {
+    border: 1px solid $mainPanelBorderColor;
+    background-color: $mainPanelBorderColor;
+  }
+
+  .p-editor-container .p-editor-content {
+    border: 1px solid $mainPanelBorderColor;
+  }
+
+  .p-editor-container .p-editor-content .ql-editor {
+    background-color: $generalMenuAndControlBackgroundColor;
+    color: $generalMenuAndControlForegroundColor;
+  }
+
+  .p-editor-container .ql-picker.ql-expanded .ql-picker-label {
+    color: $generalMenuAndControlForegroundColor;
+  }
+
+  .p-editor-container .ql-stroke {
+    stroke: $generalMenuAndControlForegroundColor;
+  }
+
+  .p-editor-container .ql-picker-label {
+    color: $generalMenuAndControlForegroundColor;
+  }
+
+  .p-editor-container .ql-snow.ql-toolbar button:hover,
+  .p-editor-container .ql-snow .ql-toolbar button:hover,
+  .p-editor-container .ql-snow.ql-toolbar button.ql-active,
+  .p-editor-container .ql-snow .ql-toolbar button.ql-active,
+  .p-editor-container .ql-snow.ql-toolbar .ql-picker-label:hover,
+  .p-editor-container .ql-snow .ql-toolbar .ql-picker-label:hover,
+  .p-editor-container .ql-snow.ql-toolbar .ql-picker-label.ql-active,
+  .p-editor-container .ql-snow .ql-toolbar .ql-picker-label.ql-active,
+  .p-editor-container .ql-snow.ql-toolbar .ql-picker-item:hover,
+  .p-editor-container .ql-snow .ql-toolbar .ql-picker-item:hover,
+  .p-editor-container .ql-snow.ql-toolbar .ql-picker-item.ql-selected,
+  .p-editor-container .ql-snow .ql-toolbar .ql-picker-item.ql-selected {
+    color: $mainThemeColor;
+  }
+
+  .p-editor-container .ql-snow.ql-toolbar button:hover .ql-stroke,
+  .p-editor-container .ql-snow .ql-toolbar button:hover .ql-stroke,
+  .p-editor-container .ql-snow.ql-toolbar button.ql-active .ql-stroke,
+  .p-editor-container .ql-snow .ql-toolbar button.ql-active .ql-stroke,
+  .p-editor-container .ql-snow.ql-toolbar .ql-picker-label:hover .ql-stroke,
+  .p-editor-container .ql-snow .ql-toolbar .ql-picker-label:hover .ql-stroke,
+  .p-editor-container .ql-snow.ql-toolbar .ql-picker-label.ql-active .ql-stroke,
+  .p-editor-container .ql-snow .ql-toolbar .ql-picker-label.ql-active .ql-stroke,
+  .p-editor-container .ql-snow.ql-toolbar .ql-picker-item:hover .ql-stroke,
+  .p-editor-container .ql-snow .ql-toolbar .ql-picker-item:hover .ql-stroke,
+  .p-editor-container .ql-snow.ql-toolbar .ql-picker-item.ql-selected .ql-stroke,
+  .p-editor-container .ql-snow .ql-toolbar .ql-picker-item.ql-selected .ql-stroke,
+  .p-editor-container .ql-snow.ql-toolbar button:hover .ql-stroke-miter,
+  .p-editor-container .ql-snow .ql-toolbar button:hover .ql-stroke-miter,
+  .p-editor-container .ql-snow.ql-toolbar button.ql-active .ql-stroke-miter,
+  .p-editor-container .ql-snow .ql-toolbar button.ql-active .ql-stroke-miter,
+  .p-editor-container .ql-snow.ql-toolbar .ql-picker-label:hover .ql-stroke-miter,
+  .p-editor-container .ql-snow .ql-toolbar .ql-picker-label:hover .ql-stroke-miter,
+  .p-editor-container .ql-snow.ql-toolbar .ql-picker-label.ql-active .ql-stroke-miter,
+  .p-editor-container .ql-snow .ql-toolbar .ql-picker-label.ql-active .ql-stroke-miter,
+  .p-editor-container .ql-snow.ql-toolbar .ql-picker-item:hover .ql-stroke-miter,
+  .p-editor-container .ql-snow .ql-toolbar .ql-picker-item:hover .ql-stroke-miter,
+  .p-editor-container .ql-snow.ql-toolbar .ql-picker-item.ql-selected .ql-stroke-miter,
+  .p-editor-container .ql-snow .ql-toolbar .ql-picker-item.ql-selected .ql-stroke-miter {
+    stroke: $mainThemeColor;
+  }
+
+  .p-rating a {
+    text-align: center;
+    display: inline-block;
+    color: $generalMenuAndControlForegroundColor;
+    -moz-transition: color 0.2s;
+    -o-transition: color 0.2s;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+  }
+
+  .p-rating a.p-rating-cancel {
+    color: #CD3A3A;
+  }
+
+  .p-rating a .p-rating-icon {
+    font-size: 20px;
+  }
+
+  .p-rating:not(.p-disabled):not(.p-rating-readonly) a:hover {
+    color: $mainThemeColor;
+  }
+
+  .p-rating:not(.p-disabled):not(.p-rating-readonly) a.p-rating-cancel:hover {
+    color: #d76161;
+  }
+
+  .p-inputnumber .p-inputnumber-input {
+    padding-right: 2.786em;
+  }
+
+  .p-inputnumber .p-inputnumber-button {
+    width: 2.357em;
+  }
+
+  .p-inputnumber .p-inputnumber-button.p-inputnumber-up {
+    -moz-border-radius-topright: 3px;
+    -webkit-border-top-right-radius: 3px;
+    border-top-right-radius: 3px;
+  }
+
+  .p-inputnumber .p-inputnumber-button.p-inputnumber-down {
+    -moz-border-radius-bottomright: 3px;
+    -webkit-border-bottom-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+
+  .p-inputnumber .p-inputnumber-button .p-inputnumber-button-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -0.5em;
+    margin-left: -0.5em;
+    width: 1em;
+  }
+
+  .p-fluid .p-inputnumber .p-inputnumber-input {
+    padding-right: 2.786em;
+  }
+
+  .p-fluid .p-inputnumber .p-inputnumber-button {
+    width: 2.357em;
+  }
+
+  .p-fluid .p-inputnumber .p-inputnumber-button .p-inputnumber-button-icon {
+    left: 50%;
+  }
+
+  .p-slider {
+    background-color: $generalMenuAndControlBackgroundColor;
+    border: 0 none;
+  }
+
+  .p-slider.p-slider-horizontal {
+    height: 0.286em;
+  }
+
+  .p-slider.p-slider-horizontal .p-slider-handle {
+    top: 50%;
+    margin-top: -0.5715em;
+  }
+
+  .p-slider.p-slider-vertical {
+    width: 0.286em;
+  }
+
+  .p-slider.p-slider-vertical .p-slider-handle {
+    left: 50%;
+    margin-left: -0.5715em;
+  }
+
+  .p-slider .p-slider-handle {
+    height: 1.143em;
+    width: 1.143em;
+    background-color: $generalMenuAndControlBackgroundColor;
+    border: 2px solid $mainThemeColor;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    -moz-transition: border-color 0.2s;
+    -o-transition: border-color 0.2s;
+    -webkit-transition: border-color 0.2s;
+    transition: border-color 0.2s;
+  }
+
+  .p-slider .p-slider-range {
+    background-color: $mainThemeColor;
+  }
+
+  .p-slider:not(.p-disabled) .p-slider-handle:hover {
+    background-color: $mainThemeColor;
+    border: 2px solid $mainThemeColor;
+  }
+
+  .p-datepicker {
+    padding: 0.857em;
+    min-width: 20em;
+  }
+
+  .p-datepicker-weeknumber, .p-datepicker-weeknumber span {
+    cursor: default !important;
+  }
+
+  .p-datepicker-header select {
+    cursor: pointer;
+  }
+
+  .p-datepicker .p-datepicker-header {
+    padding: 0.429em 0 0.429em 0;
+    background-color: transparent;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+  }
+
+  .p-datepicker .p-datepicker-header .p-datepicker-prev,
+  .p-datepicker .p-datepicker-header .p-datepicker-next {
+    cursor: pointer;
+    top: 0;
+    -moz-transition: color 0.2s;
+    -o-transition: color 0.2s;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+  }
+
+  .p-datepicker .p-datepicker-header .p-datepicker-title {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    display: flex;
+  }
+
+  .p-datepicker .p-datepicker-header .p-datepicker-title select {
+    margin-top: -0.35em;
+    margin-bottom: 0;
+  }
+
+  .p-datepicker table {
+    font-size: 14px;
+    margin: 0.857em 0 0 0;
+  }
+
+  .p-datepicker table th {
+    padding: 0.5em;
+  }
+
+  .p-datepicker table td > a, body .p-datepicker table td > span {
+    display: block;
+    text-align: center;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+  }
+
+  .p-datepicker table td > span {
+    padding: 0.5em;
+  }
+
+  .p-datepicker table td > a {
+    cursor: pointer;
+  }
+
+  .p-datepicker table td.p-datepicker-today > span {
+    background-color: $datePickerTodayBackground !important;
+    color: $formButtonAndManyOthersColor !important;
+  }
+
+  /*
+  .p-datepicker .p-datepicker-today:hover {
+    color: $formButtonAndManyOthersColor;
+    background-color: $datePickerTodayBackground;
+  }
+  */
+
+  .p-datepicker-weeknumber {
+    border-right: 1px solid $mainPanelBorderColor;
+  }
+
+  .p-datepicker-weeknumber:hover {
+    background-color: transparent !important;
+    cursor: default;
+  }
+
+  .p-datepicker .p-datepicker-buttonbar {
+    border-top: 1px solid $inputBorder;
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
+
+  .p-datepicker .p-datepicker-buttonbar .p-button {
+    height: 30px;
+    min-width: 80px;
+  }
+
+  .p-datepicker .p-timepicker {
+    border: 0 none;
+    border-top: 1px solid $inputBorder;
+    padding: 0.857em;
+  }
+
+  .p-datepicker .p-timepicker a {
+    color: $generalMenuAndControlForegroundColor;
+    font-size: 1.286em;
+  }
+
+  .p-datepicker .p-timepicker a:hover {
+    color: $mainThemeColor;
+  }
+
+  .p-datepicker .p-timepicker span {
+    font-size: 1.286em;
+  }
+
+  .p-datepicker .p-monthpicker .p-monthpicker-month {
+    color: $generalMenuAndControlForegroundColor;
+  }
+
+  .p-datepicker .p-monthpicker .p-monthpicker-month.p-state-active {
+    color: $formButtonAndManyOthersColor;
+    background-color: $mainThemeColor;
+  }
+
+  .p-datepicker.p-datepicker-timeonly {
+    padding: 0;
+  }
+
+  .p-datepicker.p-datepicker-timeonly .p-timepicker {
+    border-top: 0 none;
+  }
+
+  .p-datepicker.p-datepicker-multiple-month .p-datepicker-group {
+    border-right: 1px solid $inputBorder;
+    padding-right: 0.857em;
+    padding-left: 0.857em;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .p-datepicker.p-datepicker-multiple-month .p-datepicker-group:first-child {
+    padding-left: 0;
+  }
+
+  .p-datepicker.p-datepicker-multiple-month .p-datepicker-group:last-child {
+    padding-right: 0;
+    border-right: 0 none;
+  }
+
+  .p-datepicker table td > span {
+    border-radius: 0 !important;
+  }
+
+  .p-calendar.p-calendar-w-btn .p-inputtext {
+    -moz-border-radius-topright: 0;
+    -webkit-border-top-right-radius: 0;
+    border-top-right-radius: 0;
+    -moz-border-radius-bottomright: 0;
+    -webkit-border-bottom-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: 0 none;
+  }
+
+  .p-calendar.p-calendar-w-btn .p-inputtext:enabled:hover:not(.p-state-error), body .p-calendar.p-calendar-w-btn .p-inputtext:enabled:focus:not(.p-state-error) {
+    border-right: 0 none;
+  }
+
+  .p-calendar.p-calendar-w-btn .p-datepicker-trigger.p-button {
+    border-radius: 0;
+  }
+
+  .p-calendar .p-datepicker-trigger, .p-calendar .p-datepicker-trigger:hover {
+    width: 32px !important;
+    min-width: 32px !important;
+    max-width: 32px !important;
+  }
+
+  .p-fluid .p-calendar.p-calendar-w-btn input.p-inputtext {
+    width: calc(100% - 2.357em);
+  }
+
+  .p-fileupload .p-fileupload-buttonbar {
+    background-color: $mainPanelBorderColor;
+    padding: 0.571em 1em;
+    border: 1px solid $mainPanelBorderColor;
+    color: $generalMenuAndControlForegroundColor;
+    border-bottom: 0 none;
+  }
+
+  .p-fileupload .p-fileupload-buttonbar .p-button {
+    margin-right: 8px;
+  }
+
+  .p-fileupload .p-fileupload-content {
+    background-color: $mainPanelBackground;
+    padding: 0.571em 1em;
+    border: 1px solid $mainPanelBorderColor;
+    color: $generalMenuAndControlForegroundColor;
+  }
+
+  .p-fileupload .p-progressbar {
+    top: 0;
+  }
+
+  .p-fileupload-choose:not(.p-disabled):hover {
+    background-color: $mainThemeHoverColor;
+    color: $formButtonAndManyOthersColor;
+    border-color: $mainThemeHoverColor;
+  }
+
+  .p-fileupload-choose:not(.p-disabled):active {
+    background-color: $mainThemeFocusColor;
+    color: $formButtonAndManyOthersColor;
+    border-color: $mainThemeFocusColor;
+  }
+
+  .p-fileupload-choose.p-focus {
+    outline: 0 none;
+    outline-offset: 0px;
+  }
+
+  .p-password-panel {
+    padding: 12px;
+    background-color: $mainPanelBackground;
+    color: $generalMenuAndControlForegroundColor;
+    border: 1px solid $mainPanelBorderColor;
+    -webkit-box-shadow: 0 3px 6px 0 $mainDarkDropShadowColor;
+    -moz-box-shadow: 0 3px 6px 0 $mainDarkDropShadowColor;
+    box-shadow: 0 3px 6px 0 $mainDarkDropShadowColor;
+  }
+
+  .p-inputgroup .p-inputgroup-addon {
+    border-color: $mainPanelBorderColor;
+    background-color: $mainPanelAndButtonBackground;
+    color: $generalMenuAndControlForegroundColor;
+    padding: 0.429em;
+    min-width: 2em;
+  }
+
+  .p-inputgroup .p-inputgroup-addon:first-child {
+    -moz-border-radius-topleft: 3px;
+    -webkit-border-top-left-radius: 3px;
+    border-top-left-radius: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+  }
+
+  .p-inputgroup .p-inputgroup-addon:last-child {
+    -moz-border-radius-topright: 3px;
+    -webkit-border-top-right-radius: 3px;
+    border-top-right-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -webkit-border-bottom-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+
+  .p-inputgroup .p-inputgroup-addon.p-inputgroup-addon-checkbox {
+    position: relative;
+  }
+
+  .p-inputgroup .p-inputgroup-addon.p-inputgroup-addon-checkbox .p-checkbox {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -10px;
+    margin-top: -10px;
+  }
+
+  .p-inputgroup .p-inputgroup-addon.p-inputgroup-addon-radiobutton {
+    position: relative;
+  }
+
+  .p-inputgroup .p-inputgroup-addon.p-inputgroup-addon-radiobutton .p-radiobutton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -10px;
+    margin-top: -10px;
+  }
+
+  .p-inputgroup .p-button:first-child {
+    -moz-border-radius-topleft: 3px;
+    -webkit-border-top-left-radius: 3px;
+    border-top-left-radius: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+  }
+
+  .p-inputgroup .p-button:last-child {
+    -moz-border-radius-topright: 3px;
+    -webkit-border-top-right-radius: 3px;
+    border-top-right-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -webkit-border-bottom-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+
+  .p-fluid .p-inputgroup .p-button {
+    width: auto;
+  }
+
+  .p-fluid .p-inputgroup .p-button.p-button-icon-only {
+    width: 2.357em;
+  }
+
+  ::-webkit-input-placeholder {
+    color: #9b9b9b;
+  }
+
+  :-moz-placeholder {
+    color: #9b9b9b;
+  }
+
+  ::-moz-placeholder {
+    color: #9b9b9b;
+  }
+
+  :-ms-input-placeholder {
+    color: #9b9b9b;
+  }
+
+  .p-button:enabled:focus {
+    outline: 0 none;
+    outline-offset: 0px;
+    /*    border-color: $mainLightDropShadowColor
+        -webkit-box-shadow: 0 0 0 0.2em $mainLightDropShadowColor;
+        -moz-box-shadow: 0 0 0 0.2em $mainLightDropShadowColor;
+        box-shadow: 0 0 0 0.2em $mainLightDropShadowColor;*/
+  }
+
+  .p-button.p-button-text-only .p-button-text {
+    padding: 0.429em 1em;
+  }
+
+  .p-button.p-button-text-icon-left .p-button-text {
+    padding: 0.429em 1em 0.429em 2em;
+  }
+
+  .p-button.p-button-text-icon-right .p-button-text {
+    padding: 0.429em 2em 0.429em 1em;
+  }
+
+  .p-button.p-button-icon-only {
+    width: 2.357em;
+  }
+
+  .p-button.p-button-icon-only .p-button-text {
+    padding: 0.429em;
+  }
+
+  .p-button.p-button-raised {
+    -webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.15);
+  }
+
+  .p-button.p-button-rounded {
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+  }
+
+  .p-fluid .p-button-icon-only {
+    width: 2.357em;
+  }
+
+  .p-togglebutton {
+    background-color: $mainPanelAndButtonBackground;
+    border: 1px solid $mainPanelAndButtonBackground;
+    color: $generalMenuAndControlForegroundColor;
+    -moz-transition: background-color 0.2s, box-shadow 0.2s;
+    -o-transition: background-color 0.2s, box-shadow 0.2s;
+    -webkit-transition: background-color 0.2s, box-shadow 0.2s;
+    transition: background-color 0.2s, box-shadow 0.2s;
+  }
+
+  .p-togglebutton .p-button-icon-left {
+    color: $someButtons;
+  }
+
+  .p-togglebutton:not(.p-disabled):not(.p-state-active):hover {
+    background-color: $generalMenuAndControlBackgroundColor;
+    border-color: $generalMenuAndControlBackgroundColor;
+    color: $generalMenuAndControlForegroundColor;
+  }
+
+  .p-togglebutton:not(.p-disabled):not(.p-state-active):hover .p-button-icon-left {
+    color: $generalMenuAndControlForegroundColor;
+  }
+
+  .p-togglebutton:not(.p-disabled):not(.p-state-active).p-focus {
+    background-color: $generalMenuAndControlBackgroundColor;
+    border-color: $generalMenuAndControlBackgroundColor;
+    color: $generalMenuAndControlForegroundColor;
+    outline: 0 none;
+  }
+
+  .p-togglebutton:not(.p-disabled):not(.p-state-active).p-focus .p-button-icon-left {
+    color: $generalMenuAndControlForegroundColor;
+  }
+
+  .p-togglebutton.p-state-active {
+    background-color: $mainThemeColor;
+    border-color: $mainThemeColor;
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-togglebutton.p-state-active .p-button-icon-left {
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-togglebutton.p-state-active:hover {
+    background-color: $mainThemeHoverColor;
+    border-color: $mainThemeHoverColor;
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-togglebutton.p-state-active:hover .p-button-icon-left {
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-togglebutton.p-state-active.p-focus {
+    background-color: $mainThemeFocusColor;
+    border-color: $mainThemeFocusColor;
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-togglebutton.p-state-active.p-focus .p-button-icon-left {
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-selectbutton .p-button {
+    background-color: $mainPanelAndButtonBackground;
+    border: 1px solid $mainPanelAndButtonBackground;
+    color: $generalMenuAndControlForegroundColor;
+    -moz-transition: background-color 0.2s, box-shadow 0.2s;
+    -o-transition: background-color 0.2s, box-shadow 0.2s;
+    -webkit-transition: background-color 0.2s, box-shadow 0.2s;
+    transition: background-color 0.2s, box-shadow 0.2s;
+  }
+
+  .p-selectbutton .p-button .p-button-icon-left {
+    color: $someButtons;
+  }
+
+  .p-selectbutton .p-button:not(.p-disabled):not(.p-state-active):hover {
+    background-color: $generalMenuAndControlBackgroundColor;
+    border-color: $generalMenuAndControlBackgroundColor;
+    color: $generalMenuAndControlForegroundColor;
+  }
+
+  .p-selectbutton .p-button:not(.p-disabled):not(.p-state-active):hover .p-button-icon-left {
+    color: $generalMenuAndControlForegroundColor;
+  }
+
+  .p-selectbutton .p-button:not(.p-disabled):not(.p-state-active).p-focus {
+    background-color: $generalMenuAndControlBackgroundColor;
+    border-color: $generalMenuAndControlBackgroundColor;
+    color: $generalMenuAndControlForegroundColor;
+    outline: 0 none;
+  }
+
+  .p-selectbutton .p-button:not(.p-disabled):not(.p-state-active).p-focus .p-button-icon-left {
+    color: $generalMenuAndControlForegroundColor;
+  }
+
+  .p-selectbutton .p-button.p-state-active {
+    background-color: $mainThemeColor;
+    border-color: $mainThemeColor;
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-selectbutton .p-button.p-state-active .p-button-icon-left {
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-selectbutton .p-button.p-state-active:not(.p-disabled):hover {
+    background-color: $mainThemeHoverColor;
+    border-color: $mainThemeHoverColor;
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-selectbutton .p-button.p-state-active:not(.p-disabled):hover .p-button-icon-left {
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-selectbutton .p-button.p-state-active.p-focus {
+    background-color: $mainThemeFocusColor;
+    border-color: $mainThemeFocusColor;
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-selectbutton .p-button.p-state-active.p-focus .p-button-icon-left {
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-selectbutton .p-button:first-child {
+    -moz-border-radius-topleft: 3px;
+    -webkit-border-top-left-radius: 3px;
+    border-top-left-radius: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+  }
+
+  .p-selectbutton .p-button:last-child {
+    -moz-border-radius-topright: 3px;
+    -webkit-border-top-right-radius: 3px;
+    border-top-right-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -webkit-border-bottom-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+
+  @media (max-width: 640px) {
+    .p-buttonset:not(.p-splitbutton) .p-button {
+      margin-bottom: 1px;
+      -moz-border-radius: 3px;
+      -webkit-border-radius: 3px;
+      border-radius: 3px;
+    }
+  }
+
+  .p-splitbutton.p-buttonset .p-button {
+    border: 1px solid transparent;
+  }
+
+  .p-splitbutton.p-buttonset .p-menu {
+    min-width: 100%;
+  }
+
+  .p-button.p-state-default.p-button-secondary, body .p-buttonset.p-button-secondary > .p-button.p-state-default {
+    color: #333333;
+    background-color: #f4f4f4;
+    border: 1px solid #f4f4f4;
+  }
+
+  .p-button.p-state-default.p-button-secondary:enabled:hover, body .p-buttonset.p-button-secondary > .p-button.p-state-default:enabled:hover {
+    background-color: #c8c8c8;
+    color: #333333;
+    border-color: #c8c8c8;
+  }
+
+  .p-button.p-state-default.p-button-secondary:enabled:focus, body .p-buttonset.p-button-secondary > .p-button.p-state-default:enabled:focus {
+    -webkit-box-shadow: 0 0 0 0.2em $mainLightDropShadowColor;
+    -moz-box-shadow: 0 0 0 0.2em $mainLightDropShadowColor;
+    box-shadow: 0 0 0 0.2em $mainLightDropShadowColor;
+  }
+
+  .p-button.p-state-default.p-button-secondary:enabled:active, body .p-buttonset.p-button-secondary > .p-button.p-state-default:enabled:active {
+    background-color: #a0a0a0;
+    color: #333333;
+    border-color: #a0a0a0;
+  }
+
+  .p-button.p-state-default.p-button-info, body .p-buttonset.p-button-info > .p-button.p-state-default {
+    color: #ffffff;
+    background-color: #007ad9;
+    border: 1px solid #007ad9;
+  }
+
+  .p-button.p-state-default.p-button-info:enabled:hover, body .p-buttonset.p-button-info > .p-button.p-state-default:enabled:hover {
+    background-color: #116fbf;
+    color: #ffffff;
+    border-color: #116fbf;
+  }
+
+  .p-button.p-state-default.p-button-info:enabled:focus, body .p-buttonset.p-button-info > .p-button.p-state-default:enabled:focus {
+    -webkit-box-shadow: 0 0 0 0.2em #8dcdff;
+    -moz-box-shadow: 0 0 0 0.2em #8dcdff;
+    box-shadow: 0 0 0 0.2em #8dcdff;
+  }
+
+  .p-button.p-state-default.p-button-info:enabled:active, body .p-buttonset.p-button-info > .p-button.p-state-default:enabled:active {
+    background-color: #005b9f;
+    color: #ffffff;
+    border-color: #005b9f;
+  }
+
+  .p-button.p-state-default.p-button-success, body .p-buttonset.p-button-success > .p-button.p-state-default {
+    color: #ffffff;
+    background-color: #34A835;
+    border: 1px solid #34A835;
+  }
+
+  .p-button.p-state-default.p-button-success:enabled:hover, body .p-buttonset.p-button-success > .p-button.p-state-default:enabled:hover {
+    background-color: #107D11;
+    color: #ffffff;
+    border-color: #107D11;
+  }
+
+  .p-button.p-state-default.p-button-success:enabled:focus, body .p-buttonset.p-button-success > .p-button.p-state-default:enabled:focus {
+    -webkit-box-shadow: 0 0 0 0.2em #aae5aa;
+    -moz-box-shadow: 0 0 0 0.2em #aae5aa;
+    box-shadow: 0 0 0 0.2em #aae5aa;
+  }
+
+  .p-button.p-state-default.p-button-success:enabled:active, body .p-buttonset.p-button-success > .p-button.p-state-default:enabled:active {
+    background-color: #0C6B0D;
+    color: #ffffff;
+    border-color: #0C6B0D;
+  }
+
+  .p-button.p-state-default.p-button-warning, body .p-buttonset.p-button-warning > .p-button.p-state-default {
+    color: #333333;
+    background-color: #ffba01;
+    border: 1px solid #ffba01;
+  }
+
+  .p-button.p-state-default.p-button-warning:enabled:hover, body .p-buttonset.p-button-warning > .p-button.p-state-default:enabled:hover {
+    background-color: #ED990B;
+    color: #333333;
+    border-color: #ED990B;
+  }
+
+  .p-button.p-state-default.p-button-warning:enabled:focus, body .p-buttonset.p-button-warning > .p-button.p-state-default:enabled:focus {
+    -webkit-box-shadow: 0 0 0 0.2em #ffeab4;
+    -moz-box-shadow: 0 0 0 0.2em #ffeab4;
+    box-shadow: 0 0 0 0.2em #ffeab4;
+  }
+
+  .p-button.p-state-default.p-button-warning:enabled:active, body .p-buttonset.p-button-warning > .p-button.p-state-default:enabled:active {
+    background-color: #D38B10;
+    color: #333333;
+    border-color: #D38B10;
+  }
+
+  .p-button.p-state-default.p-button-danger, body .p-buttonset.p-button-danger > .p-button.p-state-default {
+    color: #ffffff;
+    background-color: #e91224;
+    border: 1px solid #e91224;
+  }
+
+  .p-button.p-state-default.p-button-danger:enabled:hover, body .p-buttonset.p-button-danger > .p-button.p-state-default:enabled:hover {
+    background-color: #c01120;
+    color: #ffffff;
+    border-color: #c01120;
+  }
+
+  .p-button.p-state-default.p-button-danger:enabled:focus, body .p-buttonset.p-button-danger > .p-button.p-state-default:enabled:focus {
+    -webkit-box-shadow: 0 0 0 0.2em #f9b4ba;
+    -moz-box-shadow: 0 0 0 0.2em #f9b4ba;
+    box-shadow: 0 0 0 0.2em #f9b4ba;
+  }
+
+  .p-button.p-state-default.p-button-danger:enabled:active, body .p-buttonset.p-button-danger > .p-button.p-state-default:enabled:active {
+    background-color: #a90000;
+    color: #ffffff;
+    border-color: #a90000;
+  }
+
+  .p-component-content p {
+    line-height: 1.5;
+    margin: 0;
+  }
+
+  .p-panel {
+    padding: 0;
+    border: 0 none;
+  }
+
+  .p-panel .p-panel-titlebar {
+    border: 1px solid $mainPanelBorderColor;
+    padding: 0.571em 1em;
+    background-color: $mainPanelBorderColor;
+    color: $generalMenuAndControlForegroundColor;
+    -moz-border-radius-topleft: 3px;
+    -webkit-border-top-left-radius: 3px;
+    border-top-left-radius: 3px;
+    -moz-border-radius-topright: 3px;
+    -webkit-border-top-right-radius: 3px;
+    border-top-right-radius: 3px;
+    -moz-border-radius-bottomleft: 0;
+    -webkit-border-bottom-left-radius: 0;
+    border-bottom-left-radius: 0;
+    -moz-border-radius-bottomright: 0;
+    -webkit-border-bottom-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .p-panel .p-panel-titlebar .p-panel-title {
+    vertical-align: middle;
+    font-weight: 700;
+  }
+
+  .p-panel .p-panel-titlebar .p-panel-titlebar-icon {
+    margin: 0;
+    position: relative;
+    font-size: 14px;
+    color: $someButtons;
+    border: 1px solid transparent;
+    -moz-transition: color 0.2s;
+    -o-transition: color 0.2s;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+  }
+
+  .p-panel .p-panel-titlebar .p-panel-titlebar-icon:hover {
+    color: $generalMenuAndControlForegroundColor;
+  }
+
+  .p-panel .p-panel-content {
+    padding: 0.571em 1em;
+    border: 1px solid $mainPanelBorderColor;
+    background-color: $mainPanelBackground;
+    color: $generalMenuAndControlForegroundColor;
+    border-top: 0 none;
+  }
+
+  .p-panel .p-panel-footer {
+    padding: 0.571em 1em;
+    border: 1px solid $mainPanelBorderColor;
+    background-color: $mainPanelBackground;
+    color: $generalMenuAndControlForegroundColor;
+    border-top: 0 none;
+    margin: 0;
+  }
+
+  .p-fieldset {
+    border: 1px solid $mainPanelBorderColor;
+    background-color: transparent;
+    color: $generalMenuAndControlForegroundColor;
+  }
+
+  .p-fieldset .p-fieldset-legend a {
+    padding: 0.571em 1em;
+    border: 1px solid gray;
+    color: black;
+    background-color: white;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -moz-transition: background-color 0.2s;
+    -o-transition: background-color 0.2s;
+    -webkit-transition: background-color 0.2s;
+    transition: background-color 0.2s;
+  }
+
+  .p-fieldset .p-fieldset-legend a .p-fieldset-toggler {
+    float: none;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 0.5em;
+    color: $someButtons;
+  }
+
+  .p-fieldset .p-fieldset-legend a .p-fieldset-legend-text {
+    padding: 0;
+  }
+
+  .p-fieldset.p-fieldset-toggleable .p-fieldset-legend a:hover {
+    background-color: silver;
+    border: 1px solid darkgray;
+    color: $mainThemeColor;
+  }
+
+  .p-fieldset.p-fieldset-toggleable .p-fieldset-legend a:hover .p-fieldset-toggler {
+    color: $mainThemeColor;
+  }
+
+  .p-fieldset .p-fieldset-content {
+    padding: 0;
+  }
+
+  .p-accordion .p-accordion-header {
+    margin-bottom: 2px;
+  }
+
+  .p-accordion .p-accordion-header a {
+    padding: 0.571em 1em;
+    border: 1px solid $mainPanelBorderColor;
+    color: $generalMenuAndControlForegroundColor;
+    background-color: $mainPanelBorderColor;
+    font-weight: 700;
+    -moz-transition: background-color 0.2s;
+    -o-transition: background-color 0.2s;
+    -webkit-transition: background-color 0.2s;
+    transition: background-color 0.2s;
+  }
+
+  .p-accordion .p-accordion-header a .p-accordion-toggle-icon {
+    color: $someButtons;
+  }
+
+  .p-accordion .p-accordion-header:not(.p-state-active):not(.p-disabled):hover a {
+    background-color: $mainPanelBorderColor;
+    border: 1px solid $mainPanelBorderColor;
+    color: $mainThemeColor;
+  }
+
+  .p-accordion .p-accordion-header:not(.p-state-active):not(.p-disabled):hover a .p-accordion-toggle-icon {
+    color: $mainThemeColor;
+  }
+
+  .p-accordion .p-accordion-header:not(.p-disabled).p-state-active a {
+    background-color: $mainThemeColor;
+    border: 1px solid $mainThemeColor;
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-accordion .p-accordion-header:not(.p-disabled).p-state-active a .p-accordion-toggle-icon {
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-accordion .p-accordion-header:not(.p-disabled).p-state-active:hover a {
+    border: 1px solid $mainThemeFocusColor;
+    background-color: $mainThemeFocusColor;
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-accordion .p-accordion-header:not(.p-disabled).p-state-active:hover a .p-accordion-toggle-icon {
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-accordion .p-accordion-content {
+    padding: 0.571em 1em;
+    border: 1px solid $mainPanelBorderColor;
+    background-color: $mainPanelBackground;
+    color: $generalMenuAndControlForegroundColor;
+  }
+
+  .p-toolbar {
+    background-color: $mainPanelBorderColor;
+    border: 1px solid $mainPanelBorderColor;
+    padding: 0.571em 1em;
+  }
+
+  .p-toolbar button {
+    vertical-align: middle;
+  }
+
+  .p-toolbar .p-toolbar-separator {
+    vertical-align: middle;
+    color: $someButtons;
+    margin: 0 0.5em;
+  }
+
+  .p-card {
+    background-color: $mainPanelBackground;
+    color: $generalMenuAndControlForegroundColor;
+    -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 2px 1px -1px rgba(0, 0, 0, 0.12);
+  }
+
+  .p-paginator {
+    background-color: $mainPanelAndButtonBackground;
+    border: 1px solid $mainPanelBorderColor;
+    padding: 0;
+  }
+
+  .p-paginator .p-paginator-first,
+  .p-paginator .p-paginator-prev,
+  .p-paginator .p-paginator-next,
+  .p-paginator .p-paginator-last {
+    color: $generalMenuAndControlForegroundColor;
+    height: 2.286em;
+    min-width: 2.286em;
+    border: 0 none;
+    line-height: 2.286em;
+    padding: 0;
+    margin: 0;
+    vertical-align: top;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+  }
+
+  .p-paginator .p-paginator-first:not(.p-disabled):not(.p-state-active):hover,
+  .p-paginator .p-paginator-prev:not(.p-disabled):not(.p-state-active):hover,
+  .p-paginator .p-paginator-next:not(.p-disabled):not(.p-state-active):hover,
+  .p-paginator .p-paginator-last:not(.p-disabled):not(.p-state-active):hover {
+    background-color: $generalMenuAndControlBackgroundColor;
+    color: $generalMenuAndControlForegroundColor;
+  }
+
+  .p-paginator .p-paginator-current {
+    color: $generalMenuAndControlForegroundColor;
+    height: 2.286em;
+    min-width: 2.286em;
+    line-height: 2.286em;
+  }
+
+  .p-paginator .p-dropdown {
+    border: 0 none;
+  }
+
+  .p-paginator .p-dropdown .p-dropdown-trigger, body .p-paginator .p-dropdown .p-dropdown-label {
+    color: $generalMenuAndControlForegroundColor;
+  }
+
+  .p-paginator .p-dropdown:hover .p-dropdown-trigger, body .p-paginator .p-dropdown:hover .p-dropdown-label {
+    color: $generalMenuAndControlForegroundColor;
+  }
+
+  .p-paginator .p-paginator-first:before {
+    position: relative;
+    top: 1px;
+  }
+
+  .p-paginator .p-paginator-prev:before {
+    position: relative;
+  }
+
+  .p-paginator .p-paginator-next:before {
+    position: relative;
+    top: 1px;
+  }
+
+  .p-paginator .p-paginator-last:before {
+    position: relative;
+    top: 1px;
+  }
+
+  .p-paginator .p-paginator-pages {
+    vertical-align: top;
+    display: inline-block;
+    padding: 0;
+  }
+
+  .p-paginator .p-paginator-pages .p-paginator-page {
+    color: $generalMenuAndControlForegroundColor;
+    height: 2.286em;
+    min-width: 2.286em;
+    border: 0 none;
+    line-height: 2.286em;
+    padding: 0;
+    margin: 0;
+    vertical-align: top;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+  }
+
+  .p-paginator .p-paginator-pages .p-paginator-page.p-state-active {
+    background-color: $mainThemeColor;
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-paginator .p-paginator-pages .p-paginator-page:not(.p-state-active):hover {
+    background-color: $generalMenuAndControlBackgroundColor;
+    color: $generalMenuAndControlForegroundColor;
+  }
+
+  .p-paginator .p-dropdown {
+    margin-left: 0.5em;
+    height: 2.286em;
+    min-width: auto;
+  }
+
+  .p-table .p-table-caption,
+  .p-table .p-table-summary {
+    background-color: $mainPanelBorderColor;
+    color: $generalMenuAndControlForegroundColor;
+    border: 1px solid $mainPanelBorderColor;
+    padding: 0.571em 1em;
+    text-align: center;
+  }
+
+  .p-table .p-table-caption {
+    border-bottom: 0 none;
+    font-weight: 700;
+  }
+
+  .p-table .p-table-summary {
+    border-top: 0 none;
+    font-weight: 700;
+  }
+
+  .p-table .p-table-thead > tr > th {
+    padding: 0.571em 0.857em;
+    border: 1px solid $mainPanelBorderColor;
+    font-weight: 700;
+    color: $generalMenuAndControlForegroundColor;
+    background-color: $mainPanelAndButtonBackground;
+  }
+
+  .p-table .p-table-tbody > tr > td {
+    padding: 0.571em 0.857em;
+  }
+
+  .p-table .p-table-tfoot > tr > td {
+    padding: 0.571em 0.857em;
+    border: 1px solid $mainPanelBorderColor;
+    font-weight: 700;
+    color: $generalMenuAndControlForegroundColor;
+    background-color: $mainPanelAndButtonBackground;
+  }
+
+  .p-table .p-sortable-column .p-sortable-column-icon {
+    color: $someButtons;
+  }
+
+  .p-table .p-sortable-column:not(.p-highlight):hover {
+    background-color: $generalMenuAndControlBackgroundColor;
+    color: $generalMenuAndControlForegroundColor;
+  }
+
+  .p-table .p-sortable-column:not(.p-highlight):hover .p-sortable-column-icon {
+    color: $generalMenuAndControlForegroundColor;
+  }
+
+  .p-table .p-sortable-column.p-highlight {
+    background-color: $mainThemeColor;
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-table .p-sortable-column.p-highlight .p-sortable-column-icon {
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-table .p-editable-column input {
+    font-size: 14px;
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  }
+
+  .p-table .p-editable-column input:focus {
+    outline: 1px solid $mainThemeColor;
+    outline-offset: 2px;
+  }
+
+  .p-table .p-table-tbody > tr {
+    background-color: $mainPanelBackground;
+    color: $generalMenuAndControlForegroundColor;
+  }
+
+  .p-table .p-table-tbody > tr > td {
+    background-color: inherit;
+    border: 1px solid $mainPanelBorderColor;
+  }
+
+  .p-table .p-table-tbody > tr.p-highlight {
+    background-color: $mainThemeColor;
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-table .p-table-tbody > tr.p-highlight a {
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-table .p-table-tbody > tr.p-contextmenu-selected {
+    background-color: $mainThemeColor;
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-table .p-table-tbody > tr.p-table-dragpoint-bottom > td {
+    -webkit-box-shadow: inset 0 -2px 0 0 $mainThemeColor;
+    -moz-box-shadow: inset 0 -2px 0 0 $mainThemeColor;
+    box-shadow: inset 0 -2px 0 0 $mainThemeColor;
+  }
+
+  .p-table .p-table-tbody > tr:nth-child(even) {
+    background-color: $mainPanelBackground;
+  }
+
+  .p-table .p-table-tbody > tr:nth-child(even).p-highlight {
+    background-color: $mainThemeColor;
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-table .p-table-tbody > tr:nth-child(even).p-highlight a {
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-table .p-table-tbody > tr:nth-child(even).p-contextmenu-selected {
+    background-color: $mainThemeColor;
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-table.p-table-hoverable-rows .p-table-tbody > tr.p-selectable-row:not(.p-highlight):not(.p-contextmenu-selected):hover {
+    cursor: pointer;
+    background-color: $generalMenuAndControlBackgroundColor;
+    color: $generalMenuAndControlForegroundColor;
+  }
+
+  .p-table .p-column-resizer-helper {
+    background-color: $mainThemeColor;
+  }
+
+  @media screen and (max-width: 40em) {
+    .p-table.p-table-responsive .p-paginator-top {
+      border-bottom: 1px solid $mainPanelBorderColor;
+    }
+    .p-table.p-table-responsive .p-paginator-bottom {
+      border-top: 1px solid $mainPanelBorderColor;
+    }
+    .p-table.p-table-responsive .p-table-tbody > tr > td {
+      border: 0 none;
+    }
+  }
+
+  .p-datagrid .p-datagrid-header {
+    background-color: $mainPanelBorderColor;
+    color: $generalMenuAndControlForegroundColor;
+    border: 1px solid $mainPanelBorderColor;
+    padding: 0.571em 1em;
+    font-weight: 700;
+    border-bottom: 0 none;
+  }
+
+  .p-datagrid .p-datagrid-content {
+    padding: 0.571em 1em;
+    border: 1px solid $mainPanelBorderColor;
+    background-color: $mainPanelBackground;
+    color: $generalMenuAndControlForegroundColor;
+    padding: 0.571em 1em;
+  }
+
+  .p-datagrid .p-datagrid-footer {
+    background-color: $mainPanelBackground;
+    color: $generalMenuAndControlForegroundColor;
+    border: 1px solid $mainPanelBorderColor;
+    padding: 0.571em 1em;
+    border-top: 0 none;
+  }
+
+  .p-datalist .p-datalist-header {
+    background-color: $mainPanelBorderColor;
+    color: $generalMenuAndControlForegroundColor;
+    border: 1px solid $mainPanelBorderColor;
+    padding: 0.571em 1em;
+    font-weight: 700;
+    border-bottom: 0 none;
+  }
+
+  .p-datalist .p-datalist-content {
+    padding: 0.571em 1em;
+    border: 1px solid $mainPanelBorderColor;
+    background-color: $mainPanelBackground;
+    color: $generalMenuAndControlForegroundColor;
+  }
+
+  .p-datalist .p-datalist-footer {
+    background-color: $mainPanelBackground;
+    color: $generalMenuAndControlForegroundColor;
+    border: 1px solid $mainPanelBorderColor;
+    padding: 0.571em 1em;
+    border-top: 0 none;
+  }
+
+  .p-datascroller .p-datascroller-header {
+    background-color: $mainPanelBorderColor;
+    color: $generalMenuAndControlForegroundColor;
+    border: 1px solid $mainPanelBorderColor;
+    padding: 0.571em 1em;
+    font-weight: 700;
+    border-bottom: 0 none;
+  }
+
+  .p-datascroller .p-datascroller-content {
+    padding: 0.571em 1em;
+    border: 1px solid $mainPanelBorderColor;
+    background-color: $mainPanelBackground;
+    color: $generalMenuAndControlForegroundColor;
+  }
+
+  .p-datascroller .p-datascroller-footer {
+    background-color: $mainPanelBackground;
+    color: $generalMenuAndControlForegroundColor;
+    border: 1px solid $mainPanelBorderColor;
+    padding: 0.571em 1em;
+    border-top: 0 none;
+  }
+
+  .p-virtualscroller .p-virtualscroller-header {
+    background-color: $mainPanelBorderColor;
+    color: $generalMenuAndControlForegroundColor;
+    border: 1px solid $mainPanelBorderColor;
+    padding: 0.571em 1em;
+    font-weight: 700;
+    border-bottom: 0 none;
+  }
+
+  .p-virtualscroller .p-virtualscroller-content {
+    border: 1px solid $mainPanelBorderColor;
+    background-color: $mainPanelBackground;
+    color: $generalMenuAndControlForegroundColor;
+  }
+
+  .p-virtualscroller .p-virtualscroller-content .p-virtualscroller-list li {
+    border-bottom: 1px solid $mainPanelBorderColor;
+  }
+
+  .p-virtualscroller .p-virtualscroller-footer {
+    background-color: $mainPanelBackground;
+    color: $generalMenuAndControlForegroundColor;
+    border: 1px solid $mainPanelBorderColor;
+    padding: 0.571em 1em;
+    border-top: 0 none;
+  }
+
+  .p-dataview .p-dataview-header {
+    background-color: $mainPanelBorderColor;
+    color: $generalMenuAndControlForegroundColor;
+    border: 1px solid $mainPanelBorderColor;
+    padding: 0.571em 1em;
+    font-weight: 700;
+    border-bottom: 0 none;
+  }
+
+  .p-dataview .p-dataview-content {
+    padding: 0.571em 1em;
+    border: 1px solid $mainPanelBorderColor;
+    background-color: $mainPanelBackground;
+    color: $generalMenuAndControlForegroundColor;
+  }
+
+  .p-dataview .p-dataview-footer {
+    background-color: $mainPanelBackground;
+    color: $generalMenuAndControlForegroundColor;
+    border: 1px solid $mainPanelBorderColor;
+    padding: 0.571em 1em;
+    border-top: 0 none;
+  }
+
+  .fc th {
+    background-color: $mainPanelBorderColor;
+    border: 1px solid $mainPanelBorderColor;
+    color: #000000;
+    /*padding: 0.571em 1em;*/
+  }
+
+  .fc td.p-component-content {
+    background-color: $mainPanelBackground;
+    border: 1px solid $mainPanelBorderColor;
+    color: $generalMenuAndControlForegroundColor;
+  }
+
+  .fc td.fc-head-container {
+    border: 1px solid $mainPanelBorderColor;
+  }
+
+  .fc .fc-row {
+    border-right: 1px solid $mainPanelBorderColor;
+  }
+
+  .fc .fc-event {
+    background-color: $mainThemeHoverColor;
+    border: 1px solid #000000;
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .fc .fc-toolbar .fc-button {
+    color: $formButtonAndManyOthersColor;
+    background-color: $mainThemeColor;
+    border: 1px solid $mainThemeColor;
+    font-size: 14px;
+    -moz-transition: background-color 0.2s, box-shadow 0.2s;
+    -o-transition: background-color 0.2s, box-shadow 0.2s;
+    -webkit-transition: background-color 0.2s, box-shadow 0.2s;
+    transition: background-color 0.2s, box-shadow 0.2s;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+  }
+
+  .fc .fc-toolbar .fc-button:enabled:hover {
+    background-color: $mainThemeHoverColor;
+    color: $formButtonAndManyOthersColor;
+    border-color: $mainThemeHoverColor;
+  }
+
+  .fc .fc-toolbar .fc-button .fc-icon-chevron-left {
+    font-family: "PrimeIcons" !important;
+    text-indent: 0;
+  }
+
+  .fc .fc-toolbar .fc-button .fc-icon-chevron-left:before {
+    content: "";
+  }
+
+  .fc .fc-toolbar .fc-button .fc-icon-chevron-right {
+    font-family: "PrimeIcons" !important;
+    text-indent: 0;
+  }
+
+  .fc .fc-toolbar .fc-button .fc-icon-chevron-right:before {
+    content: "";
+  }
+
+  .fc .fc-toolbar .fc-button:focus {
+    outline: 0 none;
+    outline-offset: 0;
+    -webkit-box-shadow: 0 0 0 0.2em $mainLightDropShadowColor;
+    -moz-box-shadow: 0 0 0 0.2em $mainLightDropShadowColor;
+    box-shadow: 0 0 0 0.2em $mainLightDropShadowColor;
+  }
+
+  .fc .fc-toolbar .fc-button-group .fc-button {
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+  }
+
+  .fc .fc-toolbar .fc-button-group .fc-button:first-child {
+    -moz-border-radius-topleft: 3px;
+    -webkit-border-top-left-radius: 3px;
+    border-top-left-radius: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+  }
+
+  .fc .fc-toolbar .fc-button-group .fc-button:last-child {
+    -moz-border-radius-topright: 3px;
+    -webkit-border-top-right-radius: 3px;
+    border-top-right-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -webkit-border-bottom-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+
+  .fc .fc-divider {
+    background-color: $mainPanelBorderColor;
+    border: 1px solid $mainPanelBorderColor;
+  }
+
+  .p-fluid .fc .fc-toolbar .fc-button {
+    width: auto;
+  }
+
+  .p-picklist .p-picklist-buttons button {
+    font-size: 16px;
+  }
+
+  .p-picklist .p-picklist-caption {
+    background-color: $mainPanelBorderColor;
+    color: $generalMenuAndControlForegroundColor;
+    border: 1px solid $mainPanelBorderColor;
+    padding: 0.571em 1em;
+    font-weight: 700;
+    border-bottom: 0 none;
+    -moz-border-radius-topleft: 3px;
+    -webkit-border-top-left-radius: 3px;
+    border-top-left-radius: 3px;
+    -moz-border-radius-topright: 3px;
+    -webkit-border-top-right-radius: 3px;
+    border-top-right-radius: 3px;
+  }
+
+  .p-picklist .p-picklist-filter-container {
+    padding: 0.429em 0.857em 0.429em 0.857em;
+    border: 1px solid $mainPanelBorderColor;
+    color: $generalMenuAndControlForegroundColor;
+    background-color: $mainPanelAndButtonBackground;
+    margin: 0;
+    border-bottom: 0 none;
+  }
+
+  .p-picklist .p-picklist-filter-container input.p-picklist-filter {
+    width: 100%;
+    padding-right: 2em;
+    text-indent: 0;
+  }
+
+  .p-picklist .p-picklist-filter-container .p-picklist-filter-icon {
+    top: 50%;
+    margin-top: -0.5em;
+    left: auto;
+    right: 1.357em;
+    color: $mainPanelAndButtonBackground;
+  }
+
+  .p-picklist .p-picklist-buttons {
+    padding: 0.571em 1em;
+  }
+
+  .p-picklist .p-picklist-list {
+    border: 1px solid $mainPanelBorderColor;
+    background-color: $mainPanelBackground;
+    color: $generalMenuAndControlForegroundColor;
+    padding: 0;
+  }
+
+  .p-picklist .p-picklist-list .p-picklist-item {
+    padding: 0.429em 0.857em;
+    margin: 0;
+    border: 0 none;
+    color: $generalMenuAndControlForegroundColor;
+    background-color: transparent;
+  }
+
+  .p-picklist .p-picklist-list .p-picklist-item:not(.p-highlight):hover {
+    background-color: $generalMenuAndControlBackgroundColor;
+    color: $generalMenuAndControlForegroundColor;
+  }
+
+  .p-picklist .p-picklist-list .p-picklist-item.p-highlight {
+    background-color: $mainThemeColor;
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-picklist .p-picklist-list .p-picklist-droppoint-highlight {
+    background-color: $mainThemeColor;
+  }
+
+  @media (max-width: 40em) {
+    .p-picklist.p-picklist-responsive .p-picklist-buttons {
+      padding: 0.571em 1em;
+    }
+  }
+
+  .p-orderlist .p-orderlist-controls {
+    padding: 0.571em 1em;
+  }
+
+  .p-orderlist .p-orderlist-controls button {
+    font-size: 16px;
+  }
+
+  .p-orderlist .p-orderlist-caption {
+    background-color: $mainPanelBorderColor;
+    color: $generalMenuAndControlForegroundColor;
+    border: 1px solid $mainPanelBorderColor;
+    padding: 0.571em 1em;
+    font-weight: 700;
+    border-bottom: 0 none;
+    -moz-border-radius-topleft: 3px;
+    -webkit-border-top-left-radius: 3px;
+    border-top-left-radius: 3px;
+    -moz-border-radius-topright: 3px;
+    -webkit-border-top-right-radius: 3px;
+    border-top-right-radius: 3px;
+  }
+
+  .p-orderlist .p-orderlist-filter-container {
+    padding: 0.429em 0.857em 0.429em 0.857em;
+    border: 1px solid $mainPanelBorderColor;
+    color: $generalMenuAndControlForegroundColor;
+    background-color: $mainPanelAndButtonBackground;
+    margin: 0;
+    border-bottom: 0 none;
+  }
+
+  .p-orderlist .p-orderlist-filter-container input.p-inputtext {
+    width: 100%;
+    padding-right: 2em;
+    text-indent: 0;
+  }
+
+  .p-orderlist .p-orderlist-filter-container .p-orderlist-filter-icon {
+    top: 50%;
+    margin-top: -0.5em;
+    left: auto;
+    right: 1.357em;
+    color: $mainPanelAndButtonBackground;
+  }
+
+  .p-orderlist .p-orderlist-list {
+    border: 1px solid $mainPanelBorderColor;
+    background-color: $mainPanelBackground;
+    color: $generalMenuAndControlForegroundColor;
+    padding: 0;
+  }
+
+  .p-orderlist .p-orderlist-list .p-orderlist-item {
+    padding: 0.429em 0.857em;
+    margin: 0;
+    border: 0 none;
+    color: $generalMenuAndControlForegroundColor;
+    background-color: transparent;
+  }
+
+  .p-orderlist .p-orderlist-list .p-orderlist-item:not(.p-highlight):hover {
+    background-color: $generalMenuAndControlBackgroundColor;
+    color: $generalMenuAndControlForegroundColor;
+  }
+
+  .p-orderlist .p-orderlist-list .p-orderlist-item.p-highlight {
+    background-color: $mainThemeColor;
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-orderlist .p-orderlist-list .p-orderlist-droppoint-highlight {
+    background-color: $mainThemeColor;
+  }
+
+  .p-tree {
+    border: 1px solid $mainPanelBorderColor;
+    background-color: $mainPanelBackground;
+    color: $generalMenuAndControlForegroundColor;
+    padding: 0.571em 1em;
+  }
+
+  .p-tree .p-tree-container {
+    padding: 0.286em;
+    margin: 0;
+  }
+
+  .p-tree .p-tree-container .p-treenode {
+    padding: 0.143em 0;
+  }
+
+  .p-tree .p-tree-container .p-treenode .p-treenode-content {
+    padding: 0;
+    border: 1px solid transparent;
+  }
+
+  .p-tree .p-tree-container .p-treenode .p-treenode-content .p-tree-toggler {
+    vertical-align: middle;
+    display: inline-block;
+    float: none;
+    margin: 0 0.143em 0 0;
+    color: $someButtons;
+  }
+
+  .p-tree .p-tree-container .p-treenode .p-treenode-content .p-treenode-icon {
+    vertical-align: middle;
+    display: inline-block;
+    margin: 0 0.143em 0 0;
+    color: $someButtons;
+  }
+
+  .p-tree .p-tree-container .p-treenode .p-treenode-content .p-treenode-label {
+    margin: 0;
+    vertical-align: middle;
+    display: inline-block;
+    padding: 0.286em;
+  }
+
+  .p-tree .p-tree-container .p-treenode .p-treenode-content .p-treenode-label.p-highlight {
+    background-color: $mainThemeColor;
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-tree .p-tree-container .p-treenode .p-treenode-content .p-checkbox {
+    margin: 0 0.5em 0 0;
+  }
+
+  .p-tree .p-tree-container .p-treenode .p-treenode-content .p-checkbox .p-checkbox-icon {
+    margin: 1px 0 0 0;
+  }
+
+  .p-tree .p-tree-container .p-treenode .p-treenode-content.p-treenode-selectable .p-treenode-label:not(.p-highlight):hover {
+    background-color: $generalMenuAndControlBackgroundColor;
+    color: $generalMenuAndControlForegroundColor;
+  }
+
+  .p-tree .p-tree-container .p-treenode .p-treenode-content > span {
+    line-height: inherit;
+  }
+
+  .p-tree .p-tree-container .p-treenode .p-treenode-content.p-treenode-dragover {
+    background-color: $generalMenuAndControlBackgroundColor;
+    color: $generalMenuAndControlForegroundColor;
+  }
+
+  .p-tree .p-tree-container .p-treenode-droppoint.p-treenode-droppoint-active {
+    background-color: $mainThemeColor;
+  }
+
+  .p-tree.p-tree-horizontal {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .p-tree.p-tree-horizontal .p-treenode .p-treenode-content {
+    border: 1px solid $mainPanelBorderColor;
+    background-color: $mainPanelBackground;
+    color: $generalMenuAndControlForegroundColor;
+    padding: 0.571em 1em;
+  }
+
+  .p-tree.p-tree-horizontal .p-treenode .p-treenode-content.p-highlight {
+    background-color: $mainThemeColor;
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-tree.p-tree-horizontal .p-treenode .p-treenode-content .p-checkbox .p-icon {
+    color: $mainThemeColor;
+  }
+
+  .p-tree.p-tree-horizontal .p-treenode .p-treenode-content .p-treenode-label:not(.p-highlight):hover {
+    background-color: inherit;
+    color: inherit;
+  }
+
+  .p-tree.p-tree-horizontal .p-treenode .p-treenode-content.p-treenode-selectable:not(.p-highlight):hover {
+    background-color: $generalMenuAndControlBackgroundColor;
+    color: $generalMenuAndControlForegroundColor;
+  }
+
+  .p-tree .p-tree-filter-container .p-tree-filter {
+    width: 100%;
+    padding-right: 2em;
+  }
+
+  .p-tree .p-tree-filter-container .p-tree-filter-icon {
+    top: 50%;
+    left: auto;
+    margin-top: -0.5em;
+    right: 0.8em;
+    color: $mainPanelAndButtonBackground;
+  }
+
+  .p-organizationchart .p-organizationchart-node-content.p-organizationchart-selectable-node:not(.p-highlight):hover {
+    background-color: $generalMenuAndControlBackgroundColor;
+    color: $generalMenuAndControlForegroundColor;
+  }
+
+  .p-organizationchart .p-organizationchart-node-content.p-highlight {
+    background-color: $mainThemeColor;
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-organizationchart .p-organizationchart-node-content.p-highlight .p-node-toggler i {
+    color: #805a00;
+  }
+
+  .p-organizationchart .p-organizationchart-line-down {
+    background-color: $mainPanelBorderColor;
+  }
+
+  .p-organizationchart .p-organizationchart-line-left {
+    border-right: 1px solid $mainPanelBorderColor;
+    border-color: $mainPanelBorderColor;
+  }
+
+  .p-organizationchart .p-organizationchart-line-top {
+    border-top: 1px solid $mainPanelBorderColor;
+    border-color: $mainPanelBorderColor;
+  }
+
+  .p-organizationchart .p-organizationchart-node-content {
+    border: 1px solid $mainPanelBorderColor;
+    background-color: $mainPanelBackground;
+    color: $generalMenuAndControlForegroundColor;
+    padding: 0.571em 1em;
+  }
+
+  .p-organizationchart .p-organizationchart-node-content .p-node-toggler {
+    bottom: -0.7em;
+    margin-left: -0.46em;
+    color: $someButtons;
+  }
+
+  .p-carousel {
+    padding: 0;
+  }
+
+  .p-carousel .p-carousel-header {
+    background-color: $mainPanelBorderColor;
+    color: $generalMenuAndControlForegroundColor;
+    padding: 0.571em 1em;
+    border: 1px solid $mainPanelBorderColor;
+    margin: 0;
+    font-weight: 700;
+  }
+
+  .p-carousel .p-carousel-header .p-carousel-header-title {
+    padding: 0;
+  }
+
+  .p-carousel .p-carousel-viewport {
+    border: 1px solid $mainPanelBorderColor;
+    background-color: $mainPanelBackground;
+    color: $generalMenuAndControlForegroundColor;
+    padding: 0;
+  }
+
+  .p-carousel .p-carousel-viewport .p-carousel-items .p-carousel-item {
+    border: 1px solid $mainPanelBorderColor;
+  }
+
+  .p-carousel .p-carousel-footer {
+    background-color: $mainPanelBorderColor;
+    color: $generalMenuAndControlForegroundColor;
+    padding: 0.571em 1em;
+    border: 1px solid $mainPanelBorderColor;
+    margin: 0;
+  }
+
+  .p-carousel .p-carousel-button {
+    color: $someButtons;
+    -moz-transition: color 0.2s;
+    -o-transition: color 0.2s;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+  }
+
+  .p-carousel .p-carousel-button.p-carousel-next-button:before {
+    content: "";
+  }
+
+  .p-carousel .p-carousel-button.p-carousel-prev-button:before {
+    content: "";
+  }
+
+  .p-carousel .p-carousel-button:not(.p-disabled):hover {
+    color: $generalMenuAndControlForegroundColor;
+  }
+
+  .p-carousel .p-carousel-page-links {
+    margin: 0.125em 0.5em;
+  }
+
+  .p-carousel .p-carousel-page-links .p-carousel-page-link {
+    color: $someButtons;
+    -moz-transition: color 0.2s;
+    -o-transition: color 0.2s;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+  }
+
+  .p-carousel .p-carousel-page-links .p-carousel-page-link:hover {
+    color: $generalMenuAndControlForegroundColor;
+  }
+
+  .p-treetable .p-treetable-caption,
+  .p-treetable .p-treetable-summary {
+    background-color: $mainPanelBorderColor;
+    color: $generalMenuAndControlForegroundColor;
+    border: 1px solid $mainPanelBorderColor;
+    padding: 0.571em 1em;
+    text-align: center;
+  }
+
+  .p-treetable .p-treetable-caption {
+    border-bottom: 0 none;
+    font-weight: 700;
+  }
+
+  .p-treetable .p-treetable-summary {
+    border-top: 0 none;
+    font-weight: 700;
+  }
+
+  .p-treetable .p-treetable-thead > tr > th {
+    padding: 0.571em 0.857em;
+    border: 1px solid $mainPanelBorderColor;
+    font-weight: 700;
+    color: $generalMenuAndControlForegroundColor;
+    background-color: $mainPanelAndButtonBackground;
+  }
+
+  .p-treetable .p-treetable-tbody > tr > td {
+    padding: 0.571em 0.857em;
+  }
+
+  .p-treetable .p-treetable-tfoot > tr > td {
+    padding: 0.571em 0.857em;
+    border: 1px solid $mainPanelBorderColor;
+    font-weight: 700;
+    color: $generalMenuAndControlForegroundColor;
+    background-color: $mainPanelAndButtonBackground;
+  }
+
+  .p-treetable .p-sortable-column .p-sortable-column-icon {
+    color: $someButtons;
+  }
+
+  .p-treetable .p-sortable-column:not(.p-highlight):hover {
+    background-color: $generalMenuAndControlBackgroundColor;
+    color: $generalMenuAndControlForegroundColor;
+  }
+
+  .p-treetable .p-sortable-column:not(.p-highlight):hover .p-sortable-column-icon {
+    color: $generalMenuAndControlForegroundColor;
+  }
+
+  .p-treetable .p-sortable-column.p-highlight {
+    background-color: $mainThemeColor;
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-treetable .p-sortable-column.p-highlight .p-sortable-column-icon {
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-treetable .p-editable-column input {
+    font-size: 14px;
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  }
+
+  .p-treetable .p-editable-column input:focus {
+    outline: 1px solid $mainThemeColor;
+    outline-offset: 2px;
+  }
+
+  .p-treetable .p-treetable-tbody > tr {
+    background-color: $mainPanelBackground;
+    color: $generalMenuAndControlForegroundColor;
+  }
+
+  .p-treetable .p-treetable-tbody > tr > td {
+    background-color: inherit;
+    border: 1px solid $mainPanelBorderColor;
+  }
+
+  .p-treetable .p-treetable-tbody > tr > td .p-treetable-toggler {
+    color: $someButtons;
+    vertical-align: middle;
+  }
+
+  .p-treetable .p-treetable-tbody > tr > td .p-treetable-checkbox {
+    vertical-align: middle;
+    margin-right: 0.5em;
+  }
+
+  .p-treetable .p-treetable-tbody > tr.p-highlight {
+    background-color: $mainThemeColor;
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-treetable .p-treetable-tbody > tr.p-highlight > td {
+    background-color: inherit;
+    border: 1px solid $mainPanelBorderColor;
+  }
+
+  .p-treetable .p-treetable-tbody > tr.p-highlight > td .p-treetable-toggler {
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-treetable .p-treetable-tbody > tr.p-contextmenu-selected {
+    background-color: $mainThemeColor;
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-treetable .p-treetable-tbody > tr.p-contextmenu-selected > td {
+    background-color: inherit;
+    border: 1px solid $mainPanelBorderColor;
+  }
+
+  .p-treetable .p-treetable-tbody > tr.p-contextmenu-selected > td .p-treetable-toggler {
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-treetable.p-treetable-hoverable-rows .p-treetable-tbody > tr:not(.p-highlight):not(.p-contextmenu-selected):hover {
+    cursor: pointer;
+    background-color: $generalMenuAndControlBackgroundColor;
+    color: $generalMenuAndControlForegroundColor;
+  }
+
+  .p-treetable .p-column-resizer-helper {
+    background-color: $mainThemeColor;
+  }
+
+  .p-messages {
+    padding: 1em;
+    margin: 1em 0;
+  }
+
+  .p-messages.p-messages-info {
+    background-color: #7fbcec;
+    border: 0 none;
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-messages.p-messages-info .p-messages-icon {
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-messages.p-messages-info .p-messages-close {
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-messages.p-messages-success {
+    background-color: #b7d8b7;
+    border: 0 none;
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-messages.p-messages-success .p-messages-icon {
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-messages.p-messages-success .p-messages-close {
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-messages.p-messages-warn {
+    background-color: #ffe399;
+    border: 0 none;
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-messages.p-messages-warn .p-messages-icon {
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-messages.p-messages-warn .p-messages-close {
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-messages.p-messages-error {
+    background-color: #f8b7bd;
+    border: 0 none;
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-messages.p-messages-error .p-messages-icon {
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-messages.p-messages-error .p-messages-close {
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-messages .p-messages-close {
+    top: 0.25em;
+    right: 0.5em;
+    font-size: 1.5em;
+  }
+
+  .p-messages .p-messages-icon {
+    font-size: 2em;
+  }
+
+  .p-message {
+    padding: 0.429em;
+    margin: 0;
+  }
+
+  .p-message.p-message-info {
+    background-color: #7fbcec;
+    border: 0 none;
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-message.p-message-info .p-message-icon {
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-message.p-message-success {
+    background-color: #b7d8b7;
+    border: 0 none;
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-message.p-message-success .p-message-icon {
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-message.p-message-warn {
+    background-color: #ffe399;
+    border: 0 none;
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-message.p-message-warn .p-message-icon {
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-message.p-message-error {
+    background-color: #f8b7bd;
+    border: 0 none;
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-message.p-message-error .p-message-icon {
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-message .p-message-icon {
+    font-size: 1.25em;
+  }
+
+  .p-message .p-message-text {
+    font-size: 1em;
+  }
+
+  .p-growl {
+    top: 70px;
+  }
+
+  .p-growl .p-growl-item-container {
+    margin: 0 0 1em 0;
+    opacity: 0.9;
+    filter: alpha(opacity=90);
+    -webkit-box-shadow: 0 3px 6px 0 $mainDarkDropShadowColor;
+    -moz-box-shadow: 0 3px 6px 0 $mainDarkDropShadowColor;
+    box-shadow: 0 3px 6px 0 $mainDarkDropShadowColor;
+  }
+
+  .p-growl .p-growl-item-container .p-growl-item {
+    padding: 1em;
+  }
+
+  .p-growl .p-growl-item-container .p-growl-item .p-growl-message {
+    margin: 0 0 0 4em;
+  }
+
+  .p-growl .p-growl-item-container .p-growl-item .p-growl-image {
+    font-size: 2.571em;
+  }
+
+  .p-growl .p-growl-item-container.p-growl-message-info {
+    background-color: #7fbcec;
+    border: 0 none;
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-growl .p-growl-item-container.p-growl-message-info .p-growl-image {
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-growl .p-growl-item-container.p-growl-message-success {
+    background-color: #b7d8b7;
+    border: 0 none;
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-growl .p-growl-item-container.p-growl-message-success .p-growl-image {
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-growl .p-growl-item-container.p-growl-message-warn {
+    background-color: #ffe399;
+    border: 0 none;
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-growl .p-growl-item-container.p-growl-message-warn .p-growl-image {
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-growl .p-growl-item-container.p-growl-message-error {
+    background-color: #f8b7bd;
+    border: 0 none;
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-growl .p-growl-item-container.p-growl-message-error .p-growl-image {
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-toast .p-toast-message {
+    -webkit-box-shadow: 0 3px 6px 0 $mainDarkDropShadowColor;
+    -moz-box-shadow: 0 3px 6px 0 $mainDarkDropShadowColor;
+    box-shadow: 0 3px 6px 0 $mainDarkDropShadowColor;
+    margin: 0 0 1em 0;
+  }
+
+  .p-toast .p-toast-message.p-toast-message-info {
+    background-color: #7fbcec;
+    border: 0 none;
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-toast .p-toast-message.p-toast-message-info .p-toast-close-icon {
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-toast .p-toast-message.p-toast-message-success {
+    background-color: #b7d8b7;
+    border: 0 none;
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-toast .p-toast-message.p-toast-message-success .p-toast-close-icon {
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-toast .p-toast-message.p-toast-message-warn {
+    background-color: #ffe399;
+    border: 0 none;
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-toast .p-toast-message.p-toast-message-warn .p-toast-close-icon {
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-toast .p-toast-message.p-toast-message-error {
+    background-color: #f8b7bd;
+    border: 0 none;
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-toast .p-toast-message.p-toast-message-error .p-toast-close-icon {
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-component-overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+
+  .p-overlaypanel {
+    background-color: $sixLightGrayBorder;
+    color: $generalMenuAndControlForegroundColor;
+    padding: 0;
+    border: 1px solid $sixLightGrayBorder;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+  }
+
+  .p-overlaypanel .p-overlaypanel-content {
+    padding: 0.571em 1em;
+  }
+
+  .p-overlaypanel .p-overlaypanel-close {
+    background-color: $mainThemeColor;
+    color: $formButtonAndManyOthersColor;
+    width: 1.538em;
+    height: 1.538em;
+    line-height: 1.538em;
+    text-align: center;
+    position: absolute;
+    top: -0.769em;
+    right: -0.769em;
+    -moz-transition: background-color 0.2s;
+    -o-transition: background-color 0.2s;
+    -webkit-transition: background-color 0.2s;
+    transition: background-color 0.2s;
+  }
+
+  .p-overlaypanel .p-overlaypanel-close:hover {
+    background-color: $mainThemeFocusColor;
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-overlaypanel .p-overlaypanel-close .p-overlaypanel-close-icon {
+    line-height: inherit;
+  }
+
+  .p-overlaypanel:after {
+    border-color: rgba(50, 50, 50, 0);
+    border-bottom-color: white;
+  }
+
+  .p-overlaypanel:before {
+    border-color: rgba(25, 25, 25, 0) !important;
+    border-bottom-color: $sixLightGrayBorder;
+  }
+
+  .p-overlaypanel.p-overlaypanel-flipped:after {
+    border-top-color: $mainPanelBackground;
+  }
+
+  .p-overlaypanel.p-overlaypanel-flipped:before {
+    border-top-color: $mainPanelBorderColor;
+  }
+
+  .p-dialog {
+    padding: 0;
+    -webkit-box-shadow: 0 0 6px 0 $mainDarkDropShadowColor;
+    -moz-box-shadow: 0 0 6px 0 $mainDarkDropShadowColor;
+    box-shadow: 0 0 6px 0 $mainDarkDropShadowColor;
+  }
+
+  .p-dialog .p-dialog-titlebar {
+    border: 1px solid $mainPanelBorderColor;
+    background-color: $mainPanelBorderColor;
+    color: $generalMenuAndControlForegroundColor;
+    padding: 1em;
+    font-weight: 700;
+    border-bottom: 0 none;
+  }
+
+  .p-dialog .p-dialog-titlebar .p-dialog-title {
+    margin: 0;
+    float: none;
+  }
+
+  .p-dialog .p-dialog-titlebar .p-dialog-titlebar-icon {
+    color: $someButtons;
+    border: 0 none;
+    padding: 0;
+    margin-left: 0.5em;
+    -moz-transition: color 0.2s;
+    -o-transition: color 0.2s;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+  }
+
+  .p-dialog .p-dialog-titlebar .p-dialog-titlebar-icon:hover {
+    color: $generalMenuAndControlForegroundColor;
+  }
+
+  .p-dialog .p-dialog-content {
+    background-color: $mainPanelBackground;
+    color: $generalMenuAndControlForegroundColor;
+    border: 1px solid $mainPanelBorderColor;
+    padding: 0.571em 1em;
+  }
+
+  .p-dialog .p-dialog-footer {
+    border: 1px solid $mainPanelBorderColor;
+    background-color: $mainPanelBackground;
+    color: $generalMenuAndControlForegroundColor;
+    padding: 0.571em 1em;
+    margin: 0;
+    text-align: right;
+    position: relative;
+    top: -1px;
+  }
+
+  .p-dialog .p-dialog-footer button {
+    margin: 0 0.5em 0 0;
+    width: auto;
+  }
+
+  .p-dialog.p-confirm-dialog .p-dialog-content {
+    padding: 1.5em;
+  }
+
+  .p-dialog.p-confirm-dialog .p-dialog-content > span {
+    float: none;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 14px;
+    margin: 0;
+  }
+
+  .p-dialog.p-confirm-dialog .p-dialog-content > span.p-icon {
+    margin-right: 0.35em;
+    font-size: 16px;
+  }
+
+  .p-sidebar {
+    background-color: $innerGradientBottom;
+    color: $generalMenuAndControlForegroundColor;
+    padding: 0.571em 1em;
+    border: 1px solid $mainPanelBorderColor;
+    -webkit-box-shadow: 0 0 6px 0 $mainDarkDropShadowColor;
+    -moz-box-shadow: 0 0 6px 0 $mainDarkDropShadowColor;
+    box-shadow: 0 0 6px 0 $mainDarkDropShadowColor;
+  }
+
+  .p-sidebar .p-sidebar-close {
+    color: $someButtons;
+  }
+
+  .p-sidebar .p-sidebar-close:hover {
+    color: $generalMenuAndControlForegroundColor;
+  }
+
+  .p-tooltip .p-tooltip-text {
+    background-color: $generalMenuAndControlBackgroundColor;
+    color: $generalMenuAndControlForegroundColor;
+    padding: 0.429em;
+    -webkit-box-shadow: 0 0 6px 0 $mainDarkDropShadowColor;
+    -moz-box-shadow: 0 0 6px 0 $mainDarkDropShadowColor;
+    box-shadow: 0 0 6px 0 $mainDarkDropShadowColor;
+  }
+
+  .p-tooltip.p-tooltip-right .p-tooltip-arrow {
+    border-right-color: $generalMenuAndControlBackgroundColor;
+  }
+
+  .p-tooltip.p-tooltip-left .p-tooltip-arrow {
+    border-left-color: $generalMenuAndControlBackgroundColor;
+  }
+
+  .p-tooltip.p-tooltip-top .p-tooltip-arrow {
+    border-top-color: $generalMenuAndControlBackgroundColor;
+  }
+
+  .p-tooltip.p-tooltip-bottom .p-tooltip-arrow {
+    border-bottom-color: $generalMenuAndControlBackgroundColor;
+  }
+
+  .p-lightbox {
+    -webkit-box-shadow: 0 0 6px 0 $mainDarkDropShadowColor;
+    -moz-box-shadow: 0 0 6px 0 $mainDarkDropShadowColor;
+    box-shadow: 0 0 6px 0 $mainDarkDropShadowColor;
+  }
+
+  .p-lightbox .p-lightbox-caption {
+    border: 1px solid $mainPanelBorderColor;
+    background-color: $mainPanelBorderColor;
+    color: $generalMenuAndControlForegroundColor;
+    padding: 0.571em 1em;
+    font-weight: 700;
+  }
+
+  .p-lightbox .p-lightbox-caption .p-lightbox-caption-text {
+    color: $generalMenuAndControlForegroundColor;
+    margin: 0;
+  }
+
+  .p-lightbox .p-lightbox-caption .p-lightbox-close {
+    padding: 0;
+    color: $someButtons;
+    -moz-transition: color 0.2s;
+    -o-transition: color 0.2s;
+    -webkit-transition: color 0.2s;
+    transition: color 0.2s;
+  }
+
+  .p-lightbox .p-lightbox-caption .p-lightbox-close:hover {
+    color: $generalMenuAndControlForegroundColor;
+  }
+
+  .p-lightbox .p-lightbox-content-wrapper {
+    overflow: hidden;
+    background-color: $mainPanelBackground;
+    color: $generalMenuAndControlForegroundColor;
+    border: 0 none;
+    padding: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+  }
+
+  .p-lightbox .p-lightbox-content-wrapper .p-lightbox-nav-left, body .p-lightbox .p-lightbox-content-wrapper .p-lightbox-nav-right {
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    font-size: 3em;
+    color: $generalMenuAndControlForegroundColor;
+    margin-top: -0.5em;
+  }
+
+  .p-lightbox .p-lightbox-content-wrapper .p-lightbox-nav-left:hover, body .p-lightbox .p-lightbox-content-wrapper .p-lightbox-nav-right:hover {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+  .p-lightbox .p-lightbox-content-wrapper .p-lightbox-content.p-lightbox-loading ~ a {
+    display: none;
+  }
+
+  .p-breadcrumb {
+    background-color: $mainPanelBackground;
+    border: 1px solid $mainPanelBorderColor;
+    padding: 0.571em 1em;
+  }
+
+  .p-breadcrumb ul li .p-menuitem-link {
+    color: $generalMenuAndControlForegroundColor;
+    margin: 0;
+  }
+
+  .p-breadcrumb ul li.p-breadcrumb-chevron {
+    margin: 0 0.5em 0 0.5em;
+    color: $someButtons;
+  }
+
+  .p-breadcrumb ul li:first-child a {
+    color: $someButtons;
+    margin: 0;
+  }
+
+  .p-breadcrumb ul li .p-menuitem-icon {
+    color: $someButtons;
+  }
+
+  .p-steps {
+    position: relative;
+  }
+
+  .p-steps .p-steps-item {
+    background-color: transparent;
+    text-align: center;
+  }
+
+  .p-steps .p-steps-item .p-menuitem-link {
+    display: inline-block;
+    text-align: center;
+    background-color: transparent;
+    overflow: hidden;
+  }
+
+  .p-steps .p-steps-item .p-menuitem-link .p-steps-number {
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    display: inline-block;
+    color: $generalMenuAndControlForegroundColor;
+    background-color: $mainPanelBorderColor;
+    border: 1px solid $mainPanelBorderColor;
+    position: relative;
+    top: 16px;
+    margin-bottom: 14px;
+    width: 28px;
+    height: 28px;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+  }
+
+  .p-steps .p-steps-item .p-menuitem-link .p-steps-title {
+    display: block;
+    margin-top: 6px;
+    color: $generalMenuAndControlForegroundColor;
+  }
+
+  .p-steps .p-steps-item.p-highlight .p-steps-number {
+    background: $mainThemeColor;
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-steps .p-steps-item.p-highlight .p-steps-title {
+    font-weight: 700;
+    color: $generalMenuAndControlForegroundColor;
+  }
+
+  .p-steps .p-steps-item:last-child .p-menuitem-link {
+    display: block;
+  }
+
+  .p-steps:before {
+    content: " ";
+    border-top: 1px solid $mainPanelBorderColor;
+    width: 100%;
+    top: 45%;
+    left: 0;
+    display: block;
+    position: absolute;
+  }
+
+  .p-menu .p-menuitem-link,
+  .p-menubar .p-menuitem-link,
+  .p-tieredmenu .p-menuitem-link,
+  .p-contextmenu .p-menuitem-link,
+  .p-megamenu .p-menuitem-link,
+  .p-slidemenu .p-menuitem-link {
+    padding: 0.714em 0.857em;
+    color: $generalMenuAndControlForegroundColor;
+    font-weight: normal;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+  }
+
+  .p-menu .p-menuitem-link .p-menuitem-text,
+  .p-menubar .p-menuitem-link .p-menuitem-text,
+  .p-tieredmenu .p-menuitem-link .p-menuitem-text,
+  .p-contextmenu .p-menuitem-link .p-menuitem-text,
+  .p-megamenu .p-menuitem-link .p-menuitem-text,
+  .p-slidemenu .p-menuitem-link .p-menuitem-text {
+    color: $generalMenuAndControlForegroundColor;
+  }
+
+  .p-menu .p-menuitem-link .p-menuitem-icon,
+  .p-menubar .p-menuitem-link .p-menuitem-icon,
+  .p-tieredmenu .p-menuitem-link .p-menuitem-icon,
+  .p-contextmenu .p-menuitem-link .p-menuitem-icon,
+  .p-megamenu .p-menuitem-link .p-menuitem-icon,
+  .p-slidemenu .p-menuitem-link .p-menuitem-icon {
+    color: $generalMenuAndControlForegroundColor;
+    margin-right: 0.5em;
+  }
+
+  .p-menu .p-menuitem-link:hover,
+  .p-menubar .p-menuitem-link:hover,
+  .p-tieredmenu .p-menuitem-link:hover,
+  .p-contextmenu .p-menuitem-link:hover,
+  .p-megamenu .p-menuitem-link:hover,
+  .p-slidemenu .p-menuitem-link:hover {
+    background-color: $generalMenuAndControlBackgroundColor;
+  }
+
+  .p-menu .p-menuitem-link:hover .p-menuitem-text,
+  .p-menubar .p-menuitem-link:hover .p-menuitem-text,
+  .p-tieredmenu .p-menuitem-link:hover .p-menuitem-text,
+  .p-contextmenu .p-menuitem-link:hover .p-menuitem-text,
+  .p-megamenu .p-menuitem-link:hover .p-menuitem-text,
+  .p-slidemenu .p-menuitem-link:hover .p-menuitem-text {
+    color: $generalMenuAndControlForegroundColor;
+  }
+
+  .p-menu .p-menuitem-link:hover .p-menuitem-icon,
+  .p-menubar .p-menuitem-link:hover .p-menuitem-icon,
+  .p-tieredmenu .p-menuitem-link:hover .p-menuitem-icon,
+  .p-contextmenu .p-menuitem-link:hover .p-menuitem-icon,
+  .p-megamenu .p-menuitem-link:hover .p-menuitem-icon,
+  .p-slidemenu .p-menuitem-link:hover .p-menuitem-icon {
+    color: $generalMenuAndControlForegroundColor;
+  }
+
+  .p-menu {
+    padding: 0;
+    background-color: $mainPanelAndButtonBackground;
+    border: 1px solid $mainPanelBorderColor;
+  }
+
+  .p-menu .p-menuitem {
+    margin: 0;
+  }
+
+  .p-menu.p-shadow {
+    border: 1px solid $mainPanelBorderColor;
+    -webkit-box-shadow: 0 0px 6px 0 $mainDarkDropShadowColor;
+    -moz-box-shadow: 0 0px 6px 0 $mainDarkDropShadowColor;
+    box-shadow: 0 0px 6px 0 $mainDarkDropShadowColor;
+  }
+
+  .p-menu .p-submenu-header {
+    margin: 0;
+    padding: 0.714em 0.857em;
+    color: $generalMenuAndControlForegroundColor;
+    background-color: $mainPanelBorderColor;
+    font-weight: 700;
+    border: 0 none;
+  }
+
+  .p-menu .p-menu-separator {
+    border: 1px solid $mainPanelBorderColor;
+    border-width: 1px 0 0 0;
+  }
+
+  .p-menubar {
+    padding: 0;
+    background-color: $mainPanelAndButtonBackground;
+    border: 1px solid $mainPanelBorderColor;
+  }
+
+  .p-menubar .p-menubar-root-list > .p-menuitem > .p-menuitem-link {
+    padding: 0.714em 0.857em;
+  }
+
+  .p-menubar .p-menubar-root-list > .p-menu-separator {
+    border: 1px solid $mainPanelBorderColor;
+    border-width: 0 0 0 1px;
+  }
+
+  .p-menubar .p-submenu-list {
+    padding: 0;
+    background-color: $mainPanelAndButtonBackground;
+    border: 1px solid $mainPanelBorderColor;
+    -webkit-box-shadow: 0 0px 6px 0 $mainDarkDropShadowColor;
+    -moz-box-shadow: 0 0px 6px 0 $mainDarkDropShadowColor;
+    box-shadow: 0 0px 6px 0 $mainDarkDropShadowColor;
+  }
+
+  .p-menubar .p-submenu-list .p-menuitem {
+    margin: 0;
+  }
+
+  .p-menubar .p-submenu-list .p-menu-separator {
+    border: 1px solid $mainPanelBorderColor;
+    border-width: 1px 0 0 0;
+  }
+
+  .p-menubar .p-menuitem {
+    margin: 0;
+  }
+
+  .p-menubar .p-menuitem.p-menuitem-active > .p-menuitem-link {
+    background-color: $mainThemeColor;
+  }
+
+  .p-menubar .p-menuitem.p-menuitem-active > .p-menuitem-link .p-menuitem-text {
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-menubar .p-menuitem.p-menuitem-active > .p-menuitem-link .p-menuitem-icon, body .p-menubar .p-menuitem.p-menuitem-active > .p-menuitem-link .p-submenu-icon {
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-contextmenu {
+    padding: 0;
+    background-color: $mainPanelAndButtonBackground;
+    border: 1px solid $mainPanelBorderColor;
+    -webkit-box-shadow: 0 0px 6px 0 $mainDarkDropShadowColor;
+    -moz-box-shadow: 0 0px 6px 0 $mainDarkDropShadowColor;
+    box-shadow: 0 0px 6px 0 $mainDarkDropShadowColor;
+  }
+
+  .p-contextmenu .p-submenu-list {
+    padding: 0;
+    background-color: $mainPanelAndButtonBackground;
+    border: 1px solid $mainPanelBorderColor;
+    -webkit-box-shadow: 0 0px 6px 0 $mainDarkDropShadowColor;
+    -moz-box-shadow: 0 0px 6px 0 $mainDarkDropShadowColor;
+    box-shadow: 0 0px 6px 0 $mainDarkDropShadowColor;
+  }
+
+  .p-contextmenu .p-menuitem {
+    margin: 0;
+  }
+
+  .p-contextmenu .p-menuitem .p-menuitem-link .p-submenu-icon {
+    right: 0.429em;
+  }
+
+  .p-contextmenu .p-menuitem.p-menuitem-active > .p-menuitem-link {
+    background-color: $mainThemeColor;
+  }
+
+  .p-contextmenu .p-menuitem.p-menuitem-active > .p-menuitem-link .p-menuitem-text {
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-contextmenu .p-menuitem.p-menuitem-active > .p-menuitem-link .p-menuitem-icon, body .p-contextmenu .p-menuitem.p-menuitem-active > .p-menuitem-link .p-submenu-icon {
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-contextmenu .p-menu-separator {
+    border: 1px solid $mainPanelBorderColor;
+    border-width: 1px 0 0 0;
+  }
+
+  .p-tieredmenu {
+    padding: 0;
+    background-color: $mainPanelAndButtonBackground;
+    border: 1px solid $mainPanelBorderColor;
+  }
+
+  .p-tieredmenu .p-submenu-list {
+    padding: 0;
+    background-color: $mainPanelAndButtonBackground;
+    border: 1px solid $mainPanelBorderColor;
+    -webkit-box-shadow: 0 0px 6px 0 $mainDarkDropShadowColor;
+    -moz-box-shadow: 0 0px 6px 0 $mainDarkDropShadowColor;
+    box-shadow: 0 0px 6px 0 $mainDarkDropShadowColor;
+  }
+
+  .p-tieredmenu .p-menuitem {
+    margin: 0;
+  }
+
+  .p-tieredmenu .p-menuitem .p-menuitem-link .p-submenu-icon {
+    right: 0.429em;
+  }
+
+  .p-tieredmenu .p-menuitem.p-menuitem-active > .p-menuitem-link {
+    background-color: $mainThemeColor;
+  }
+
+  .p-tieredmenu .p-menuitem.p-menuitem-active > .p-menuitem-link .p-menuitem-text {
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-tieredmenu .p-menuitem.p-menuitem-active > .p-menuitem-link .p-menuitem-icon, body .p-tieredmenu .p-menuitem.p-menuitem-active > .p-menuitem-link .p-submenu-icon {
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-tieredmenu .p-menu-separator {
+    border: 1px solid $mainPanelBorderColor;
+    border-width: 1px 0 0 0;
+  }
+
+  .p-slidemenu {
+    padding: 0;
+    background-color: $mainPanelAndButtonBackground;
+    border: 1px solid $mainPanelBorderColor;
+  }
+
+  .p-slidemenu .p-submenu-list {
+    padding: 0;
+    background-color: $mainPanelAndButtonBackground;
+    border: 0 none;
+  }
+
+  .p-slidemenu .p-menuitem {
+    margin: 0;
+  }
+
+  .p-slidemenu .p-menuitem .p-menuitem-link .p-submenu-icon {
+    right: 0.429em;
+  }
+
+  .p-slidemenu .p-menuitem.p-menuitem-active > .p-menuitem-link {
+    background-color: $mainThemeColor;
+  }
+
+  .p-slidemenu .p-menuitem.p-menuitem-active > .p-menuitem-link .p-menuitem-text {
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-slidemenu .p-menuitem.p-menuitem-active > .p-menuitem-link .p-menuitem-icon, body .p-slidemenu .p-menuitem.p-menuitem-active > .p-menuitem-link .p-submenu-icon {
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-slidemenu .p-slidemenu-backward {
+    margin: 0;
+    padding: 0.571em 1em;
+    color: $generalMenuAndControlForegroundColor;
+    background-color: $mainPanelBorderColor;
+    font-weight: 700;
+    border: 0 none;
+  }
+
+  .p-slidemenu .p-slidemenu-backward:hover {
+    background-color: $mainPanelBorderColor;
+    color: $generalMenuAndControlForegroundColor;
+  }
+
+  .p-slidemenu .p-menu-separator {
+    border: 1px solid $mainPanelBorderColor;
+    border-width: 1px 0 0 0;
+  }
+
+  .p-tabmenu {
+    border: 0 none;
+  }
+
+  .p-tabmenu .p-tabmenu-nav {
+    padding: 0;
+    background: transparent;
+    border-bottom: 1px solid $mainPanelBorderColor;
+  }
+
+  .p-tabmenu .p-tabmenu-nav .p-tabmenuitem {
+    position: static;
+    border: 1px solid $mainPanelBorderColor;
+    background-color: $mainPanelBorderColor;
+    margin-right: 2px;
+    margin-bottom: -1px;
+    -moz-transition: background-color 0.2s;
+    -o-transition: background-color 0.2s;
+    -webkit-transition: background-color 0.2s;
+    transition: background-color 0.2s;
+  }
+
+  .p-tabmenu .p-tabmenu-nav .p-tabmenuitem .p-menuitem-link {
+    color: $generalMenuAndControlForegroundColor;
+    padding: 0.571em 1em;
+  }
+
+  .p-tabmenu .p-tabmenu-nav .p-tabmenuitem .p-menuitem-link .p-menuitem-text {
+    color: $generalMenuAndControlForegroundColor;
+    margin-right: 0.5em;
+  }
+
+  .p-tabmenu .p-tabmenu-nav .p-tabmenuitem .p-menuitem-link .p-menuitem-icon {
+    color: $someButtons;
+    margin-right: 0.5em;
+  }
+
+  .p-tabmenu .p-tabmenu-nav .p-tabmenuitem:not(.p-state-active):not(.p-disabled):hover {
+    background-color: $mainPanelBorderColor;
+    border: 1px solid $mainPanelBorderColor;
+  }
+
+  .p-tabmenu .p-tabmenu-nav .p-tabmenuitem:not(.p-state-active):not(.p-disabled):hover .p-menuitem-link .p-menuitem-text {
+    color: $mainThemeColor;
+  }
+
+  .p-tabmenu .p-tabmenu-nav .p-tabmenuitem:not(.p-state-active):not(.p-disabled):hover .p-menuitem-link .p-menuitem-icon {
+    color: $generalMenuAndControlForegroundColor;
+  }
+
+  .p-tabmenu .p-tabmenu-nav .p-tabmenuitem.p-state-active {
+    background-color: $mainThemeColor;
+    border: 1px solid $mainThemeColor;
+  }
+
+  .p-tabmenu .p-tabmenu-nav .p-tabmenuitem.p-state-active .p-menuitem-link .p-menuitem-text {
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-tabmenu .p-tabmenu-nav .p-tabmenuitem.p-state-active .p-menuitem-link .p-menuitem-icon {
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-megamenu {
+    padding: 0;
+    background-color: $mainPanelAndButtonBackground;
+    border: 1px solid $mainPanelBorderColor;
+  }
+
+  .p-megamenu .p-megamenu-submenu-header {
+    margin: 0;
+    padding: 0.571em 1em;
+    color: $generalMenuAndControlForegroundColor;
+    background-color: $mainPanelBorderColor;
+    font-weight: 700;
+    border: 0 none;
+  }
+
+  .p-megamenu .p-megamenu-panel {
+    padding: 0;
+    background-color: $mainPanelAndButtonBackground;
+    border: 1px solid $mainPanelBorderColor;
+    -webkit-box-shadow: 0 0px 6px 0 $mainDarkDropShadowColor;
+    -moz-box-shadow: 0 0px 6px 0 $mainDarkDropShadowColor;
+    box-shadow: 0 0px 6px 0 $mainDarkDropShadowColor;
+  }
+
+  .p-megamenu .p-menuitem {
+    margin: 0;
+  }
+
+  .p-megamenu .p-menuitem .p-menuitem-link .p-submenu-icon {
+    right: 0.429em;
+  }
+
+  .p-megamenu .p-menuitem.p-menuitem-active > .p-menuitem-link {
+    background-color: $mainThemeColor;
+  }
+
+  .p-megamenu .p-menuitem.p-menuitem-active > .p-menuitem-link .p-menuitem-text {
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-megamenu .p-menuitem.p-menuitem-active > .p-menuitem-link .p-menuitem-icon, body .p-megamenu .p-menuitem.p-menuitem-active > .p-menuitem-link .p-submenu-icon {
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-megamenu.p-megamenu-vertical .p-megamenu-root-list > .p-menuitem > .p-menuitem-link > .p-submenu-icon {
+    right: 0.429em;
+  }
+
+  .p-panelmenu .p-icon {
+    position: static;
+  }
+
+  .p-panelmenu .p-panelmenu-header {
+    padding: 0;
+  }
+
+  .p-panelmenu .p-panelmenu-header > a {
+    border: 1px solid $mainPanelBorderColor;
+    background-color: $mainPanelBorderColor;
+    color: $generalMenuAndControlForegroundColor;
+    padding: 0.714em 0.857em;
+    font-weight: 700;
+    position: static;
+    font-size: 14px;
+    -moz-transition: background-color 0.2s;
+    -o-transition: background-color 0.2s;
+    -webkit-transition: background-color 0.2s;
+    transition: background-color 0.2s;
+  }
+
+  .p-panelmenu .p-panelmenu-header > a .p-panelmenu-icon {
+    color: $someButtons;
+  }
+
+  .p-panelmenu .p-panelmenu-header:not(.p-state-active) > a:hover {
+    outline: 0 none;
+    border: 1px solid $mainPanelBorderColor;
+    background-color: $mainPanelBorderColor;
+    color: $mainThemeColor;
+  }
+
+  .p-panelmenu .p-panelmenu-header:not(.p-state-active) > a:hover .p-panelmenu-icon {
+    color: $mainThemeColor;
+  }
+
+  .p-panelmenu .p-panelmenu-header.p-state-active > a {
+    border: 1px solid $mainThemeColor;
+    background-color: $mainThemeColor;
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-panelmenu .p-panelmenu-header.p-state-active > a .p-panelmenu-icon {
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-panelmenu .p-panelmenu-header.p-state-active > a:hover {
+    outline: 0 none;
+    border: 1px solid $mainThemeFocusColor;
+    background-color: $mainThemeFocusColor;
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-panelmenu .p-panelmenu-header.p-state-active > a:hover .p-panelmenu-icon {
+    color: $formButtonAndManyOthersColor;
+  }
+
+  .p-panelmenu .p-panelmenu-panel {
+    margin-top: 2px;
+  }
+
+  .p-panelmenu .p-panelmenu-panel:first-child {
+    margin-top: 0;
+  }
+
+  .p-panelmenu .p-panelmenu-content {
+    padding: 0;
+    background-color: $mainPanelAndButtonBackground;
+    border: 1px solid $mainPanelBorderColor;
+    margin-top: 0;
+    position: static;
+    border-top: 0 none;
+  }
+
+  .p-panelmenu .p-panelmenu-content .p-menuitem {
+    margin: 0;
+  }
+
+  .p-panelmenu .p-panelmenu-content .p-menuitem .p-menuitem-link {
+    padding: 0.714em 0.857em;
+    color: $generalMenuAndControlForegroundColor;
+  }
+
+  .p-panelmenu .p-panelmenu-content .p-menuitem .p-menuitem-link:hover {
+    background-color: $generalMenuAndControlBackgroundColor;
+  }
+
+  .p-panelmenu .p-panelmenu-content .p-menuitem .p-menuitem-link:hover .p-menuitem-icon, body .p-panelmenu .p-panelmenu-content .p-menuitem .p-menuitem-link:hover .p-panelmenu-icon {
+    color: $generalMenuAndControlForegroundColor;
+  }
+
+  .p-panelmenu .p-panelmenu-content .p-menuitem .p-menuitem-link:hover .p-menuitem-text {
+    color: $generalMenuAndControlForegroundColor;
+  }
+
+  .p-progressbar {
+    border: 0 none;
+    height: 24px;
+    background-color: #eaeaea;
+  }
+
+  .p-progressbar .p-progressbar-value {
+    border: 0 none;
+    margin: 0;
+    background: $mainThemeColor;
+  }
+
+  .p-progressbar .p-progressbar-label {
+    margin-top: 0;
+    color: $generalMenuAndControlForegroundColor;
+    line-height: 24px;
+  }
+
+  .p-galleria .p-galleria-nav-prev,
+  .p-galleria .p-galleria-nav-next {
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    position: absolute;
+    color: $someButtons;
+  }
+
+  .p-galleria .p-galleria-nav-prev:hover,
+  .p-galleria .p-galleria-nav-next:hover {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+
+  .p-galleria .p-galleria-nav-prev {
+    font-size: 16px;
+  }
+
+  .p-galleria .p-galleria-nav-next {
+    font-size: 16px;
+  }
+
+  .p-terminal {
+    background-color: $mainPanelBackground;
+    color: $generalMenuAndControlForegroundColor;
+    border: 1px solid $mainPanelBorderColor;
+    padding: 0.571em 1em;
+  }
+
+  .p-terminal .p-terminal-input {
+    font-size: 14px;
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+    height: 16px;
+  }
+
+  .p-terminal .p-terminal-command {
+    height: 16px;
+  }
+
+  .p-inplace {
+    min-height: 2.357em;
+  }
+
+  .p-inplace .p-inplace-display {
+    padding: 0.429em;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -moz-transition: background-color 0.2s;
+    -o-transition: background-color 0.2s;
+    -webkit-transition: background-color 0.2s;
+    transition: background-color 0.2s;
+  }
+
+  .p-inplace .p-inplace-display:not(.p-disabled):hover {
+    background-color: $generalMenuAndControlBackgroundColor;
+    color: $generalMenuAndControlForegroundColor;
+  }
+
+  .p-fluid .p-inplace.p-inplace-closable .p-inplace-content > :first-child {
+    display: inline-block;
+    width: calc(100% - 2.357em);
+  }
+
+  /* Add your customizations of theme here */
+  .redText {
+    color: $redText;
+  }
+
+  p-fieldset .p-fieldset-legend-text {
+    color: $fieldSetLegendTextColor !important;
+  }
+
+  /*
+  .preferencesView {
+    border: 1px solid transparent !important;
+    background: $innerGradientTop; !* Old browsers *!
+    background: -moz-linear-gradient(top, $innerGradientTop 0%, $innerGradientBottom 100%); !* FF3.6-15 *!
+    background: -webkit-linear-gradient(top, $innerGradientTop 0%, $innerGradientBottom 100%); !* Chrome10-25,Safari5.1-6 *!
+    background: linear-gradient(to bottom, $innerGradientTop 0%, $innerGradientBottom 100%); !* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ *!
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$innerGradientTop}', endColorstr='#{$innerGradientBottom}', GradientType=0); !* IE6-9 *!
+  }
+
+  #dailyCycleView {
+    background: $innerGradientTop; !* Old browsers *!
+    background: -moz-linear-gradient(top, $innerGradientTop 0%, $innerGradientBottom 100%); !* FF3.6-15 *!
+    background: -webkit-linear-gradient(top, $innerGradientTop 0%, $innerGradientBottom 100%); !* Chrome10-25,Safari5.1-6 *!
+    background: linear-gradient(to bottom, $innerGradientTop 0%, $innerGradientBottom 100%); !* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ *!
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$innerGradientTop}', endColorstr='#{$innerGradientBottom}', GradientType=0); !* IE6-9 *!
+  }
+
+  #dailyCycleView fieldset {
+    background: $innerGradientTop; !* Old browsers *!
+    background: -moz-linear-gradient(top, $innerGradientTop 0%, $innerGradientBottom 100%); !* FF3.6-15 *!
+    background: -webkit-linear-gradient(top, $innerGradientTop 0%, $innerGradientBottom 100%); !* Chrome10-25,Safari5.1-6 *!
+    background: linear-gradient(to bottom, $innerGradientTop 0%, $innerGradientBottom 100%); !* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ *!
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$innerGradientTop}', endColorstr='#{$innerGradientBottom}', GradientType=0); !* IE6-9 *!
+  }
+
+  .preferencesForm fieldset {
+    background: $innerGradientTop; !* Old browsers *!
+    background: -moz-linear-gradient(top, $innerGradientTop 0%, $innerGradientBottom 100%); !* FF3.6-15 *!
+    background: -webkit-linear-gradient(top, $innerGradientTop 0%, $innerGradientBottom 100%); !* Chrome10-25,Safari5.1-6 *!
+    background: linear-gradient(to bottom, $innerGradientTop 0%, $innerGradientBottom 100%); !* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ *!
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$innerGradientTop}', endColorstr='#{$innerGradientBottom}', GradientType=0); !* IE6-9 *!
+
+    padding-bottom: 10px !important;
+  }
+  */
+
+  .dropdown-menu a {
+    color: $dropdownMenuLinkColor;
+  }
+
+  .wsf-halfpart.wsfrightpart {
+    background-color: $mainMenuRightSideBackground !important;
+  }
+
+  #wstoggle, #wstoggle:hover {
+    color: $generalForeground !important;
+  }
+
+  #wstoggle span:before,
+  #wstoggle span:after {
+    background: $mainMenuToggleBackground !important;
+  }
+
+  .wsfbiglink li a {
+    color: $generalForeground !important;
+  }
+
+  .wsfbiglink li a.active {
+    color: $mainThemeColor !important;
+  }
+
+  .wsfbiglink li a:hover:after, .wsfbiglink li a:focus:after, .wsfbiglink li a:active:after {
+    background: $mainThemeColor !important;
+  }
+
+  .activePageImage, .activePageName {
+    color: $mainThemeColor !important;
+  }
+
+  #reportWrapper table {
+    color: $reportWrapperTableColor !important;
+  }
+
+  .row .label, .row .value {
+    color: $generalForeground !important;
+  }
+
+  .htmlReportForm .row .label, .htmlReportForm .row .value {
+    color: $htmlReportLabelColor !important;
+  }
+
+  /* hack to make button not on its own row for calendars with buttons */
+  .p-calendar.p-calendar-w-btn {
+    display: inline-flex !important;
+  }
+
+  .testEnvironment {
+    color: var(--testEnvironment_dark) !important;
+  }
+
+  .ag-row:hover .testEnvironment, .ag-row-selected .testEnvironment, .ag-row-selected:hover .testEnvironment,
+  .ag-row:hover .testEnvironment, .ag-row-selected:before .testEnvironment, .ag-row-selected:before:hover .testEnvironment {
+    color: var(--testEnvironment_hover_dark) !important;
+  }
+
+  .suspendedrow .testEnvironment, .ag-theme-balham-dark .ag-row.suspendedrow .testEnvironment {
+    color: var(--testEnvironmentSuspended_dark) !important;
+  }
+
+  .suspendedrow:hover .testEnvironment, .ag-theme-balham-dark .ag-row.suspendedrow:hover .testEnvironment {
+    color: var(--testEnvironmentSuspended_hover_dark) !important;
+  }
+
+  .ownuserrow, .ag-theme-balham-dark .ag-row.ownuserrow {
+    background-color: var(--ownuserrowRowBg_dark) !important;
+    color: var(--ownuserrowRowFg_dark);
+  }
+
+  .ownuserrow:hover .ag-cell, .ag-theme-balham-dark .ag-row.ownuserrow:hover .ag-cell {
+    background-color: var(--ownuserrowRowBg_hover_dark) !important;
+    color: var(--ownuserrowRowFg_hover_dark);
+  }
+
+  .stalerow, .ag-theme-balham-dark .ag-row.stalerow {
+    background-color: var(--staleRowBg_dark) !important;
+    color: var(--staleRowFg_dark);
+  }
+
+  .stalerow:hover .ag-cell, .ag-theme-balham-dark .ag-row.stalerow:hover .ag-cell {
+    background-color: var(--staleRowBg_hover_dark) !important;
+    color: var(--staleRowFg_hover_dark);
+  }
+
+  .suspended, .suspendedrow, .ag-theme-balham-dark .ag-row.suspended, .ag-theme-balham-dark .ag-row.suspendedrow {
+    background-color: var(--suspendedRowBg_dark) !important;
+    color: var(--suspendedRowFg_dark);
+  }
+
+  .ag-theme-balham-dark .ag-row-selected.suspended, .ag-theme-balham-dark .ag-row-selected.suspendedrow, .ag-row-selected .suspended, .ag-row-selected .suspendedrow,
+  .ag-theme-balham-dark .ag-row-selected:before.suspended, .ag-theme-balham-dark .ag-row-selected:before.suspendedrow, .ag-row-selected:before .suspended, .ag-row-selected:before .suspendedrow {
+    background-color: var(--suspendedRowBg_selected_dark) !important;
+    color: var(--suspendedRowFg_dark);
+  }
+
+  .suspendedrow:hover .ag-cell, .ag-theme-balham-dark .ag-row.suspendedrow:hover .ag-cell {
+    background-color: var(--suspendedRowBg_hover_dark) !important;
+    color: var(--suspendedRowFg_hover_dark);
+  }
+
+  .suspendedText, .ag-theme-balham-dark .ag-row.suspendedText {
+    color: var(--suspendedText_dark);
+  }
+
+  .selfLinkedPrevention, .ag-theme-balham-dark .ag-row.selfLinkedPrevention {
+    background-color: $selfLinkedPreventionBackground !important;
+    color: $selfLinkedPreventionForeground !important;
+  }
+
+  .selfLinkedPrevention:hover .ag-cell, .ag-theme-balham-dark .ag-row.selfLinkedPrevention:hover .ag-cell {
+    background-color: $selfLinkedPreventionBackgroundHover !important;
+    color: $selfLinkedPreventionForeground !important;
+  }
+
+  .ag-row-selected.selfLinkedPrevention .ag-cell {
+    color: $selfLinkedPreventionForegroundSelected !important;
+  }
+
+  .inactive, .ag-theme-balham-dark .ag-row.inactive {
+    background-color: var(--inactiveRowBg_dark);
+    color: var(--inactiveRowFg_dark);
+  }
+
+  .inactiverow:hover .ag-cell, .ag-theme-balham-dark .ag-row.inactiverow:hover .ag-cell {
+    background-color: var(--inactiveRowBg_hover_dark);
+    color: var(--inactiveRowFg_hover_dark);
+  }
+
+  .ag-row-selected .inactive, .ag-theme-balham-dark .ag-row-selected .inactive,
+  .ag-row-selected:before .inactive, .ag-theme-balham-dark:before .ag-row-selected .inactive {
+    background-color: var(--inactiveRowBg_selected_dark);
+    color: var(--inactiveRowFg_dark);
+  }
+
+  .ag-theme-balham-dark {
+    background-color: $agThemeBackground;
+  }
+
+  .popover-header {
+    background: linear-gradient(to bottom, $popoverHeaderBackgroundTop 0%, $popoverHeaderBackgroundBottom 100%);
+    color: black;
+  }
+
+  .popover-body {
+    background: linear-gradient(to bottom, $popoverBodyBackgroundTop 0%, $popoverBodyBackgroundBottom 100%);
+    color: black;
+  }
+
+  .popover-body td, .popover-body th {
+    padding: 5px;
+  }
+
+  .popover-body td {
+    color: black;
+  }
+
+  .popuptable .table .thead-light th {
+    color: $popupTableColor;
+    background-color: $popupTableBackground;
+    border-color: $popupTableBorderColor;
+  }
+
+  .popuptable .table-bordered th, .popuptable .table-bordered td {
+    border: 1px solid $popupTableBorderColor;
+    background: $popupTableTdBackground;
+  }
+
+  .ag-theme-balham-dark .auditGridDeleteRow, .ag-theme-balham-dark .ag-row-odd.auditGridDeleteRow {
+    background-color: $auditGridDeletedRowBackground !important;
+    color: $generalForeground;
+  }
+
+  .ag-theme-balham-dark .ag-row.auditGridDeleteRow:hover, .ag-theme-balham-dark .ag-row-odd.auditGridDeleteRow:hover {
+    background-color: $auditGridDeletedRowBackgroundHover !important;
+  }
+
+  .ag-theme-balham-dark .auditGridAddedRow, .ag-theme-balham-dark .ag-row-odd.auditGridAddedRow {
+    background-color: $auditGridAddedRowBackground !important;
+    color: $generalForeground;
+  }
+
+  .ag-theme-balham-dark .ag-row.auditGridAddedRow:hover, .ag-theme-balham-dark .ag-row-odd.auditGridAddedRow:hover {
+    background-color: $auditGridAddedRowBackgroundHover !important;
+  }
+
+  .ag-theme-balham-dark .auditGridEditedRow, .ag-theme-balham-dark .ag-grow-odd.auditGridEditedRow {
+    background-color: $auditGridEditedRowBackground !important;
+    color: $generalForeground;
+  }
+
+  .ag-theme-balham-dark .ag-row.auditGridEditedRow:hover, .ag-theme-balham-dark .ag-grow-odd.auditGridEditedRow:hover {
+    background-color: $auditGridEditedRowBackgroundHover !important;
+  }
+
+  .ag-floating-filter-button button {
+    height: 16px !important;
+    width: 16px !important;
+    margin-top: -7px !important;
+    margin-left: -5px !important;
+  }
+
+  .testRunColor {
+    color: $testRunColor;
+  }
+
+  .sk-cube-grid .sk-cube {
+    background-color: $loadingColor !important;
+  }
+
+  .line, .ring-1, .ring-2 {
+    border-color: $loadingColor !important;
+  }
+
+  .ball, .square, .bubble-1, .bubble-2, .bar {
+    background: $loadingColor !important;
+  }
+
+  .loader {
+    background-color: transparent !important;
+  }
+
+  .ag-icon.ag-icon-expanded {
+    color: $agIcon;
+  }
+
+  .ag-icon.ag-icon-expanded:hover {
+    color: $agIconExpanded;
+  }
+
+  .ngToolbarSelect {
+    background-color: $generalMenuAndControlBackgroundColor;
+    border: 1px solid #ababab;
+  }
+
+  .textAreaFormDescription {
+    color: $generalForeground;
+  }
+
+  .mainMenuBg {
+    background-color: $innerGradientTop;
+  }
+
+  .themeSpecificForeground {
+    color: $generalForeground;
+  }
+
+  .gridTitle {
+    color: $generalForeground !important;
+    font-family: Tahoma, Helvetica, serif;
+    height: 22px;
+    font-weight: 700;
+    line-height: 20px;
+    font-size: 10px;
+
+    border: 1px solid $innerGradientBorder !important;
+    background: $innerGradientTop; /* Old browsers */
+    background: -moz-linear-gradient(top, $innerGradientTop 0%, $innerGradientBottom 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, $innerGradientTop 0%, $innerGradientBottom 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, $innerGradientTop 0%, $innerGradientBottom 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{$innerGradientTop}', endColorstr='#{$innerGradientBottom}', GradientType=0); /* IE6-9 */
+  }
+
+  .stringSearchMatchedCell {
+    border: 1px solid var(--stringSearchMatch_dark) !important;
+  }
+
+  .loadingBlockerFormOuter {
+    border: 2px solid $loadingBlockerFormOuterBorderColor;
+  }
+
+  .fc-week-number span {
+    color: $fullCalendarWeekNumberColor;
+  }
+
+  .alert {
+    border-radius: 0;
+  }
+
+  .alert-danger {
+    color: #ffffff;
+    background-color: #9a000e;
+    border-left-color: #ff0018;
+    border-right-color: #ff0018;
+    border-bottom-color: #ff0018;
+    border-top-width: 0;
+    font-size: 14px;
+  }
+
+  .ag-theme-balham-dark .ag-overlay-loading-wrapper {
+    background-color: $agGridOverlayLoadingWrapperBackground !important;
+  }
+
+  .themeSpecificLabel {
+    color: $generalForeground;
+  }
+
+  .ag-theme-balham-dark .ag-row {
+    border-color: $agGridRowBorderColor;
+  }
+
+  .detailsPanelCollapseExpandButton {
+    color: $detailsPanelButtonForeground;
+  }
+
+  .detailsPanelCollapseExpandButton:hover {
+    color: $detailsPanelButtonForegroundHover;
+  }
+
+  .nav-item .nav-link .fas {
+    color: $navLinkIconColor !important;
+  }
+
+  .nav-item .nav-link.active .fas {
+    color: $navLinkIconColorHover !important;
+  }
+
+  .nav-item .nav-link:hover .fas {
+    color: $navLinkIconColorHover !important;
+  }
+
+  .nav-item .nav-link.logout-link:hover span {
+    color: $logoutLinkIconHover !important;
+  }
+
+  .p-calendar .p-calendar .p-button:enabled:hover, .p-calendar .p-calendar .p-button:focus {
+    border-left: 1px solid $inputBorder !important;
+  }
+
+  /*
+  .p-button:focus {
+    background-color: lighten($mainThemeColor, 20%) !important;
+    border-color: lighten($mainThemeColor, 20%) !important;
+  }
+  */
+
+  .p-timepicker {
+    background-color: $timepickerBackgroundColor;
+  }
+
+  #securityReferenceDialog input, #instrumentDetailsForm input {
+    color: $generalForeground !important;
+  }
+
+  .tooltip-inner {
+    max-width: 250px;
+    padding: 3px 8px;
+    color: $tooltipColor;
+    text-align: center;
+    background-color: $tooltipBackground;
+    border-radius: .25rem;
+    -webkit-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.36);
+    -moz-box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.36);
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.36);
+  }
+
+
+  .bs-tooltip-end .tooltip-arrow::before, .bs-tooltip-auto[data-popper-placement^=left] .tooltip-arrow::before {
+    border-left-color: $mainThemeColor;
+  }
+
+  .bs-tooltip-end .tooltip-arrow::before, .bs-tooltip-auto[data-popper-placement^=right] .tooltip-arrow::before {
+    border-right-color: $mainThemeColor;
+  }
+
+  .bs-tooltip-end .tooltip-arrow::before, .bs-tooltip-auto[data-popper-placement^=bottom] .tooltip-arrow::before {
+    border-bottom-color: $mainThemeColor;
+  }
+
+  .ngToolbarSelect {
+    background-color: white;
+    color: black;
+  }
+
+  .currencyHolidayCopyBorder {
+    border-bottom: 2px solid $currencyHolidayCopyBorder;
+  }
+
+  .ag-theme-balham-dark .ag-cell.ag-cell-inline-editing {
+    height: 21px !important;
+  }
+
+  .ag-menu .ag-tab-header {
+    background-color: $innerBackgroundStatic !important;
+  }
+
+  #dailyCycleView .running {
+    color: $dailyCycleRunningColor;
+  }
+
+  #dailyCycleView .not-running {
+    color: $generalForeground;
+  }
+
+  .modal-header .close:focus {
+    color: $modalDialogCloseButtonActive !important;
+  }
+
+  .modal-dialog .p-tabview {
+    box-shadow: none !important;
+  }
+
+  .modal-dialog .p-tabview .p-tabview-panels {
+    border: 0 !important;
+  }
+
+  .p-autocomplete-dd {
+    display: inline-flex !important;
+  }
+
+  .p-autocomplete-dd .p-inputtext {
+    border-top-right-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+    border-right: 0 none !important;
+  }
+
+  .p-autocomplete-dropdown, .p-autocomplete-dropdown:hover {
+    margin: 0 !important;
+    width: 32px !important;
+    min-width: 32px !important;
+    max-width: 32px !important;
+    height: 24px !important;
+    margin-top: 1px !important;
+    border-radius: 0 !important;
+  }
+
+  .serverConnectionLost p {
+    color: $generalForeground !important;
+  }
+
+  .ngToolbarButton:focus-visible, .ngToolbarButtonSelect:focus-visible, .ngToolbarButtonSelectDropdown:focus-visible {
+    border-color: black;
+    background: lighten($mainThemeColor, 7%) !important;
+  }
+
+  .p-tabview {
+    border: 0 none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .p-tabview .p-tabview-nav {
+    background: var(--surface-a);
+  }
+
+  .p-tabview .p-tabview-nav li {
+    vertical-align: bottom;
+    top: auto;
+    margin: 0 0.125em 0px 0;
+    border: 0 none;
+    -moz-transition: border-color 0.15s;
+    -o-transition: border-color 0.15s;
+    -webkit-transition: border-color 0.15s;
+    transition: border-color 0.15s;
+    border-radius: 0;
+  }
+
+  .p-tabview .p-tabview-panels {
+    height: 100%;
+    overflow: auto;
+  }
+
+  .p-tabview .p-tabview-panels .p-tabview-panel {
+    padding: 15px 20px 15px 20px;
+    height: 100%;
+    border-color: transparent !important;
+  }
+
+  .p-tabview-nav-container {
+    position: relative
+  }
+
+  .p-tabview-scrollable .p-tabview-nav-container {
+    overflow: hidden
+  }
+
+  .p-tabview-nav-content {
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    overscroll-behavior: contain auto
+  }
+
+  .p-tabview-nav {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    flex: 1 1 auto
+  }
+
+  .p-tabview-nav-link {
+    cursor: pointer;
+    -webkit-user-select: none;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    position: relative;
+    text-decoration: none;
+    overflow: hidden
+  }
+
+  .p-tabview-ink-bar {
+    display: none;
+    z-index: 1
+  }
+
+  .p-tabview-nav-link:focus {
+    z-index: 1
+  }
+
+  .p-tabview-title {
+    line-height: 1;
+    white-space: nowrap
+  }
+
+  .p-tabview-nav-btn {
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center
+  }
+
+  .p-tabview-nav-prev {
+    left: 0
+  }
+
+  .p-tabview-nav-next {
+    right: 0
+  }
+
+  .p-tabview-nav-content::-webkit-scrollbar {
+    display: none
+  }
+
+  .p-tabview-close {
+    z-index: 1
+  }
+
+  .p-tabview .p-tabview-nav li .p-tabview-nav-link {
+    color: #6c757d;
+    height: 43px;
+  }
+
+  .p-tabview-nav li, .p-tabview-nav a {
+    border-radius: 0 !important;
+  }
+
+  .p-tabview .p-tabview-nav li .p-tabview-nav-link {
+    height: 43px;
+  }
+
+  .p-tabview .p-tabview-nav li:not(.p-highlight):not(.p-disabled):hover .p-tabview-nav-link {
+    background: $sixLightGray;
+  }
+
+  .p-tabview .p-tabview-nav li.p-highlight .p-tabview-nav-link {
+    background: $sixRed;
+    color: white;
+    border-radius: 0 !important;
+    border-color: red;
+  }
+
+  .p-tabview .p-tabview-nav li .p-tabview-nav-link:not(.p-disabled):focus {
+    box-shadow: none !important;
+  }
+
+  .form-control {
+    color: black;
+  }
+
+  .form-control:focus {
+    box-shadow: none !important;
+  }
+
+  /*
+  .ag-header-viewport {
+    background: white;
+  }
+  */
+
+  /*
+  .ag-header-cell {
+    background: white;
+  }
+  */
+/*
+  .ag-header {
+    border-bottom: 2px solid black;
+  }*/
+
+  /*.ag-header-cell:hover {
+    background: #f3f3f3;
+  }
+*/
+  .ag-theme-alpine .ag-header-cell-menu-button:hover, .ag-theme-alpine .ag-side-button-button:hover, .ag-theme-alpine .ag-tab:hover, .ag-theme-alpine .ag-panel-title-bar-button:hover, .ag-theme-alpine .ag-header-expand-icon:hover, .ag-theme-alpine .ag-column-group-icons:hover, .ag-theme-alpine .ag-group-expanded .ag-icon:hover, .ag-theme-alpine .ag-group-contracted .ag-icon:hover, .ag-theme-alpine .ag-chart-settings-prev:hover, .ag-theme-alpine .ag-chart-settings-next:hover, .ag-theme-alpine .ag-group-title-bar-icon:hover, .ag-theme-alpine .ag-column-select-header-icon:hover, .ag-theme-alpine .ag-floating-filter-button-button:hover, .ag-theme-alpine .ag-filter-toolpanel-expand:hover, .ag-theme-alpine .ag-chart-menu-icon:hover {
+    color: $sixRed;
+  }
+
+  .ag-menu .ag-tab-selected {
+    background-color: #e1e1e1;
+  }
+
+  .p-button:focus {
+    box-shadow: none !important;
+  }
+
+  .spaceLeft {
+    margin-left: 5px;
+  }
+
+  /* adjusts size etc of the switch */
+  .custom-control.border-switch .border-switch-control-indicator {
+    top: -1px;
+  }
+
+  .custom-control.border-switch .border-switch-control-indicator {
+    height: 24px;
+    width: 40px
+  }
+
+  .custom-control.border-switch .border-switch-control-indicator::after {
+    width: 14px;
+    height: 14px;
+  }
+
+  .custom-control .border-switch-control-indicator::after {
+    top: 4px !important;
+  }
+
+  .custom-control.border-switch .border-switch-control-input:checked ~ .border-switch-control-indicator::after {
+    left: 21px;
+  }
+
+  .custom-control-label {
+    padding-left: 6px;
+    vertical-align: text-top;
+  }
+
+  .ag-icon.ag-icon-tree-closed, .ag-icon.ag-icon-tree-open {
+    margin-top: 6px;
+  }
+
+  .datepickerCellEditor input {
+    border: 0 !important;
+  }
+
+  .lpSchemeButton {
+    border: 1px solid gray;
+  }
+
+  #gridSearch label {
+    white-space: nowrap;
+  }
+
+  .visibly-disabled-checkbox {
+    opacity: 1 !important;
+  }
+
+  .p-multiselect-filter.p-inputtext {
+    height: 24px;
+  }
+
+  .p-multiselect-filter .p-icon-wrapper .p-icon {
+    margin-top: -2px;
+  }
+
+  .p-multiselect-trigger, .p-dropdown-trigger {
+    justify-content: right;
+  }
+
+  .tableMaintenanceListPanel li span {
+    font-size: 14px !important;
+  }
+
+  .tableMaintenanceListPanel .p-listbox-list-wrapper {
+    background: white;
+  }
+
+  textarea {
+    border-radius: 0 !important;
+  }
+
+  .p-dropdown:not(.p-disabled):hover {
+    border-color: black;
+  }
+
+  .border-switch-control-indicator::after {
+    top: 3px !important;
+  }
+
+  .p-inputnumber-input {
+    padding-left: 4px !important;
+    padding-top: 6px !important;
+  }
+
+  .p-button.p-button-icon-only {
+    padding: 0 !important;
+  }
+
+  .p-multiselect-filter-icon {
+    margin-top: -1px !important;
+  }
+
+  .gridColors input {
+    height: 26px;
+    border: 1px solid gray;
+  }
+
+  .p-multiselect-items-wrapper .p-multiselect-items {
+    padding-top: 0;
+  }
+
+  .innerProductionSection legend {
+    background: #bdc0ce !important;
+    color: black !important;
+  }
+  .innerTestSection legend {
+    background: #a9cfae !important;
+    color: black !important;
+  }
+  .productionLegend {
+    background: #0f2cc6 !important;
+    color: white !important;
+  }
+  .testLegend {
+    background: #0fc627 !important;
+    color: white !important;
+  }
+
+  #dailyCycleView .form-row, #dailyCycleView th, #dailyCycleView td, #dailyCycleView span {
+    background: transparent !important;
+  }
+
+  .ag-popup-editor {
+    box-shadow: none !important;
+  }
+
+  .ag-rich-select-row.ag-rich-select-row-selected {
+    color: white;
+  }
+
+  .csSegmentCellEditor {
+    top: -31px !important;
+    height: 32px !important;
+    //left: 98px !important;
+    border: 1px solid silver !important;
+  }
+
+  .formClearSelectButton  {
+    display: block !important;
+    color: #000 !important;
+    border: 1px solid gray !important;
+    border-radius: 2px !important;
+    white-space: nowrap !important;
+    overflow: visible !important;
+    padding: 0 !important;
+    width: 20px !important;
+    height: 20px !important;
+    background: rgb(255,255,255) !important;
+    background: linear-gradient(to bottom,rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%) !important;
+  }
+  .formClearSelectButton span {
+    vertical-align: unset !important;
+  }
+
+  #instrumentDetailsForm .testOnlySecurity {
+    background-color: green !important;
+    color: white !important;
+    opacity: 1 !important;
+    font-weight: bold !important;
+  }
+
+  .formClearSelectButton span {
+    margin-left: 1px;
+  }
+
+  .stiServicesCellEditor .p-multiselect-panel {
+    padding: 0 !important;
+  }
+
+  #eventReportsNumberOfBusinessDays {
+    border: 1px solid black;
+    height: 26px;
+    width: 100px;
+  }
+
+  .p-dropdown-panel .p-dropdown-items .p-dropdown-item:not(.p-highlight):not(.p-disabled):hover,
+  .p-autocomplete-panel .p-autocomplete-items .p-autocomplete-item:hover {
+    background-color: $sixDropdownHoverBackground;
+    color: white;
+  }
+
+  .ag-menu-option {
+    height: 26px;
+  }
+
+  .p-dropdown-item {
+    padding-left: 12px !important;
+  }
+
+  .ag-picker-field-display {
+    color: black !important;
+  }
+}

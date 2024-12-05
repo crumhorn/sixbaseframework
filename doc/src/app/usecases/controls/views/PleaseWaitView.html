@@ -1,0 +1,39 @@
+<div class="documentParent">
+  <div class="document">
+    <h1>Please Wait</h1>
+
+    <p class="description">This control is a simple blocking control that can be used for blocking the UI while something is loading. It displays an animated block of squares in the middle of the screen.</p>
+
+    <h2>Demo</h2>
+    <h3>Global</h3>
+    <p class="description">To show the loader, press the button. The loader will automatically turn off after 5 seconds.</p>
+    <p class="description">
+      <button pButton pRipple (click)="showLoader()">Show Global Blocker</button>
+    </p>
+    <h3>Local</h3>
+    <p class="description">To show the loader, press the button. The loader will automatically turn off after 5 seconds.</p>
+    <p class="description">
+      <button pButton pRipple (click)="showLoaderTwo()">Show Local Blocker</button>
+    </p>
+    <div style="width: 600px; height: 200px; border: 2px solid black; position: relative; display: flex"><div style="width: 100%; height: 100%; text-align: center; align-content: center; align-items: center; justify-content: center">This area will be blocked for 5 seconds.</div>
+      <PleaseWait [block]="blockTwo"></PleaseWait>
+    </div>
+
+
+    <h2>Setup</h2>
+    <p class="description">Import the control it into your module as follows: </p>
+    <pre><code [highlight]="pwInitCode" language="ts"></code></pre>
+
+    <p class="description">In your HTML then place this where you want the blocker to live:</p>
+    <pre><code [highlight]="pleaseWaitHtmlCode" language="html"></code></pre>
+    <h3>Global</h3>
+    <p class="description">It all depends where you place the control. If you just put it in an outer tag somewhere and don't control it with <i>style="position: relative"</i> it will by default block as much as it possibly can.</p>
+    <h3>Local</h3>
+    <p class="description">First, put the HTML code at the bottom of the root tag where it should block. Then make sure the parent element is set to <i>style="position: relative"</i> it will by default block as much as it possibly can.</p>
+
+
+
+  </div>
+</div>
+
+<PleaseWait [block]="block"></PleaseWait>

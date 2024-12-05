@@ -1,0 +1,36 @@
+<div class="documentParent" xmlns="http://www.w3.org/1999/html">
+  <div class="document">
+    <h1>Custom Annotations and the DecoratorRegistry</h1>
+
+    <p class="description">When the provided annotations are not enough, creating your own is the way to go. An annotation in Javscript is essentially a <i>Decorator</i> and is created by quite specific code. This section will go over creating your own and registering them with the <i>EntityMapper</i>.</p>
+
+    <h2>Sample Annotation (Decorator) named <i>&#64;Test</i></h2>
+    <pre><code [highlight]="sampleAnnotationCode"
+               language="ts"></code></pre>
+
+    <h2>DecoratorRegistry</h2>
+    <p class="description">All annotation registration (so that the <i>EntityMapper</i> is aware of your custom annotation) is done via the <i>DecoratorRegistry</i> service. First, inject the <i>DecoratorRegistry</i> in your constructor as as follows:
+
+    <pre><code [highlight]="constuctorCode"
+               language="ts"></code></pre>
+
+
+    <p class="description">We then register the annotation to it via:</p>
+    <pre><code [highlight]="sampleRegistrationCode"
+               language="ts"></code></pre>
+
+
+    <p class="description">Once it's registered, we can add it to our entity class where we wish to use it:</p>
+    <pre><code [highlight]="sampleUsageCode"
+               language="ts"></code></pre>
+
+    <p class="description">In this test case, the annotation would per the above code do the following:</p>
+    <ol type="1">
+      <li><p class="description">If there is a parameter passed along with the <i>&#64;Test()</i> annotation, such as <i>&#64;Test('Hi there!')</i>, then the value of "prop" will be "Hi there!"</p></li>
+      <li><p class="description">If there is no parameter passed along with the <i>&#64;Test()</i> annotation, then the value is "It worked!"</p></li>
+    </ol>
+
+
+
+  </div>
+</div>

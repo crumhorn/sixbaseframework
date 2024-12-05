@@ -1,0 +1,280 @@
+.modal-header {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,e5e5e5+100;White+3D */
+  background: rgb(255, 255, 255); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(229, 229, 229, 1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(229, 229, 229, 1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(229, 229, 229, 1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#e5e5e5', GradientType=0); /* IE6-9 */
+
+  border-radius: 0px !important;
+
+  padding: 3px 3px 3px 16px !important;
+  position: relative;
+
+  .modal-title {
+    font-size: 16px;
+    margin-left: 10px;
+  }
+
+  .close {
+    font-size: 34px;
+    text-shadow: none !important;
+    background-color: initial;
+    border: 0;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    opacity: .5;
+    position: absolute;
+    right: 0;
+  }
+
+  .close:hover {
+    color: red;
+  }
+}
+
+.edit-dialog {
+  .modal-header {
+    border-bottom: 1px solid #ed9017 !important;
+    background: #f6e6b4;
+    border-top: 4px solid #ed9017;
+  }
+}
+
+.add-dialog {
+  .modal-header {
+    border-bottom: 1px solid green !important;
+    background: #addd81;
+    border-top: 4px solid green;
+  }
+}
+
+.modal-footer {
+  border-radius: 0;
+
+  button {
+    min-width: 120px;
+    width: 120px;
+    margin-left: 10px;
+  }
+}
+
+.modal-body {
+  flex: 2;
+}
+
+.modal-content .card {
+  height: 100%;
+}
+
+.modal label {
+  flex-basis: content;
+}
+
+
+/** Stacked Modal Support */
+.modal.show {
+  -webkit-perspective: 2000px;
+  -moz-perspective: 2000px;
+  -ms-perspective: 2000px;
+  -o-perspective: 2000px;
+  perspective: 2000px;
+}
+
+.modal.show.aside {
+  -webkit-transform: -340px;
+  -moz-transform: -340px;
+  -ms-transform: -340px;
+  -o-transform: -340px;
+  transform: -340px;
+  -webkit-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  opacity: 0.6;
+}
+
+.modal.show.aside.aside-1 {
+  -webkit-transform: calc(-300px);
+  -moz-transform: calc(-300px);
+  -ms-transform: calc(-300px);
+  -o-transform: calc(-300px);
+  transform: calc(-300px);
+}
+
+.modal.show.aside.aside-2 {
+  -webkit-transform: calc(-260px);
+  -moz-transform: calc(-260px);
+  -ms-transform: calc(-260px);
+  -o-transform: calc(-260px);
+  transform: calc(-260px);
+}
+
+.modal.show.aside.aside-3 {
+  -webkit-transform: calc(-220px);
+  -moz-transform: calc(-220px);
+  -ms-transform: calc(-220px);
+  -o-transform: calc(-220px);
+  transform: calc(-220px);
+}
+
+.modal.show.aside.aside-4 {
+  -webkit-transform: calc(-180px);
+  -moz-transform: calc(-180px);
+  -ms-transform: calc(-180px);
+  -o-transform: calc(-180px);
+  transform: calc(-180px);
+}
+
+.modal.show.aside.aside-5 {
+  -webkit-transform: calc(-140px);
+  -moz-transform: calc(-140px);
+  -ms-transform: calc(-140px);
+  -o-transform: calc(-140px);
+  transform: calc(-140px);
+}
+
+.aside-1 .modal-dialog {
+  -webkit-transform: scale(0.8) rotateY(45deg) translateZ(calc(-300px)) !important;
+  -ms-transform: scale(0.8) rotateY(45deg) translateZ(calc(-300px)) !important;
+  -o-transform: scale(0.8) rotateY(45deg) translateZ(calc(-300px)) !important;
+  transform: scale(0.8) rotateY(45deg) translateZ(calc(-300px)) !important;
+}
+
+.aside-2 .modal-dialog {
+  -webkit-transform: scale(0.8) rotateY(45deg) translateZ(calc(-260px)) !important;
+  -ms-transform: scale(0.8) rotateY(45deg) translateZ(calc(-260px)) !important;
+  -o-transform: scale(0.8) rotateY(45deg) translateZ(calc(-260px)) !important;
+  transform: scale(0.8) rotateY(45deg) translateZ(calc(-260px)) !important;
+}
+
+.aside-3 .modal-dialog {
+  -webkit-transform: scale(0.8) rotateY(45deg) translateZ(calc(-220px)) !important;
+  -ms-transform: scale(0.8) rotateY(45deg) translateZ(calc(-220px)) !important;
+  -o-transform: scale(0.8) rotateY(45deg) translateZ(calc(-220px)) !important;
+  transform: scale(0.8) rotateY(45deg) translateZ(calc(-220px)) !important;
+}
+
+.aside-4 .modal-dialog {
+  -webkit-transform: scale(0.8) rotateY(45deg) translateZ(calc(-180px)) !important;
+  -ms-transform: scale(0.8) rotateY(45deg) translateZ(calc(-180px)) !important;
+  -o-transform: scale(0.8) rotateY(45deg) translateZ(calc(-180px)) !important;
+  transform: scale(0.8) rotateY(45deg) translateZ(calc(-180px)) !important;
+}
+
+.aside-5 .modal-dialog {
+  -webkit-transform: scale(0.8) rotateY(45deg) translateZ(calc(-140px)) !important;
+  -ms-transform: scale(0.8) rotateY(45deg) translateZ(calc(-140px)) !important;
+  -o-transform: scale(0.8) rotateY(45deg) translateZ(calc(-140px)) !important;
+  transform: scale(0.8) rotateY(45deg) translateZ(calc(-140px)) !important;
+}
+
+/** End Stacked Modal Support */
+.modal {
+
+  .title-arrow.right {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+  }
+
+  .title-arrow {
+    border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    vertical-align: middle;
+  }
+
+  .modal-header {
+    padding: 0 !important;
+    font-size: 16px;
+  }
+
+  .title-wrapper {
+    display: inline-flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+
+  .title-left {
+    background: #ed9017;
+    color: white;
+    padding: 5px 20px 5px 10px;
+  }
+
+  .title-middle {
+    width: 20px;
+    background: #f7cd97;
+    padding: 5px 20px 5px 10px;
+  }
+
+  .title-right {
+    padding-left: 10px;
+  }
+
+  &.add-dialog {
+    .title-left {
+      background: #008000;
+      color: white;
+    }
+
+    .title-middle {
+      display: none;
+    }
+
+    .title-arrow {
+      display: none;
+    }
+  }
+
+  &.edit-dialog {
+    .title-left {
+      background: #ed9017;
+      color: white;
+    }
+
+    .title-middle {
+      background: #f7cd97;
+    }
+
+    .title-arrow {
+      border-color: #ab732c;
+    }
+  }
+}
+
+.modal:before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px;
+}
+
+.modal-backdrop {
+  z-index: 50 !important;
+}
+
+.modal {
+  text-align: center;
+  padding: 0 !important;
+  z-index: 999 !important;
+}
+
+.modal:before {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
+  margin-right: -4px;
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+

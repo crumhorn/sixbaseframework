@@ -1,0 +1,42 @@
+<div class="documentParent" xmlns="http://www.w3.org/1999/html">
+  <div class="document">
+    <h1>Annotations and Decorators</h1>
+
+    <div class="description">Annotations on properties in your entities defines how the raw json properties are converted into real objects. For the most general usecases of mapping data (for example strings into Date objects), many annotations are provided by the framework.</div>
+
+    <div class="description">Example of annotation usage where a string UNIX date would be converted into a JS Date Object</div>
+    <pre><code [highlight]="exampleCode"
+               language="ts"></code></pre>
+
+
+    <p></p>
+    <div class="description">Here are the annotations that are in the framework already. If you need to convert things that are not covered here, please go on to the next section in the menu</div>
+    <p></p>
+
+    <h2>Provided Annotations</h2>
+    <table class="doc-table">
+      <thead>
+      <tr>
+        <th> name</th>
+        <th> usage</th>
+        <th> attributes</th>
+        <th> description</th>
+        <th> other info</th>
+        <th> example code</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let item of tableData">
+        <td><span class="doc-option-name" id="api.menu.props.model">{{ item.name }}<a class="doc-option-link"><i class="pi pi-link"></i></a></span></td>
+        <td><span class="doc-option-type">{{ item.usage }}</span></td>
+        <td><span id="api.menu.props.attributes" class="doc-option-light doc-option-default">{{ item.attributes }}</span></td>
+        <td><span id="api.menu.props.description" class="doc-option-description">{{ item.description }}</span></td>
+        <td><span id="api.menu.props.other" class="doc-option-description">{{ item.other }}</span></td>
+        <td><span id="api.menu.props.example" class="doc-option-description"><pre><code [highlight]="item.example"
+                                                                                        language="ts"></code></pre></span></td>
+      </tr>
+      </tbody>
+    </table>
+
+  </div>
+</div>

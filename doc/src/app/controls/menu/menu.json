@@ -1,0 +1,201 @@
+{
+  "data": [
+    {
+      "name": "Getting Started",
+      "icon": "pi pi-home",
+      "children": [
+        {
+          "name": "Installation",
+          "routerLink": "/install"
+        },
+        {
+          "name": "Configuration",
+          "routerLink": "/install/configuration"
+        },
+        {
+          "name": "Grid Module Config",
+          "routerLink": "/install/gridconfiguration",
+          "badge": "AgGrid"
+        }
+      ]
+    },
+    {
+      "name": "Base Classes",
+      "icon": "pi pi-objects-column",
+      "children": [
+        {
+          "name": "BaseControl",
+          "routerLink": "/baseClasses/baseControl"
+        },
+        {
+          "name": "BaseForm",
+          "routerLink": "/baseClasses/baseForm"
+        },
+        {
+          "name": "BaseGrid",
+          "routerLink": "/baseClasses/baseGrid",
+          "badge": "AgGrid"
+        },
+        {
+          "name": "BaseUsecaseModel",
+          "routerLink": "/baseClasses/baseUsecaseModel"
+        },
+        {
+          "name": "BaseView",
+          "routerLink": "/baseClasses/baseView"
+        }
+      ]
+    },
+    {
+      "name": "Entity Mapping",
+      "icon": "pi pi-compass",
+      "children": [
+        {
+          "name": "Core",
+          "children": [
+            {
+              "name": "Entity Mapping",
+              "routerLink": "/entityMapping"
+            },
+            {
+              "name": "Provided Annotations",
+              "routerLink": "/entityMapping/annotations"
+            },
+            {
+              "name": "Custom Annotations",
+              "routerLink": "/entityMapping/customAnnotations"
+            },
+            {
+              "name": "Entities Back to JSON",
+              "routerLink": "/entityMapping/reverseMapping"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Custom Controls",
+      "icon": "pi pi-th-large",
+      "children": [
+        {
+          "name": "Controls",
+          "children": [
+            {
+              "name": "AgGrid Inline Search",
+              "routerLink": "/controls/inlinesearch",
+              "badge": "AgGrid"
+            },
+            {
+              "name": "Split Layout View",
+              "routerLink": "/controls/splitlayout"
+            },
+            {
+              "name": "Split Layout Container",
+              "routerLink": "/controls/splitlayoutcontainer"
+            },
+            {
+              "name": "Toolbar",
+              "routerLink": "/controls/toolbar"
+            },
+            {
+              "name": "Please Wait",
+              "routerLink": "/controls/pleasewait"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Helpers",
+      "icon": "pi pi-th-large",
+      "children": [
+        {
+          "name": "ErrorHelper",
+          "routerLink": "/helpers/errorHelper"
+        },
+        {
+          "name": "ModalUtils",
+          "routerLink": "/helpers/modalUtils"
+        },
+        {
+          "name": "ColumnHelper",
+          "routerLink": "/helpers/columnHelper",
+          "badge": "AgGrid"
+        },
+        {
+          "name": "GridHelper",
+          "routerLink": "/helpers/gridHelper",
+          "badge": "AgGrid"
+        },
+        {
+          "name": "ContextMenuHelper",
+          "routerLink": "/helpers/contextMenuHelper",
+          "badge": "AgGrid"
+        },
+        {
+          "name": "ToolbarHelper",
+          "routerLink": "/helpers/toolbarHelper"
+        },
+        {
+          "name": "GridToolbarHelper",
+          "routerLink": "/helpers/gridToolbarHelper",
+          "badge": "AgGrid"
+        },
+        {
+          "name": "RegexHelper",
+          "routerLink": "/helpers/regexHelper"
+        }
+      ]
+    },
+    {
+      "name": "Utilities",
+      "icon": "pi pi-objects-column",
+      "children": [
+        {
+          "name": "DateUtils",
+          "routerLink": "/utilities/dateUtils"
+        },
+        {
+          "name": "ArrayUtils",
+          "routerLink": "/utilities/arrayUtils"
+        },
+        {
+          "name": "JsUtils",
+          "routerLink": "/utilities/jsUtils"
+        },
+        {
+          "name": "NumberUtils",
+          "routerLink": "/utilities/numberUtils"
+        },
+        {
+          "name": "PathUtils",
+          "routerLink": "/utilities/pathUtils"
+        },
+        {
+          "name": "StringUtils",
+          "routerLink": "/utilities/stringUtils"
+        }
+      ]
+    },
+    {
+      "name": "Resources",
+      "icon": "pi pi-file",
+      "children": [
+        {
+          "name": "File Resources",
+          "routerLink": "/fileResources"
+        }
+      ]
+    },
+    {
+      "name": "Help",
+      "icon": "pi pi-question",
+      "children": [
+        {
+          "name": "How to get help",
+          "routerLink": "/howToGetHelp"
+        }
+      ]
+    }
+  ]
+}

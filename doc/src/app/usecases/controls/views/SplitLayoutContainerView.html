@@ -1,0 +1,45 @@
+<div class="documentParent">
+  <div class="document">
+    <h1>Split Layout Container View</h1>
+
+    <p class="description">The split layout container control is generally considered to be used together with the <i>SplitLayoutContainer</i> control. It essentially allows you to create content in different sections of the control. It also shows expand and collapse and maximize buttons in the header. If you wish to use this control without a split layout parent, please set <i>[standalone]="true"</i>, which will hide functionality related to the split view.</p>
+
+    <h2>Demo</h2>
+    <p class="description">Here is an example of how the <i>SplitLayoutContainer</i> works, showing each section with a bit of text. If you maximize a view, scroll up to the top to see it (as that's how it's set up for this demo, the location is up to you)</p>
+
+    <div style="width: 100%; height: 400px; border: 1px solid black; position: relative">
+      <SplitLayoutContainer [header]="header" [body]="body" [toolbar]="toolbar" [footer]="footer" headerName="I am the container" [standalone]="true">
+        <ng-template #header>
+          I am in the #header area
+        </ng-template>
+        <ng-template #toolbar>
+          <div style="display: flex; align-items: center; background: black; color: white; height: 30px; padding-left: 10px">I'm in the #toolbar area</div>
+        </ng-template>
+        <ng-template #body>
+          <div style="padding: 10px">
+            Hi! I'm #body
+          </div>
+        </ng-template>
+        <ng-template #footer>
+          <div style="display: flex; align-items: center; background: black; color: white; height: 30px; padding-left: 10px">I'm in the #footer area</div>
+        </ng-template>
+      </SplitLayoutContainer>
+    </div>
+    <p></p>
+
+    <h2>Sections</h2>
+    <p class="description">Each section that you wish to use is defined via parameters:</p>
+    <pre><code [highlight]="definitionCode" language="ts"></code></pre>
+
+    <p class="description">And each section is then defined inside of the tag with templates:</p>
+    <pre><code [highlight]="templateCode" language="ts"></code></pre>
+
+    <p class="description">Here is an example that essentially makes up the demo above, which defines all sections (<i>header</i>, <i>body</i>, <i>toolbar</i>, <i>footer</i>):</p>
+    <pre><code [highlight]="demoCode" language="ts"></code></pre>
+
+    <h2>Styling and Images</h2>
+    <p class="description">See the same documentation for this in the <a [routerLink]="'/controls/splitlayout'"><i>SplitLayoutView</i></a> control.</p>
+
+  </div>
+</div>
+

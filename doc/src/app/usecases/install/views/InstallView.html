@@ -1,0 +1,56 @@
+
+
+<div class="documentParent">
+  <div class="document">
+    <h1>Installation</h1>
+
+    <h3>Latest Version is:</h3>
+    <p class="description">{{ this.latestVersion }} - Released {{ this.releaseDate }}</p>
+
+    <h2>Command Line</h2>
+
+    <h3>Globally</h3>
+    <pre><code [highlight]='"npm install -g @six-group/base-angular-framework"'
+               language="dos"></code>
+</pre>
+
+    <p></p>
+
+    <h3>Locally</h3>
+    <pre><code [highlight]='"npm install @six-group/base-angular-framework"'
+               language="dos"></code>
+</pre>
+
+    <p></p>
+
+    <h2>Project</h2>
+    <p class="description">In your dependencies in your <i>package.json</i> file, include the following in your dependencies:</p>
+    <pre><code [highlight]="depCode"
+               language="json"></code>
+</pre>
+
+    <p></p>
+
+    <h2>From Source</h2>
+    <a href="https://gitlab.six-group.net/six/angbase/base">Here is the Gitlab Repository</a>
+
+    <h2>Necessary imports in your project</h2>
+    <p class="description">Due to third party dependencies you will need the following your <i>package.json</i></p>
+
+    <pre><code [highlight]="packageDepCode"
+               language="json"></code></pre>
+
+    <h2>AgGrid features</h2>
+      <p class="description">If you are using the <i>AgGrid</i> features you will also need the following in your <i>package.json</i></p>
+
+    <pre><code [highlight]="agGridDeps"
+               language="json"></code></pre>
+
+       <h2>angular.json (adapt to your theme choices)</h2>
+
+      <pre><code [highlight]="angJsonCode"
+                 language="json"></code></pre>
+
+
+  </div>
+</div>

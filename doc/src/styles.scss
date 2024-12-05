@@ -1,0 +1,202 @@
+.document {
+  font-family: 'Inter var', sans-serif !important;
+  font-feature-settings: 'liga' 1, 'calt' 1 !important; /* fix for Chrome */
+}
+
+@supports (font-variation-settings: normal) {
+  .document {
+    font-family: 'Inter var', sans-serif !important;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 1.5rem 0 1rem;
+  font-family: "Inter var", sans-serif;
+  font-weight: 600;
+  line-height: 1.2;
+  color: var(--surface-900);
+}
+
+pre {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+  word-wrap: break-word;
+}
+
+code {
+  flex: 1;
+  line-height: 1.8em;
+  font-size: 14px;
+  min-height: 100%;
+  padding: 1em 1.2em;
+  overflow-x: unset;
+  overflow-y: unset;
+}
+
+.hljs.hljs-line-numbers {
+  padding: 0 !important;
+}
+
+pre .hljs {
+  border: none;
+  transition: border ease 1s;
+}
+
+.hljs-ln {
+  tr {
+    &:first-child td {
+      padding-top: 10px !important;
+    }
+
+    &:last-child td {
+      padding-bottom: 10px !important;
+    }
+  }
+}
+
+table,
+tbody,
+tr,
+td {
+  background: inherit;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  background: inherit;
+}
+
+/* for block of numbers */
+td.hljs-ln-numbers {
+  position: sticky;
+  left: 0;
+  user-select: none;
+  text-align: center;
+  color: #cccccc6b;
+  border-right: 1px solid #cccccc1c;
+  vertical-align: top;
+  padding-right: 10px !important;
+  padding-left: 10px !important;
+}
+
+/* for block of code */
+td.hljs-ln-code {
+  padding-left: 10px !important;
+}
+
+.smallTitle {
+  color: black;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.mediumTitle {
+  color: black;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+code {
+  border-radius: 10px;
+}
+
+.code {
+  padding: 0;
+  font-style: italic;
+}
+
+.desc {
+  margin-bottom: 6px;
+}
+
+.documentParent {
+  display: flex;
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+.document {
+  border-radius: 5px;
+  padding: 10px;
+  justify-content: center;
+  //margin: 0 auto;
+  max-width: 1000px;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 0;
+  min-width: 0;
+}
+
+.document a {
+  font-size: 1.125rem;
+  color: #3B82F6;
+  font-weight: 500;
+  transition: all .2s;
+  border-radius: 6px;
+  text-decoration: none;
+}
+.document a:hover {
+  text-decoration: underline;
+}
+
+.description {
+  font-size: 1.125rem;
+  color: var(--surface-900);
+}
+
+.description> i {
+  border-radius: 6px;
+  padding: 2px 6px;
+  font-size: 1rem;
+  font-weight: 500;
+  font-style: normal;
+  background-color: #e2e8f0;
+  color: #334155;
+}
+
+p {
+  line-height: 1.75;
+  margin: 0 0 1rem;
+}
+
+.app-title {
+  font-size: 38px;
+  font-weight: 700;
+}
+
+.stringSearchMatchedCell {
+  border: 2px solid orchid !important;
+}
+
+.inline-search-active-in-grid {
+  border: 2px solid blue;
+}
+
+.highlightText {
+  background: yellow !important;
+  border: 1px solid red !important;
+  color: black !important;
+}
+
+.slcLayoutHeaderContainer {
+  border: 1px solid #cfcfcf !important;
+  background: #cfcfcf !important;
+}
+
+.ngToolbar button {
+  color: white;
+}
+.ngToolbar button:hover {
+  color: black;
+}
+
+.loader-hidden {
+  visibility: collapse;
+  display: none;
+}
+
+pre {
+  font-size: 14px;
+}

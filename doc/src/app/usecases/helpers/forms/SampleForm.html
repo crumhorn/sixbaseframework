@@ -1,0 +1,26 @@
+<div class="modal-header">
+  <h4 class="modal-title">{{ title }}</h4>
+  <button type="button" class="close" aria-label="Close" data-dismiss="modal" (click)="activeModal.dismiss()">
+    <span aria-hidden>&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  <div class="outerFormContainer">
+    <fieldset style="padding: 10px">
+      <legend style="padding: 5px">Hi there!</legend>
+      <div style="padding: 15px">I'm the content area. You can obviously put whatever you want here.</div>
+    </fieldset>
+  </div>
+</div>
+<div class="modal-footer">
+  <button pButton pRipple type="submit" label="Submit" class="p-button-success p-button-raised search-button" icon="pi pi-search" iconPos="left" (click)="activeModal.close(true)"></button>
+  <button pButton pRipple type="button" label="Cancel" class="p-button-danger p-button-raised search-button" icon="pi pi-search" iconPos="left" (click)="activeModal.dismiss()"></button>
+
+</div>
+
+<div class="alert alert-danger" *ngIf="dialogErrors.length > 0" style="margin: 5px">
+  <strong>ERROR!</strong>
+  <br/>
+  <div *ngFor="let error of dialogErrors">{{ error }}</div>
+</div>
+

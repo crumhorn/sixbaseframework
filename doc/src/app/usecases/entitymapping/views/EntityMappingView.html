@@ -1,0 +1,150 @@
+<div class="documentParent" xmlns="http://www.w3.org/1999/html">
+  <div class="document">
+    <h1>Entity Mapping</h1>
+
+    <h2>The Fast (But Usually Not Good Enough) Way</h2>
+
+    <p class="description">You can cast raw JSON over to an object with just a simple:</p>
+    <pre><code [highlight]="'let classObj:TargetClass = (TargetClass) json'"
+               language="ts"></code></pre>
+    <p class="description">And this is fine for flat JSON structures or simple object graphs where no type conversion needs to be done. If your model is small and simple, this may be the way you want to do it rather than using the <i>EntityMapper</i>. Once you get into complex types and structures, it gets messy and usually requires a lot of custom code.</p>
+    <p class="description">By using the <i>EntityMapper</i> and its associated annotations (see the next section in the menu) you can get away from most of the "having to deal with getting real objects out of JSON" and just get on with your life (or code).</p>
+    <p class="description">The <i>EntityMapper</i>'s job is to create real "Entity classes" from raw JSON data. The result is classes that usually match the ones that exist on a server. And with all the nested entities and complex references and type conversion that may need to be done.</p>
+
+    <h2>The Short Version (TL;DR / You've been here before)</h2>
+    <p class="description"><i>Step 1</i> - Have your entity class implement <i>BaseEntity</i> per:</p>
+    <pre><code [highlight]="'export class YourClass implements BaseEntity<YourClass> {'"
+               language="ts"></code></pre>
+    <br><br>
+    <p class="description"><i>Step 2</i> - When you have your JSON structure that you wish to convert, call:</p>
+    <pre><code [highlight]="'EntityMapper.mapEntityTreeFrom(jsonObjStructure, targetObject, EntityClassToMapTo, this.entityDataService);'"
+               language="ts"></code></pre>
+    <p class="description">And the targetObj will then be of the <i>EntityClassToMapTo</i> type.
+    <br><br>
+      If using the <i>EntityDataService</i> all the mapping will be done for you, and you simply use the data fetching methods with the type parameter (<i>TargetClazz</i> in the below example) for the target object such as:</p>
+    <pre><code [highlight]="easyRestCode"
+               language="ts"></code></pre>
+
+    <h2>The Long Version (First time here)</h2>
+
+    <h3>The BaseEntity class</h3>
+    <p class="description">All your entity classes that you wish to be able to automatically build up with the <i>EntityMapper</i> should implement the <i>BaseEntity</i> interface that contains utility methods that are later used by the <i>EntityMapper</i> to help create the entities.</p>
+    <p class="description">Here is a simple example class that extends the BaseEntity and includes a method override that creates a local property called _id after the class has been created by the mapper:</p>>
+
+    <pre><code [highlight]="baseEntityCode"
+               language="ts"></code></pre>
+
+    <p class="description">The example shows the required method overrides. The <i>getClassName</i> override is used when the code is "javascript minimized"/optimized in a production build, as the class name will then disappear, and with it; any possibility of referencing it as a type.</p>
+    <h3>IMPORTANT - EVERY CLASS PROPERTY MUST BE INITIALIZED</h3>
+    <p class="description">It's imperative that you initialize EVERY property in your entity classes with either <i>null</i>, <i>undefined</i>, or with actual values. Lists and Arrays should be empty or null.</p>
+    <p class="description" style="color: red">Never initialize a property like this. It will cause any entity mapping to fail:</p>
+    <pre><code [highlight]="badInitCode"
+               language="ts"></code></pre>
+    <p class="description">The reason is, that this property is impossible to see with reflection due to it being un-initialized. If you need your properties to be uninitialized just set them to 'undefined'</p>
+    <pre><code [highlight]="goodInitCode"
+               language="ts"></code></pre>
+
+    <h2>The EntityDataService</h2>
+
+    <p class="description">The <i>EntityMapper</i> is also used together with the <i>EntityDataService</i>. This injectable service includes methods for fetching data over REST. It will call the <i>EntityMapper</i> on the return of all data and convert the JSON data over to objects using the mapper. This is the a simplified way to do it, but you can of course use the mapper completely standalone.</p>
+    <p class="description">To inject it, simply include it in your constructor per:</p>
+
+    <pre><code [highlight]="'constructor(private entityMapper: EntityMapper) {'"
+               language="ts"></code></pre>
+
+    <h2>Using the EntityMapper By Itself</h2>
+    <p class="description">The base usage is like the example below. You always start the mapping from the root object if your object is a tree of data. Any subsequent entities will be automatically mapped from the root out to the end of every tree.</p>
+
+    <pre><code [highlight]="'EntityMapper.mapEntityFrom(jsonObj, targetObj, EntityClassToMapTo, entityDataService);'"
+               language="ts"></code></pre>
+
+    <p class="description">Let's say our jsonObj is an array of <i>Currency</i> data that matches the example class at the top:</p>
+    <pre><code [highlight]="currencyCode"
+               language="ts"></code></pre>
+
+    <p class="description">We know we want any array of <i>Currency</i> entity objects as the result. To map them all we do as follows:</p>
+    <pre><code [highlight]="currencyMappingCode"
+               language="ts"></code></pre>
+
+    <h2>Using BaseEntity with Code Generators & Automatically Generated Classes</h2>
+    <p class="description">A lot of time you will have your base entities generated by some code generation framework. This causes headaches for changing entities as you cannot modify the class itself without having any changes being overwritten the next tiem the generation is done.
+      To get around this, one way to tackle it is to add a post-processing task to your Maven build or whatever you use to build your code.</p>
+    <p class="description">Here is an example from an existing project that goes through entities and adds annotations to the generated base classes (in this case, using the Open API generator).</p>
+
+    <pre><code [highlight]="mavenExampleCode"
+               language="xml"></code></pre>
+
+    <!--
+
+        <h2>Framework Root Module Initialization</h2>
+        <p class="description">To get started with the base framework you need to tell your application (or module / library), to use it and to initialize it. This is done in your module declaration in the import section. Usually in <i>app.module.ts</i>, but you can of course initialize it individually in any lazy loaded module
+          as well.
+          You initialize the module by telling it some basic things, such as what the default display date format is and you need to provide a class handler that converts class "string names" into objects. An Example follows:</p>
+
+        <h4>Example Initialization</h4>
+        <pre><code [highlight]="initCode"
+                   language="ts"></code></pre>
+
+
+        <p class="description">So to highlight, the important block here is the <i>SixCoreModule.forRoot()</i>. You can also use <i>forChild()</i> rather than <i>forRoot()</i> for sub-module implementations.</p>
+
+        <h2>Initializing for testing (Jest/Karma):</h2>
+        <p class="description">If you get errors about the module not being instantiated, you may need to provide a custom provider in your "providers" set up of your testbed as follows:</p>
+
+        <pre><code [highlight]="testbedCode"
+                   language="ts"></code></pre>
+
+        <h2>Parameter 1 (Optional) - IEntityClassHandler</h2>
+        <p class="description">This parameter is our "converter" for classes that tells the entity mapper inside the base framework what "string class name" goes to what class object.
+
+          A "class handler" is a very simple dummy class that exports all entity classes that you wish to be mappable from text to object in the following way:</p>
+
+        <pre><code [highlight]="classHandlerCode"
+                   language="ts"></code></pre>
+
+
+        <p class="description">When the EntityMapper then needs a class, it calls your handler that returns a new class cast from the string representation of that class.
+
+          This can be done in many ways, but if you want each instance to be a new object, the "simplest" (with some typescript magic) is to simply cast a new object into the class via:</p>
+
+        <pre><code [highlight]="'return new (<any>clazzHandler)[clazzName]();'"
+                   language="ts"></code></pre>
+
+        <p></p>
+        <p class="description">You can import the <i>clazzHandler</i> (ClassHandler from above) as follows;</p>
+
+        <pre><code [highlight]="importCode"
+                   language="ts"></code></pre>
+
+        <p class="description">If you hare not planning on using any sort of entity mapping, you can pass <i>null</i> or <i>undefined</i>.</p>
+
+        <h2>Parameter 2 (Optional) - IBaseFrameworkSettings</h2>
+        <p class="description">The second parameter, is your implementation of the <i>IBaseFrameworkSettings</i> interface. This controls settings that are used in the base module and range from how things are displayed to grid specific features. Please look at the interface for further details on possible options, <a
+          href="https://gitlab.six-group.net/six/angbase/base/-/blob/main/src/app/components/core/src/ext/IBaseFrameworkSettings.ts">each option is documented in the API.</a></p>
+
+        <table class="doc-table">
+          <thead>
+          <tr>
+            <th> name</th>
+            <th> type</th>
+            <th> default</th>
+            <th> description</th>
+            <th></th>
+            <th></th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr *ngFor="let item of tableData">
+            <td><span class="doc-option-name" id="api.menu.props.model">{{ item.name }}<a class="doc-option-link"><i class="pi pi-link"></i></a></span></td>
+            <td><span class="doc-option-type">{{ item.type }}</span></td>
+            <td><span id="api.menu.props.default" class="doc-option-light doc-option-default">{{ item.def }}</span></td>
+            <td><span id="api.menu.props.description" class="doc-option-description">{{ item.description }}</span></td>
+            <td></td>
+            <td></td>
+          </tr>
+          </tbody>
+        </table>
+    -->
+
+  </div>
+</div>

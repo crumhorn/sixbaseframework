@@ -1,0 +1,20 @@
+<h1>Core features - Test.</h1>
+
+<ul>
+  <li>-. If you see this at all, that means the BaseView implementation works (or this page would not load). It also means the BaseUsecaseModel implementation is working.</li>
+  <ng-container *ngIf="!settingsService">
+    <li>ERROR - SETTING SERVICE Class 'SettingService' was not injected.</li>
+  </ng-container>
+  <ng-container *ngIf="settingsService">
+    <li *ngIf="settingsService.frameworkSettings">- You should see what you have injected with 'forRoot' here for the various settings:
+      <pre>{{ settingsService.frameworkSettings | json }}</pre>
+    </li>
+    <li *ngIf="!settingsService.frameworkSettings">- You <b>injected no</b> properties in forRoot</li>
+    <li *ngIf="settingsService.classHandler">-. A Class handler has been also been set.</li>
+    <li *ngIf="!settingsService.classHandler">-. A Class handler has <b>not</b> been also been set.</li>
+  </ng-container>
+  <li *ngIf="testEntity">Test Entity Exists, that means BaseEntity implementation works</li>
+  <li *ngIf="!testEntity">Test Entity does NOT Exist! That means BaseEntity implementation does not work</li>
+  <li *ngIf="testEntityWithAnnotation">Test Entity With Custom Annotation Exists, that means the annotation framework works. Value of "name" is: {{ testEntityWithAnnotation.name }}</li>
+  <li *ngIf="!testEntity">Test Entity With Custom Annotation does NOT Exist!</li>
+</ul>

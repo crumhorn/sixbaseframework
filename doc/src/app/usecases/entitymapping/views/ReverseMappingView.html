@@ -1,0 +1,21 @@
+<div class="documentParent" xmlns="http://www.w3.org/1999/html">
+  <div class="document">
+    <h1>Converting <i>BaseEntity</i> implementations back to JSON</h1>
+    <p class="description">Mapping from JSON to entities is great. But many times we need to send object graphs back to the server as JSON, and this is again where a lot of headaches can happen as you may have back-references which cause infinite loops etc when trying to use the basic <i>JSON.stringify(object)</i>.</p>
+    <p class="description">We may also have added "temporary properties" that actually don't belong to the object via code, such as <i>obj["thisIsNew"] = "blah"</i>, and as they technically didn't exist on the object from the beginning, they should also not be sent back.</p>
+    <p class="description">To ensure all of this works as intended, the <i>EntityMapping</i> framework comes with a utility that lets you convert your object structure back to JSON.</p>
+    <p class="description">First we inject the <i>EntityUtilities</i> service into our constructor.</p>
+
+    <pre><code [highlight]="'constructor(private entityUtilities: EntityUtilities) {'"
+               language="ts"></code></pre>
+
+    <p class="description">Now we can tell <i>EntityUtilities</i> that we need to convert our object (that implements <i>BaseEntity</i>) back to JSON</p>
+
+    <pre><code [highlight]="backToJsonCode"
+               language="ts"></code></pre>
+
+    <p class="description">This is a very simple example. The converter takes many optional parameters as well that lets you override properties, do custom conversion before or after. For more details, <a href="https://gitlab.six-group.net/six/angbase/root/base/-/blob/main/src/app/components/core/src/services/EntityUtilities.ts" target="_blank">please read the API documentation for the class</a></p>
+
+
+  </div>
+</div>

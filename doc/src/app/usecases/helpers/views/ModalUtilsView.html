@@ -1,0 +1,83 @@
+<div class="documentParent">
+  <div class="document">
+    <h1>ModalUtils</h1>
+
+    <p class="description">This service assists with opening <i>modal</i> dialogs that contain some sort of view or simply displays information or warning messages to the user. You either inject it yourself, or if you're using <i>BaseView</i> it is already injected for you and you can access it via <i>super.modalUtils</i>. To inject yourself:</p>
+    <pre><code [highlight]="injectCode" language="ts"></code></pre>
+
+    <h2>Requirements</h2>
+    <p class="description">Regular dialogs require <a href="https://ng-bootstrap.github.io/#/home" target="_new"><i>ng-bootstrap</i></a> and the smaller dialogs require <i>SweetAlert2</i>. If you want resizable dialogs you also need to include <a href="https://jqueryui.com/resizable/" target="_new"><i>jQuery resizable</i></a>. Please ensure each library is set up correctly in <i>angular.json</i> per the instructions of them.</p>
+    <pre><code [highlight]="reqCode" language="ts"></code></pre>
+
+    <h2>Demo of <i>openDialog()</i></h2>
+    <p class="description">
+      <button pButton pRipple (click)="testDialog()">Test Regular Dialog</button>
+    </p>
+
+    <h2>Demo of Various Options</h2>
+    <p class="description">
+      <button pButton pRipple (click)="test()">Test Success Dialog</button>
+      <button style="margin-left: 8px" pButton pRipple (click)="testConfirm()">Test Question Dialog (And Timer Dialog)</button>
+      <button style="margin-left: 8px" pButton pRipple (click)="delete()">Test Delete Dialog</button>
+      <button style="margin-left: 8px" pButton pRipple (click)="html()">Test HTML Dialog</button>
+    </p>
+    <p></p>
+
+    <h2>Usage of openDialog()</h2>
+    <h3>HTML Framework</h3>
+    <p class="description">First, you need to create a class that will represent the entire content of your dialog, this includes header, content, footer, etc. Here is a base HTML framework for that:</p>
+    <pre><code [highlight]="rawDialogCode" language="html"></code></pre>
+
+    <h3>Typescript part</h3>
+    <p class="description">Your class can be anything. In this example we extend <i>BaseForm</i> and define a title as <i>&#64;input()</i> that will be defined before we open the dialog:</p>
+    <pre><code [highlight]="rawDialogTypescriptCode" language="ts"></code></pre>
+
+    <h3>Opening the dialog and passing data</h3>
+    <p class="description">To open the dialog with the class that makes up the content we finally call the <i>openDialog(...)</i> API:</p>
+    <pre><code [highlight]="openDialogCode" language="ts"></code></pre>
+
+    <h3>Dialog Modes</h3>
+    <p class="description">To help facilitate what "state" the dialog is in, the enum <i>DialogModes</i> provides a set of the most commonly used scenarios:</p>
+    <p class="description"><i>ADD</i>, <i>EDIT</i>, <i>REPARENT</i>, <i>COPY</i>, <i>VIEW</i></p>
+
+    <h3>Accessing the active dialog</h3>
+    <p class="description">This actually comes from <i>ng-bootstrap</i>. Injecting <i>NgbActiveModal</i>, you have access to the dialog itself:</p>
+    <pre><code [highlight]="injectModalCode" language="ts"></code></pre>
+    <p class="description">We will use that to send any result back to the parent class that opened it, or to tell the modal that it needs to cancel</p>
+    <h3>Cancel Dialog</h3>
+    <pre><code [highlight]="closeWithCancelCode" language="ts"></code></pre>
+    <h3>Close Dialog With Result</h3>
+    <pre><code [highlight]="closeWithResultCode" language="ts"></code></pre>
+
+    <h2>Usage of Basic API</h2>
+    <p class="description">General usage is as follows:</p>
+    <pre><code [highlight]="'this.modalUtils.apiCall(...)'" language="ts"></code></pre>
+
+    <h2>Styling</h2>
+    <p class="description">By default the only styling is the bootstrap styling. If you wish more SIX-like styling that you see in the demo above, you can use <a href="./assets/modalStyle.zip">this as your base</a></p>
+
+    <h2>Dialog API</h2>
+    <table class="doc-table">
+      <thead>
+      <tr>
+        <th> name</th>
+        <th> description</th>
+        <th></th>
+        <th></th>
+        <th></th>
+        <th></th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let item of tableData">
+        <td><span class="doc-option-name" id="api.menu.props.model">{{ item.name }}<a class="doc-option-link"><i class="pi pi-link"></i></a></span></td>
+        <td><span id="api.menu.props.description" class="doc-option-description">{{ item.description }}</span></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
