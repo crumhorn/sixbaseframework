@@ -39,7 +39,7 @@ import {APP_BASE_HREF} from "@angular/common";
   ],
   providers: [
     {provide: 'WEB_FONTS', useValue: true},
-    {provide: APP_BASE_HREF, useValue: '/' },
+    // {provide: APP_BASE_HREF, useValue: '/' },
     {
       provide: HIGHLIGHT_OPTIONS,
       useValue: <HighlightJSOptions>{

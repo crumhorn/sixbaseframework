@@ -226,22 +226,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   AppModule: () => (/* binding */ AppModule)
 /* harmony export */ });
-/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/platform-browser */ 80436);
-/* harmony import */ var _six_group_base_angular_framework_core__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @six-group/base-angular-framework/core */ 59665);
+/* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/platform-browser */ 80436);
+/* harmony import */ var _six_group_base_angular_framework_core__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @six-group/base-angular-framework/core */ 59665);
 /* harmony import */ var _app_routing_module__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./app-routing.module */ 94114);
 /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./app.component */ 20092);
 /* harmony import */ var _app_routes__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./app.routes */ 32181);
-/* harmony import */ var _six_group_base_angular_framework_utils__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @six-group/base-angular-framework/utils */ 73035);
+/* harmony import */ var _six_group_base_angular_framework_utils__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @six-group/base-angular-framework/utils */ 73035);
 /* harmony import */ var _app_shared_modules__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app.shared.modules */ 18953);
-/* harmony import */ var _six_group_base_angular_framework_ag_grid__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @six-group/base-angular-framework/ag-grid */ 32981);
-/* harmony import */ var ngx_highlightjs__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! ngx-highlightjs */ 57725);
-/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/platform-browser/animations */ 43835);
+/* harmony import */ var _six_group_base_angular_framework_ag_grid__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @six-group/base-angular-framework/ag-grid */ 32981);
+/* harmony import */ var ngx_highlightjs__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ngx-highlightjs */ 57725);
+/* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/platform-browser/animations */ 43835);
 /* harmony import */ var _controls_menu_app_menu_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./controls/menu/app.menu.component */ 19456);
 /* harmony import */ var _views_FileResourcesView__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./views/FileResourcesView */ 74213);
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/common */ 60316);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/core */ 37580);
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @angular/router */ 95072);
-
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @angular/router */ 95072);
 
 
 
@@ -276,11 +274,10 @@ class AppModule {
       providers: [{
         provide: 'WEB_FONTS',
         useValue: true
-      }, {
-        provide: _angular_common__WEBPACK_IMPORTED_MODULE_7__.APP_BASE_HREF,
-        useValue: '/'
-      }, {
-        provide: ngx_highlightjs__WEBPACK_IMPORTED_MODULE_8__.HIGHLIGHT_OPTIONS,
+      },
+      // {provide: APP_BASE_HREF, useValue: '/' },
+      {
+        provide: ngx_highlightjs__WEBPACK_IMPORTED_MODULE_7__.HIGHLIGHT_OPTIONS,
         useValue: {
           coreLibraryLoader: () => Promise.all(/*! import() */[__webpack_require__.e("default-node_modules_highlight_js_lib_core_js"), __webpack_require__.e("node_modules_highlight_js_es_core_js")]).then(__webpack_require__.bind(__webpack_require__, /*! highlight.js/lib/core */ 2885)),
           lineNumbersLoader: () => Promise.resolve(/*! import() */).then(__webpack_require__.bind(__webpack_require__, /*! ngx-highlightjs/line-numbers */ 70705)),
@@ -295,14 +292,14 @@ class AppModule {
           }
         }
       }],
-      imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_9__.BrowserModule, _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_10__.BrowserAnimationsModule, _app_routing_module__WEBPACK_IMPORTED_MODULE_0__.AppRoutingModule, _app_routes__WEBPACK_IMPORTED_MODULE_2__.ClientRoutes, _six_group_base_angular_framework_ag_grid__WEBPACK_IMPORTED_MODULE_11__.CoreAgGridModule.forRoot(),
+      imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_8__.BrowserModule, _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_9__.BrowserAnimationsModule, _app_routing_module__WEBPACK_IMPORTED_MODULE_0__.AppRoutingModule, _app_routes__WEBPACK_IMPORTED_MODULE_2__.ClientRoutes, _six_group_base_angular_framework_ag_grid__WEBPACK_IMPORTED_MODULE_10__.CoreAgGridModule.forRoot(),
       // https://stackoverflow.com/questions/41900872/where-to-import-export-a-module-using-forroot
-      _app_shared_modules__WEBPACK_IMPORTED_MODULE_3__.SharedModule.forRoot(), _six_group_base_angular_framework_core__WEBPACK_IMPORTED_MODULE_12__.SixCoreModule.forRoot({
+      _app_shared_modules__WEBPACK_IMPORTED_MODULE_3__.SharedModule.forRoot(), _six_group_base_angular_framework_core__WEBPACK_IMPORTED_MODULE_11__.SixCoreModule.forRoot({
         getClassForString(clazzName) {
           return null;
         }
       }, {
-        displayDateFormat: _six_group_base_angular_framework_utils__WEBPACK_IMPORTED_MODULE_13__.DateUtils.YYYY_MM_DD
+        displayDateFormat: _six_group_base_angular_framework_utils__WEBPACK_IMPORTED_MODULE_12__.DateUtils.YYYY_MM_DD
       }), _controls_menu_app_menu_component__WEBPACK_IMPORTED_MODULE_4__.AppMenuComponent]
     });
   }
@@ -310,7 +307,7 @@ class AppModule {
 (function () {
   (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵsetNgModuleScope"](AppModule, {
     declarations: [_app_component__WEBPACK_IMPORTED_MODULE_1__.AppComponent, _views_FileResourcesView__WEBPACK_IMPORTED_MODULE_5__.FileResourcesView],
-    imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_9__.BrowserModule, _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_10__.BrowserAnimationsModule, _app_routing_module__WEBPACK_IMPORTED_MODULE_0__.AppRoutingModule, _angular_router__WEBPACK_IMPORTED_MODULE_14__.RouterModule, _six_group_base_angular_framework_ag_grid__WEBPACK_IMPORTED_MODULE_11__.CoreAgGridModule, _app_shared_modules__WEBPACK_IMPORTED_MODULE_3__.SharedModule, _six_group_base_angular_framework_core__WEBPACK_IMPORTED_MODULE_12__.SixCoreModule, _controls_menu_app_menu_component__WEBPACK_IMPORTED_MODULE_4__.AppMenuComponent]
+    imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_8__.BrowserModule, _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_9__.BrowserAnimationsModule, _app_routing_module__WEBPACK_IMPORTED_MODULE_0__.AppRoutingModule, _angular_router__WEBPACK_IMPORTED_MODULE_13__.RouterModule, _six_group_base_angular_framework_ag_grid__WEBPACK_IMPORTED_MODULE_10__.CoreAgGridModule, _app_shared_modules__WEBPACK_IMPORTED_MODULE_3__.SharedModule, _six_group_base_angular_framework_core__WEBPACK_IMPORTED_MODULE_11__.SixCoreModule, _controls_menu_app_menu_component__WEBPACK_IMPORTED_MODULE_4__.AppMenuComponent]
   });
 })();
 
@@ -1074,4 +1071,4 @@ module.exports = /*#__PURE__*/JSON.parse('{"data":[{"name":"Getting Started","ic
 /******/ var __webpack_exports__ = __webpack_require__.O();
 /******/ }
 ]);
-//# sourceMappingURL=main.b2f2fe5945d6e2d2.js.map
+//# sourceMappingURL=main.764b399a8aa87aed.js.map
