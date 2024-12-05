@@ -278,7 +278,7 @@ class AppModule {
         useValue: true
       }, {
         provide: _angular_common__WEBPACK_IMPORTED_MODULE_7__.APP_BASE_HREF,
-        useValue: '/sixbaseframework'
+        useValue: '/sixbaseframework/'
       }, {
         provide: ngx_highlightjs__WEBPACK_IMPORTED_MODULE_8__.HIGHLIGHT_OPTIONS,
         useValue: {
@@ -1074,4 +1074,4 @@ module.exports = /*#__PURE__*/JSON.parse('{"data":[{"name":"Getting Started","ic
 /******/ var __webpack_exports__ = __webpack_require__.O();
 /******/ }
 ]);
-//# sourceMappingURL=main.9a4266eff8dc3d4c.js.map
+//# sourceMappingURL=main.e98cffa405d7a00e.js.map
