@@ -10,8 +10,8 @@ import {BaseView} from "@six-group/base-angular-framework/core";
 })
 export class InstallView extends BaseView implements OnInit, AfterViewInit, OnDestroy {
 
-  public latestVersion = "1.0.20";
-  public releaseDate = "22/11/2024";
+  public latestVersion = "1.0.24";
+  public releaseDate = "01/12/2024";
 
   public angJsonCode = `"styles": [
    "node_modules/primeicons/primeicons.css",

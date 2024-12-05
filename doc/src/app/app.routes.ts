@@ -2,12 +2,13 @@ import {Routes, RouterModule} from '@angular/router';
 import {AppComponent} from "./app.component";
 import {FileResourcesView} from "./views/FileResourcesView";
 import {HelpView} from "./views/HelpView";
+import {Landing} from "./landing";
 
 // see: http://stackoverflow.com/questions/34731869/wait-for-angular-2-to-load-resolve-model-before-rendering-view-template
 export const routes: Routes = [
   {
     path: '',
-    component: AppComponent
+    component: Landing
   },
   {
     path: 'install',

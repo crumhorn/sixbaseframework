@@ -15,11 +15,13 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {AppMenuComponent} from "./controls/menu/app.menu.component";
 import {FileResourcesView} from "./views/FileResourcesView";
 import {APP_BASE_HREF} from "@angular/common";
+import {Landing} from "./landing";
 
 @NgModule({
   declarations: [
     AppComponent,
-    FileResourcesView
+    FileResourcesView,
+    Landing
   ],
   imports: [
     BrowserModule,
